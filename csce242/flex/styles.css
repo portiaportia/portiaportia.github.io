@@ -97,6 +97,13 @@ a {
     text-align:center;
 }
 
+#hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
 @media (min-width: 900px) {
     .articles, .main-section {
         display:flex;
