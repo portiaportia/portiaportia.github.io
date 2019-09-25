@@ -104,6 +104,31 @@ a {
     margin: 6px 0;
   }
 
+#hamburger {
+    display:none;
+}
+
+.hidden {
+    display:none;
+}
+
+button {
+    padding:5px;
+}
+
+input {
+    padding:5px;
+    background:lightpink;
+}
+
+p {
+    margin: 10px;
+}
+
+.error {
+    color:red;
+}
+
 @media (min-width: 900px) {
     .articles, .main-section {
         display:flex;
@@ -119,4 +144,12 @@ a {
     .navbar ul li {
         text-align:center;
     }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+#navitems.hidden {
+    display:none;
 }
