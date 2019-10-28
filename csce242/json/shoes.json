@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Skechers Sport Women's Empire Fashion Sneaker",
+        "brand": "Sketchers",
+        "price":"52.95",
+        "material":"100% Faux Leather",
+        "description":"Slip on bungee laced athletic sporty walking sneaker design; Zigzag stitched toe seam detail Side",
+        "rating":"4.5",
+        "reviews":["perfect shoe","I love this shoe","best shoe by best company", "was a dissapointment"]
+    },
+    {
+        "name": "ASICS Men's Gel-Venture 6 Running Shoe",
+        "brand": "Asics",
+        "price":"62.22",
+        "material":"Synthetic, rubber shole",
+        "description":"Get out and explore in the redesigned GEL-Venture 6. Designed to take on rugged terrain, this model comes complete with a trail-specific outsole and high-abrasion rubber for confidence-inspiring traction. Rearfoot GEL cushioning absorbs shock to keep you comfortable as you pound along the path, while the removable sockliner lets you insert custom orthotics for an even more personalized fit.",
+        "rating":"4.5",
+        "reviews":["cheaper version on last years model", "might be a knockoff", "I buy too much crap", "marathon proven running shoe"]
+    },
+    {
+        "name": "Men's TarantuLace Performance Rock Climbing Shoe",
+        "brand": "La Sportiva",
+        "price":"80.00",
+        "material":"Leather",
+        "description":"The La Sportiva TarantuLace is the super-comfortable, high-performance solution for any climber looking for one shoe to do it all. Designed for intermediate climbers, the TarantuLace features a rugged rubber heel rand, grippy FriXion RS rubber soles, and a low- asymmetry RN45 shoe shape, lending plenty of grip, support, and sensitivity. Refusing to sacrifice comfort for technical performance, the synthetic leather overlay lacing harness adds great support for beginner to mid level climbers, and the unlined leather upper and breathable lined tongue are comfy and soft. Whether hitting your local gym wall or an expert-level pitch, this men's one-quiver climbing shoe will keep you moving up.",
+        "rating":"4.5",
+        "reviews":["Great shoe", "Shoe wore out", "Fantastic comfort", "Great beginner shoe"]
+    },
+    {
+        "name": "Naturalizer Women's Michelle Dress Pum",
+        "brand": "Naturalizer",
+        "price":"82.71",
+        "material":"Leather",
+        "description":"Naturalizer was one of the first shoe brands that women could turn to for the feminine style they coveted and the comfort they thought was impossible to attain. Naturalizer's fresh, unpretentious designs are a smooth fit with your wardrobe, your life and your own unique style. Naturalizer promises style that makes you look good and feel good - always.",
+        "rating":"4",
+        "reviews":["Going to buy more", "Good, not great", "Great pair of heals", "Beautiful not comfortable"]
+    },
+]
