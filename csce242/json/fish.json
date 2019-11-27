@@ -1,0 +1,98 @@
+[
+  {
+    "title":"Longfin Zebra Danio",
+    "lifespan": "5 years",
+    "length": "3 inches",
+    "colors":["blue", "purple", "white", "yellow"],
+    "description":"Longfin Zebra Danio is usually of a peaceful temperament. Therefore keeping them with equal-minded fishes in small-size schools would be best for them.",
+    "img":"images/longfin-zebra-danio.jpg"
+  },
+  {
+    "title":"Jack Dempsey",
+    "lifespan": "5-7 years",
+    "length": "8 inches",
+    "colors":["blue", "orange", "yellow", "red"],
+    "description":"Jack Dempsey is an aggressive territorial fish with strong facial features compared with the famous 1920s boxer Jack Dempsey. It might prove to be destructive in the aquarium.",
+    "img":"images/jack-dempsey.jpg"
+  },
+  {
+    "title":"Bettas",
+    "lifespan": "2-3 years",
+    "length": "3 inches",
+    "colors":["blue", "purple", "maroon", "gold"],
+    "description":"Majority of beginners chooses this viral, vibrantly colored simplest species of all for their hassle-free maintenance and its aquarium does not even require any filters or heaters.",
+    "img":"images/bettas.jpg"
+  },
+  {
+    "title":"Corydoras Catfish",
+    "lifespan": "5 years",
+    "length": "1 - 2.5 inches",
+    "colors":["yellow", "green", "white", "orange"],
+    "description":"Corydoras Catfish, popularly called Cory Cats is a hardy fish that is ideal for beginner hobbyists. They have a variety of species and are available in different sizes and colors.",
+    "img":"images/corydoras-catfish.jpg"
+  },
+  {
+    "title":"Guppi",
+    "lifespan": "2-3 years",
+    "length": ".5 - 2.5 inches",
+    "colors":["blue", "orange", "yellow", "black"],
+    "description":"Guppies are tropical aquarium fish that are most widely distributed in the world. It is one of the most renowned freshwater fish species for the aquarium as it is nice, active, breeds easily and not demanding in case of diet.",
+    "img":"images/guppi.jpg"
+  },
+  {
+    "title":"Swordtails",
+    "lifespan": "3-5 years",
+    "length": "4-5 inches",
+    "colors":["orange", "purple","yellow","red"],
+    "description":"Swordtails are very hardy fish from the Poeciliidae family which makes them very famous spread tank fish and a perfect freshwater species for the beginner aquarist. They have a slightly bulkier body similar to the shape of platy or guppy with a sword-shaped extension of the fin.",
+    "img":"images/swordtails.jpg"
+  },
+  {
+    "title":"Harlequin Rasbora",
+    "lifespan": "3-4 years",
+    "length": "2 inches",
+    "colors":["blue", "orange", "yellow"],
+    "description":"his small, magnificent fish will be a good tank mate for each of the freshwater aquarium fish mentioned above. This fish is popular among aquarists for its small size, good temperament and on top of that, it is not demanding.",
+    "img":"images/harlequin-rasbora.jpg"
+  },
+  {
+    "title":"Bolivia Ram",
+    "lifespan": "6 years",
+    "length": "2 - 5.4 inches",
+    "colors":["orange", "yellow", "black", "red"],
+    "description":"This peaceful, calm and good-tempered cichlid species is quite hardy and live successfully in a standard fish tank. You may find them a little more aggressive, but they are more like to scare other fish rather than attacking or hurting them.",
+    "img":"images/bolivian-ram.jpg"
+  },
+  {
+    "title":"White Cloud Mountain Minnow",
+    "lifespan": "3 years",
+    "length": "2.5 - 3 cm",
+    "colors":["blue", "purple", "white", "yellow"],
+    "description":"The fish prefers middle water layers, and it likes swimming in a school. White Cloud Mountain Minnow manages well in cold water and, therefore, kept in a pond in the yard in summer by pet lovers.",
+    "img":"images/white-cloud.jpg"
+  },
+  {
+    "title":"Kuhli Loach",
+    "lifespan": "5 years",
+    "length": "4-5 inches",
+    "colors":["yellow","brown"],
+    "description":"uhli loach is the most unusual fish, and even an inexperienced aquarist can keep them easily. Being close to true loaches family it resembles a small snake. ",
+    "img":"images/kuhli-loach.jpg"
+  },
+  {
+    "title":"Goldfish",
+    "lifespan": "2-4 years",
+    "length": "18 inches",
+    "colors":["gold"],
+    "description":"Goldfish is a wonderful freshwater variety for both beginner and seasoned aquarium enthusiasts. They are comfortable in a fishtank with 40 gallons capacity and can attain a maximum size of 18 inches.",
+    "img":"images/goldfish.jpg"
+  },
+  {
+    "title":"Angelfish",
+    "lifespan": "5 years",
+    "length": "6 inches",
+    "colors":["white"],
+    "description":"Angelfish is a freshwater variety that is originally native to South America. Carnivorous by nature, Angelfish needs proper for its overall growth and wellbeing. ",
+    "img":"images/angelfish.jpg"
+  }
+]
