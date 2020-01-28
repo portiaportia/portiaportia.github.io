@@ -1,0 +1,61 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:url(images/cows-bg.jpg);
+}
+
+#content {
+    background:rgba(255,255,255, 0.6);
+    padding:10px;
+    width:75%;
+    margin:auto;
+    border-radius:5px;
+    box-shadow: 5px 10px #E3F2F8;    
+}
+
+h1 {
+    color:#C64137;
+}
+
+#main-nav li {
+    list-style-type: none;
+    display:inline-block;
+}
+
+/*
+#main-nav a {
+    background:#342C28;
+    color:#fff;
+    text-decoration: none;
+    padding:10px;
+}
+
+#main-nav a:hover {
+    background:#FDD7DC;
+    color:#000;
+}
+*/
+
+#main-nav a {
+    text-decoration: none;
+    font-size:20px;
+    padding:0 5px;
+    color:#342C28;
+    border-bottom: 2px solid transparent;
+}
+
+#main-nav a:hover {
+    border-bottom:2px solid #C6413A;
+}
+
+#baby-cow, #cute-cow {
+    border:5px solid transparent;
+}
+
+#baby-cow:hover {
+    border: 5px dotted lightblue;
+}
+
+#cute-cow:hover {
+    border: 5px dotted #FEEEF1;
+}
+

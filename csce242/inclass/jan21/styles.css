@@ -1,0 +1,26 @@
+body {
+    background:skyblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+div {
+    background:white;
+    padding:20px;
+    width:75%;
+    margin:auto;    /* center horizontally */
+}
+
+h1 {
+    color:darkolivegreen;
+}
+
+li {
+    list-style-type: none;
+    display:inline-block;
+}
+
+td {
+    border:2px dotted magenta;
+    background:green;
+    padding:5px;
+}
