@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-header, .two-cols section, .six-cols section, .three-cols section, .four-cols section, #main-footer {
+    padding:10px;
+    margin:5px;
+}
+
+
+#main-header {
+    background:lightgray;
+}
+
+.two-cols section {
+    background:lightblue;
+}
+
+.six-cols section {
+    background:lightpink;
+}
+
+.four-cols section {
+    background:lightskyblue;
+}
+
+.three-cols section {
+    background:lightgray;
+}
+
+#main-footer {
+    background:lightseagreen;
+}
+
+/* Nav Bar */
+#main-nav li {
+    list-style-type: none;
+    background:lightgoldenrodyellow;
+    padding:10px 10px;
+    margin:0 5px;
+    text-align:center;
+}
+
+#main-nav a {
+    text-decoration: none;
+}
+
+/* Text */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* For larger layouts */
+/* Screen 900px or larger apply these styles */
+@media(min-width:900px){
+
+    #main-nav ul, .two-cols, .six-cols, .four-cols, .three-cols {
+        display:flex;
+    }
+
+    .two-cols section, .six-cols section, #main-nav ul li, .four-cols section, .three-cols section {
+        flex:1;
+    }
+}
+
+
+
+
+
+
+
+
