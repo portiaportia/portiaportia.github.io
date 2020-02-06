@@ -1,0 +1,65 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:slategray;
+}
+
+.example {
+    background:white;
+    padding:10px;
+    margin:10px;
+    border-radius:5px;
+    flex:1;
+}
+
+.example h1 {
+    text-align:center;
+}
+
+.example label {
+    width:100%;
+    text-align:center;
+    display:block;
+    padding:5px;
+}
+
+.example input {
+    width:100%;
+    display:block;
+    padding:5px;
+}
+
+.example input:focus {
+    background:skyblue;
+    color:magenta;
+}
+
+.example button {
+    width:100%;
+    padding:5px;
+}
+
+@media(min-width:900px){
+    #content {
+        display:flex;
+    }
+
+    .example p {
+        display:flex;
+    }
+
+    .example label {
+        width:100px;
+        text-align:right;
+        padding-right:5px;
+    }
+
+    .example input {
+        width:50%;
+    }
+
+    .example button {
+        width:50%;
+        display:block;
+        margin:auto;
+    }
+}
