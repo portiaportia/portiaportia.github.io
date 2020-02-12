@@ -53,14 +53,6 @@ function getEmoji(emotion){
     return "";
 }
 
-function toggleNav(){
-    const navItems = document.getElementById("main-nav-items");
-    navItems.classList.toggle("hidden");
-}
-
 const btnDisplay = document.getElementById("btn-display");
 btnDisplay.onclick = displayEmotion;
-
-const btnToggle = document.getElementById("nav-toggle");
-btnToggle.onclick = toggleNav;
 
