@@ -54,6 +54,13 @@ body {
     color:skyblue;
 }
 
+.grad {
+    width:50px;
+    height:300px;
+    border:1px solid black;
+    background: linear-gradient(0deg, rgba(249,13,3,1) 0%, rgba(249,13,3,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+}
+
 .emotion {
     font-size:20px;
     font-weight:700;
@@ -88,6 +95,7 @@ body {
 #main-nav a {
     text-decoration: none;
     color:#000;
+    cursor:pointer;
 }
 
 /* Nav Bar Toggle */
