@@ -79,6 +79,17 @@ body {
     padding-left:0;
 }
 
+#main-nav li {
+    background:#abc;
+    padding:10px;
+    margin:2px 0;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:#000;
+}
+
 /* Nav Bar Toggle */
 #nav-toggle div {
     width: 35px;
@@ -87,7 +98,7 @@ body {
     margin:6px 0;
 }
 
-/* Large Resolutions */
+/* Large Resolutions Only */
 @media(min-width:900px){
     #content {
         display:flex;
@@ -113,4 +124,32 @@ body {
         margin:auto;
     }
 
+    /* Navigation */
+    #nav-toggle {
+        display:none;
+    }
+
+    #main-nav ul {
+        display:flex;
+    }
+
+    #main-nav li {
+        background:transparent;
+    }
+
+    #main-nav a {
+        border-bottom: 2px solid transparent;
+    }
+
+    #main-nav a:hover {
+        border-bottom: 2px solid white;
+    }
 }
+
+
+
+
+
+
+
+
