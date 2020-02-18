@@ -8,7 +8,7 @@ body {
     padding:10px;
     margin:10px;
     border-radius:5px;
-    flex:1;
+    min-height:200px;
 }
 
 .example h1 {
@@ -36,6 +36,10 @@ body {
 .example button {
     width:100%;
     padding:5px;
+}
+
+.cookie-list {
+    list-style-type: none;
 }
 
 .green {
@@ -110,6 +114,11 @@ body {
 @media(min-width:900px){
     #content {
         display:flex;
+        flex-wrap:wrap;
+    }
+
+    .example {
+        width:30%;
     }
 
     .example p {

@@ -110,6 +110,28 @@ function displayCount(){
 
 }
 
+function displayCookies(){
+    let cookieTitle = document.createElement("h3");
+    let ulElem = document.createElement("ul");
+    let endTitle = document.createElement("p");
+
+    cookieTitle.textContent = "I love cookies";
+    endTitle.textContent = "Cookie Time";
+    ulElem.classList.add("cookie-list");
+
+    //add items to the dom
+    this.after(cookieTitle);
+    cookieTitle.after(ulElem);
+    ulElem.after(endTitle);
+
+    //populate the numerical list
+    for(let i=5; i >= 1; i--){
+        let liElem = document.createElement("li");
+        liElem.textContent = i;
+        ulElem.append(liElem);
+    }
+}
+
 const btnDisplay = document.getElementById("btn-display");
 btnDisplay.onclick = displayEmotion;
 
@@ -118,3 +140,6 @@ navToggle.onclick = toggleNav;
 
 const btnCount = document.getElementById("btn-go");
 btnCount.onclick = displayCount;
+
+const btnDoStuff = document.getElementById("btn-do-stuff");
+btnDoStuff.onclick = displayCookies;
