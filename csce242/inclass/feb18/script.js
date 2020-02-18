@@ -71,13 +71,43 @@ function toggleNav(){
 function displayCount(){
     let startNum = parseInt(document.getElementById("txt-start").value);
     let endNum = parseInt(document.getElementById("txt-end").value);
+    //let resultDiv = document.getElementById("ex3-result");
+
+    //clear both error spans by setting html to blank
+    document.getElementById("error-start").classList.add("hidden");
+    document.getElementById("error-end").classList.add("hidden");
 
     //if either number is not a number show error appropriately
     if(isNotValidNum(startNum, "error-start") | isNotValidNum(endNum, "error-end"))return;
 
     //if endNum is <= startNum show an error appropratiely
+    if(startNum >= endNum) {
+        resultDiv.innerHTML = "End num must be larger than start num";
+        return;
+    }
+    /*
+   resultDiv.innerHTML = "Counting:<ul>";
+   
+    for(let i=startNum; i<=endNum;i++){
+        resultDiv.innerHTML += `<li>${i}</li>`;
+    }
 
-    console.log(`counting from ${startNum} to ${endNum}`);
+   resultDiv.innerHTML += "</ul>All Done!!!";
+   */
+
+   let h3Elem = document.createElement("h3");
+   h3Elem.textContent = "Counting:";
+   btnCount.after(h3Elem);
+
+   let ulElem = document.createElement("ul");
+   h3Elem.after(ulElem);
+
+   for(let i=startNum; i <= endNum; i++){
+       let liElem = document.createElement("li");
+       liElem.textContent = i;
+       ulElem.append(liElem);
+   }
+
 }
 
 const btnDisplay = document.getElementById("btn-display");
