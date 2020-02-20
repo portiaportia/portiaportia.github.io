@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>JavaScript Examples</title>
+    </head>
+    <body>
+        <header id="main-header">
+            <h1>JavaScript Examples</h1>
+            <nav id="main-nav">
+                <div id="nav-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="main-nav-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Bio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <section class="example">
+                <h1>First Example</h1>
+
+                <p>
+                    <label for="txt-first-name">Name: </label>
+                    <input id="txt-first-name">
+                    <span id="error-name" class="error hidden">* blank</span>
+                </p>
+                <p>
+                    <label for="txt-fav-color">Fav Color: </label>
+                    <input id="txt-fav-color">
+                    <span id="error-fav-color" class="error hidden">* blank</span>
+                </p>
+                <p>
+                    <label for="txt-emotion">Emotion: </label>
+                    <input id="txt-emotion">
+                    <span id="error-emotion" class="error hidden">* blank</span>
+                </p>
+                <button id="btn-display">Display</button>
+
+                <p id="ex1-result"></p>
+                <p class="emotion" id="ex1-emotion"></p>
+            </section>
+            <section class="example">
+                <h1>Second Example</h1>
+                <div class="grad"></div>
+            </section>
+            <section class="example">
+                <h1>Third Example</h1>
+
+                <p>
+                    <label for="txt-start">Start: </label>
+                    <input id="txt-start">
+                    <span id="error-start" class="error hidden">* Not a valid num</span>
+                </p>
+                <p>
+                    <label for="txt-end">End: </label>
+                    <input id="txt-end">
+                    <span id="error-end" class="error hidden">* Not a valid num</span>
+                </p>
+                <button id="btn-go">go!</button>
+            </section>
+            <section class="example">
+                <button id="btn-do-stuff">Do Stuff</button>
+            </section>
+            <section class="example">
+                <button id="btn-grow-box">Grow Box</button>
+                <button id="btn-shrink-box">Shrink Box</button>
+                <div id="box"></div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
