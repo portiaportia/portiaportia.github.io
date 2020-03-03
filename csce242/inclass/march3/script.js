@@ -14,7 +14,31 @@ class Dog {
 
     get item(){
         let dogSection = document.createElement("section");
-        dogSection.innerHTML = this.details;
+
+        //create title
+        let h3Elem = document.createElement("h3");
+        h3Elem.innerText = this.title;
+        dogSection.append(h3Elem);
+
+        //create list
+        let ulElem = document.createElement("ul");
+        dogSection.append(ulElem);
+        let liBreedElem = document.createElement("li");
+        liBreedElem.innerText = `Breed: ${this.breed}`;
+        ulElem.append(liBreedElem);
+
+        let liColorElem = document.createElement("li");
+        liColorElem.innerText = `Color: ${this.color}`;
+        ulElem.append(liColorElem);
+
+        let liAgeElem = document.createElement("li");
+        liAgeElem.innerText = `Age: ${this.age}`;
+        ulElem.append(liAgeElem);
+
+        let liSizeElem = document.createElement("li");
+        liSizeElem.innerText = `Breed: ${this.size}`;
+        ulElem.append(liSizeElem);
+
         return dogSection;
     }
 
