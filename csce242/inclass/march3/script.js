@@ -1,11 +1,12 @@
 class Dog {
 
-    constructor(title, breed, color, age, size){
+    constructor(title, breed, color, age, size, pic){
         this.title = title;
         this.breed = breed;
         this.color = color;
         this.age = age;
         this.size = size;
+        this.pic = pic;
     }
 
     get details(){
@@ -14,6 +15,11 @@ class Dog {
 
     get item(){
         let dogSection = document.createElement("section");
+
+        //create picture
+        let imgElem = document.createElement("img");
+        imgElem.src= `images/${this.pic}`;
+        dogSection.append(imgElem);
 
         //create title
         let h3Elem = document.createElement("h3");
@@ -47,7 +53,7 @@ class Dog {
 //After the DOM has been loaded
 //After all the HTML elemnts have been rendered
 window.onload = function(){
-    let myDog = new Dog("Tipsy", "Yorkie", "brown", 5, "small");
+    let myDog = new Dog("Tipsy", "Yorkie", "brown", 5, "small", "yorkie.jpg");
     let dogListDiv = document.getElementById("dog-list");
     dogListDiv.append(myDog.item);
 }
