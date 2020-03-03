@@ -15,20 +15,24 @@ class Dog {
 
     get item(){
         let dogSection = document.createElement("section");
+        dogSection.classList.add("dog");
 
         //create picture
         let imgElem = document.createElement("img");
         imgElem.src= `images/${this.pic}`;
         dogSection.append(imgElem);
 
+        let infoSection = document.createElement("section");
+        dogSection.append(infoSection);
+
         //create title
         let h3Elem = document.createElement("h3");
         h3Elem.innerText = this.title;
-        dogSection.append(h3Elem);
+        infoSection.append(h3Elem);
 
         //create list
         let ulElem = document.createElement("ul");
-        dogSection.append(ulElem);
+        infoSection.append(ulElem);
         let liBreedElem = document.createElement("li");
         liBreedElem.innerText = `Breed: ${this.breed}`;
         ulElem.append(liBreedElem);
@@ -53,7 +57,13 @@ class Dog {
 //After the DOM has been loaded
 //After all the HTML elemnts have been rendered
 window.onload = function(){
-    let myDog = new Dog("Tipsy", "Yorkie", "brown", 5, "small", "yorkie.jpg");
+    let dogs = [];
+    dogs.push(new Dog("Tipsy", "Yorkie", "brown", 5, "Small", "yorkie.jpg"));
+    dogs.push(new Dog("Fred", "Golden Retriever", "Yellow", 1, "Medium", "golden-retriever.jpg"));
+    dogs.push(new Dog("Gerald", "Pit Bull", "White", 3, "Large", "pitt-bull.jpg"));
     let dogListDiv = document.getElementById("dog-list");
-    dogListDiv.append(myDog.item);
+    
+    for(let i in dogs){
+        dogListDiv.append(dogs[i].item);
+    }
 }

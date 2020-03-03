@@ -158,6 +158,17 @@ body {
         margin:auto;
     }
 
+    .dog {
+        display:flex;
+        border: 2px solid slategray;
+        border-radius:5px;
+        margin-bottom:10px;
+    }
+
+    .dog img {
+        width:100px;
+    }
+
     /* Navigation */
     #nav-toggle {
         display:none;
