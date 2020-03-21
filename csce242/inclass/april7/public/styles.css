@@ -1,0 +1,36 @@
+body {
+    font-family:arial;
+}
+
+#dessert-list {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.recipe {
+    width:30%;
+    background:skyblue;
+    padding:5px;
+    margin:5px;
+    border-radius: 5px;;
+}
+
+.recipe a {
+    text-decoration:none;
+}
+
+.hidden {
+    display:none;
+}
+
+#dessert-forms {
+    display:flex;
+}
+
+.dessert-form {
+    background:lightpink;
+    padding:5px;
+    width:45%;
+    margin:5px;
+    border-radius:5px;
+}

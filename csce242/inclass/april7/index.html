@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Desserts</h1>
+        <div id="dessert-list"></div>
+        <div id="dessert-forms">
+            <div id="dessert-details" class="dessert-form">
+                <h2>Recipe Details</h2>
+                <span id="recipe-id" class="hidden"></span>
+                <p>
+                    <label for="txt-name">Name: </label>
+                    <input id="txt-name">
+                </p>
+                <p>
+                    <label for="txt-description">Description: </label>
+                    <input id="txt-description">
+                </p>
+                <button id="btn-edit-recipe">Edit Recipe</button>
+                <button id="btn-delete-recipe">Delete Recipe</button>
+            </div>
+
+            <div id="add-dessert" class="dessert-form">
+                <h2>Add Recipe</h2>
+                <p>
+                    <label for="txt-add-name">Name: </label>
+                    <input id="txt-add-name">
+                </p>
+                <p>
+                    <label for="txt-add-description">Description: </label>
+                    <input id="txt-add-description">
+                </p>
+                <button id="btn-add-recipe">Add Recipe</button>
+            </div>
+        </div>
+    </body>
+</html>
