@@ -1,0 +1,60 @@
+    /* Structure */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-header {
+    margin: auto;
+    width: 80%;
+    background-color: burlywood;
+    padding: 5px;
+}
+
+
+/* Horizontal Navigation */
+
+.horizontal-nav ul {
+    padding-left: 0px;
+}
+
+.horizontal-nav li {
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+.horizontal-nav a {
+    text-decoration: none;
+}
+
+
+/* Main Navigation */
+
+
+/* User Navigation */
+
+
+/* Typography */
+
+h1 {
+    text-align: center;
+}
+
+
+/* Larger Resolution */
+
+@media only screen and (min-width: 768px) {
+    .horizontal-nav ul {
+        display: flex;
+    }
+    #main-nav ul {
+        justify-content: center;
+    }
+    /*
+    #user-nav {
+        position: absolute;
+        top: 2%;
+        right: 10%;
+    }
+    /*
+}
