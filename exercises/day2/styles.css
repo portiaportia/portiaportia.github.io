@@ -1,0 +1,75 @@
+/* Structure */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(images/giraffe-background.jpg);
+}
+
+#content {
+  background: rgba(218, 219, 169, 0.9);
+  width: 75%;
+  margin: auto;
+  padding: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 10px 10px #a2a629;
+}
+
+/* Navigation */
+
+#main-nav a {
+  text-decoration: none;
+  background: #bec169;
+  color: black;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+#main-nav a:hover {
+  background: #f5a679;
+}
+
+/* Images */
+img {
+  padding: 10px;
+  border: 5px solid #d96b43;
+  border-radius: 5px;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #565656;
+  padding: 4px;
+}
+
+th {
+  background: #f29057;
+}
+
+td {
+  background: #f3f3f3;
+}
+
+/* Typography */
+h1 {
+  color: #d96b43;
+}
+
+h2 {
+  color: #a2a629;
+}
+
+#g-things {
+  font-style: italic;
+}
+
+strong {
+  color: deeppink;
+}
+
+.big {
+  font-size: 30px;
+}

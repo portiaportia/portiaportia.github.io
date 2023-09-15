@@ -1,0 +1,163 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:slategray;
+}
+
+.example {
+    background:white;
+    padding:10px;
+    margin:10px;
+    border-radius:5px;
+    flex:1;
+}
+
+.example h1 {
+    text-align:center;
+}
+
+.example label {
+    width:100%;
+    text-align:center;
+    display:block;
+    padding:5px;
+}
+
+.example input {
+    width:100%;
+    display:block;
+    padding:5px;
+}
+
+.example input:focus {
+    background:skyblue;
+    color:magenta;
+}
+
+.example button {
+    width:100%;
+    padding:5px;
+}
+
+.green {
+    color:green;
+}
+
+.red {
+    color:red;
+}
+
+.yellow {
+    color:yellow;
+}
+
+.blue {
+    color:skyblue;
+}
+
+.grad {
+    width:50px;
+    height:300px;
+    border:1px solid black;
+    background: linear-gradient(0deg, rgba(249,13,3,1) 0%, rgba(249,13,3,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+}
+
+.emotion {
+    font-size:20px;
+    font-weight:700;
+    font-style:italic;
+}
+
+.error {
+    color:red;
+}
+
+.hidden {
+    display:none;
+}
+
+#main-header h1 {
+    text-align:center;
+    color:#fff;
+}
+ 
+/* Nav Bar */
+#main-nav ul {
+    list-style-type: none;
+    padding-left:0;
+}
+
+#main-nav li {
+    background:#abc;
+    padding:10px;
+    margin:2px 0;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:#000;
+    cursor:pointer;
+}
+
+/* Nav Bar Toggle */
+#nav-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color:black;
+    margin:6px 0;
+}
+
+/* Large Resolutions Only */
+@media(min-width:900px){
+    #content {
+        display:flex;
+    }
+
+    .example p {
+        display:flex;
+    }
+
+    .example label {
+        width:100px;
+        text-align:right;
+        padding-right:5px;
+    }
+
+    .example input {
+        width:50%;
+    }
+
+    .example button {
+        width:50%;
+        display:block;
+        margin:auto;
+    }
+
+    /* Navigation */
+    #nav-toggle {
+        display:none;
+    }
+
+    #main-nav ul {
+        display:flex;
+    }
+
+    #main-nav li {
+        background:transparent;
+    }
+
+    #main-nav a {
+        border-bottom: 2px solid transparent;
+    }
+
+    #main-nav a:hover {
+        border-bottom: 2px solid white;
+    }
+}
+
+
+
+
+
+
+
+

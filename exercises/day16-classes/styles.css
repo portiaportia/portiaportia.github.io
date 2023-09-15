@@ -1,0 +1,158 @@
+:root {
+  --primary: coral;
+  --secondary: cornflowerblue;
+}
+
+/* Structure */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: azure;
+}
+
+/* Navigation */
+#main-nav ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+#main-nav li {
+  background: var(--secondary);
+  padding: 10px;
+  margin: 2px 0;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+/* Hamburger Menu */
+#nav-toggle div {
+  width: 35px;
+  height: 5px;
+  background-color: var(--primary);
+  margin: 6px 0;
+}
+
+/* Dogs */
+.dog {
+  background-color: dodgerblue;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+}
+
+/* Typography */
+#main-nav-items {
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#square {
+  --x: 100px;
+  width: var(--x);
+  height: var(--x);
+  margin-top: 10px;
+  background-color: blueviolet;
+}
+
+/* Tables */
+#children-table {
+  border-collapse: collapse;
+}
+
+#children-table th,
+#children-table td {
+  border: 1px solid darkgray;
+  padding: 5px;
+}
+
+#children-table th {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+#children-table tr:hover {
+  background-color: lightpink;
+}
+
+#child-details {
+  margin: 5px;
+  border: 1px solid darkblue;
+  background: cornflowerblue;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#child-details h3 {
+  color: white;
+  text-align: center;
+}
+
+#child-details img {
+  max-width: 30%;
+  display: block;
+  margin: auto;
+}
+
+/* Larger Resolutions */
+@media (min-width: 900px) {
+  #main-nav-items,
+  .form-element {
+    display: flex;
+  }
+
+  #main-nav-items li {
+    flex: 1;
+  }
+
+  #main-nav-items a {
+    border-bottom: 2px solid transparent;
+  }
+
+  #main-nav-items a:hover {
+    border-bottom: 2px solid var(--primary);
+  }
+
+  #nav-toggle {
+    display: none;
+  }
+
+  /* forms */
+  .form label {
+    width: 100px;
+  }
+
+  .form input {
+    width: 200px;
+  }
+
+  .form button {
+    width: 310px;
+  }
+
+  #dog-list {
+    display: flex;
+  }
+
+  .dog {
+    flex: 1;
+  }
+
+  #children {
+    display: flex;
+  }
+
+  #children table,
+  #children section {
+    flex: 1;
+  }
+}

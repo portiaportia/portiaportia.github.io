@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>JavaScript Examples</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>JavaScript Menu Example</h1>
+      <nav id="main-nav">
+        <div id="nav-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="main-nav-items" class="hidden">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Bio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form">
+        <section class="form-element">
+          <label for="txt-first-name">First Name:</label>
+          <input type="text" id="txt-first-name" />
+          <p id="error-first-name" class="error hide">* blank</p>
+        </section>
+
+        <section class="form-element">
+          <label for="txt-last-name">Last Name:</label>
+          <input type="text" id="txt-last-name" />
+          <p id="error-last-name" class="error hide">* blank</p>
+        </section>
+
+        <section class="form-element">
+          <label for="txt-age">Age:</label>
+          <input type="number" id="txt-age" />
+          <p id="error-age" class="error hide">* blank</p>
+        </section>
+
+        <section class="form-element">
+          <button id="button-validate">Validate</button>
+        </section>
+
+        <section class="form-element">
+          <p id="result"></p>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

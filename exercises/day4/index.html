@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Learning Flexbox</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Flexbox demo</h1>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#">Nav Item 1</a></li>
+          <li><a href="#">Nav Item 2</a></li>
+          <li><a href="#">Nav Item 3</a></li>
+          <li><a href="#">Nav Item 4</a></li>
+          <li><a href="#">Nav Item 5</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
+      <h2>Main Content</h2>
+      <div class="flex-container">
+        <section class="col1of2 column">
+          <h3>First Half</h3>
+          <p>This is some sample text.</p>
+          <div class="flex-container">
+            <section class="col1of3 column">
+              <h4>Column 1</h4>
+            </section>
+            <section class="col1of3 column">
+              <h4>Column 2</h4>
+            </section>
+            <section class="col1of3 column">
+              <h4>Column 3</h4>
+            </section>
+          </div>
+        </section>
+        <section class="col1of2 column">
+          <h3>Second Half</h3>
+          <p>This is some sample text.</p>
+          <div class="flex-container">
+            <section class="col1of3 column">
+              <h4>Column 1</h4>
+            </section>
+            <section class="col2of3 column">
+              <h4>Column 2</h4>
+            </section>
+          </div>
+        </section>
+      </div>
+      <div class="flex-container">
+        <div class="col1of4 column">
+          <h3>First column</h3>
+        </div>
+        <div class="col1of4 column">
+          <h3>Second column</h3>
+        </div>
+        <div class="col2of4 column">
+          <h3>Third column</h3>
+        </div>
+      </div>
+    </main>
+    <footer id="main-footer">
+      <p>Goodbye</p>
+    </footer>
+  </body>
+</html>

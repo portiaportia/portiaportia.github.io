@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>JavaScript Examples</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>JavaScript Menu Example</h1>
+      <nav id="main-nav">
+        <div id="nav-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="main-nav-items" class="hidden">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Bio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form-elem">
+        <label for="first-num">Starting Number:</label>
+        <input type="number" min="1" max="5" id="first-num" />
+      </section>
+
+      <section class="form-elem">
+        <label for="last-num">Ending Number:</label>
+        <input type="number" min="10" max="20" id="last-num" />
+      </section>
+
+      <button id="button-loops">Loop it up!</button>
+      <ul id="result"></ul>
+    </main>
+  </body>
+</html>

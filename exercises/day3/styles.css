@@ -1,0 +1,58 @@
+/* Structure */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+  width: 85%;
+  margin: auto;
+}
+
+#main-header,
+#main-footer {
+  background: skyblue;
+  padding: 5px;
+}
+
+#main-header {
+  border-radius: 5px 5px 0 0;
+}
+
+#main-footer {
+  border-radius: 0 0 5px 5px;
+}
+
+#page-content {
+  background: pink;
+  padding: 5px;
+}
+
+.content-section {
+  background: lightgray;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* Main Navigation */
+#main-nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#main-nav a {
+  text-decoration: none;
+  background: pink;
+  padding: 5px;
+  color: white;
+  border-radius: 2px;
+}
+
+#main-nav a:hover {
+  color: cornflowerblue;
+}
+
+/* Typography */
+#main-header h1 {
+  text-align: center;
+}
