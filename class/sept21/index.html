@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header id="main-header" class="padded-area">
+      <h1>My Main Heading</h1>
+      <nav id="main-nav">
+        <div id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="nav-items" class="hide-small">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pictures</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" class="columns">
+      <section class="padded-area">
+        <h2>Mood Ring</h2>
+
+        <p class="columns">
+          <label for="txt-mood">Mood:</label>
+          <input type="text" id="txt-mood" />
+        </p>
+
+        <button id="button-show-data">Show Data</button>
+
+        <div id="mood-display"></div>
+      </section>
+      <section class="padded-area">
+        <div id="square"></div>
+        <button id="button-gradient">Color My Square</button>
+      </section>
+
+      <section class="padded-area">
+        <h2>Order</h2>
+
+        <p class="columns">
+          <label for="txt-num">Number of Coffees:</label>
+          <input type="text" id="txt-num" />
+        </p>
+
+        <p class="columns">
+          <label for="txt-type">Coffee Type:</label>
+          <input type="text" id="txt-type" />
+        </p>
+
+        <button id="button-show-data">Show Order</button>
+
+        <div id="coffee-order"></div>
+      </section>
+    </main>
+    <footer id="main-footer" class="padded-area">
+      <p>Goodbye</p>
+    </footer>
+  </body>
+</html>
