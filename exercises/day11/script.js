@@ -16,10 +16,25 @@ const editHTML = () => {
 
   for (let i = 0; i < foodLis.length; i++) {
     foodLis[i].innerHTML = "I &hearts; " + foodLis[i].innerHTML;
+    setTimeout();
   }
+};
+
+const count = () => {
+  let num = 0;
+  let p = document.getElementById("counter");
+
+  let interval = setInterval(() => {
+    num += 1;
+    p.innerHTML = num;
+    if (num >= 10) {
+      clearInterval(interval);
+    }
+  }, 1000);
 };
 
 window.onload = () => {
   document.getElementById("nav-toggle").onclick = toggleNav;
   document.getElementById("button-foods").onclick = editHTML;
+  document.getElementById("button-count").onclick = count;
 };
