@@ -16,6 +16,18 @@ const slide = () => {
     nextImage = document.querySelector("#slideshow :first-child");
     count = 1;
   }
+  currentImage.classList.add("slideHide");
+  nextImage.classList.add("slideShow");
+
+  currentImage.addEventListener("animationend", () => {
+    currentImage.classList.add("hidden");
+    currentImage.classList.remove("slideHide");
+  });
+
+  nextImage.addEventListener("animationend", () => {
+    nextImage.classList.remove("hidden");
+    nextImage.classList.remove("slideShow");
+  });
 };
 
 window.onload = () => {
