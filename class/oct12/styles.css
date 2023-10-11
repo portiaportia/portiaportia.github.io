@@ -15,53 +15,31 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative; /* So we can center content inside */
 }
 
 .home {
   background-image: url("images/jasp-tree.jpg");
 }
 
-.home h1 {
-  text-align: center;
-  color: white;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 43%;
-  font-size: 5em;
+.face {
+  background-image: url("images/jasp-house.jpg");
+}
+
+.leash {
+  background-image: url("images/jasp-leash.jpg");
 }
 
 .info-section {
   background-color: #595a5c;
   font-size: 36px;
   padding: 1%;
+  color: white;
 }
 
 .info-section section {
   padding: 0 10px;
   margin: 0 10px;
-}
-
-.pic-section {
-  height: 800px;
-  background-image: url("images/jasp-house.jpg");
-  font-size: 36px;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  line-height: 400px;
-}
-
-.leash-section {
-  height: 800px;
-  background-image: url("images/jasp-leash.jpg");
-  font-size: 36px;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  line-height: 400px;
 }
 
 img {
@@ -102,6 +80,33 @@ img {
   text-decoration: none;
   color: white;
   padding: 10px;
+}
+
+/* Typography */
+.parallax h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 50%;
+  font-size: 5em;
+}
+
+.parallax h3 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 25%;
+  font-size: 3em;
+}
+
+.down-arrow {
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
 }
 
 /* Larger resolutions */
