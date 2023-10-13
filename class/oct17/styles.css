@@ -83,23 +83,27 @@ img {
 }
 
 /* Form */
-#contact-form {
+form {
   margin: 0 2%;
 }
 
-#contact-form label {
+form label {
   font-size: 0.75em;
   display: block;
 }
 
-#contact-form input,
-#contact-form textarea,
-#contact-form button {
+form input,
+form textarea,
+form button {
   font-size: 0.75em;
 }
 
-#contact-form textarea {
+form textarea {
   min-height: 200px;
+}
+
+#form-raccoon p {
+  margin-bottom: 1%;
 }
 
 #map {

@@ -14,15 +14,16 @@
     </nav>
     <div class="parallax home"><h1>Welcome</h1></div>
     <section class="info-section text-center">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
+      <form id="form-raccoon">
+        <p>
+          <label for="raccoon-name">Name:</label>
+          <input type="text" id="raccoon-name" required />
+        </p>
+        <p>
+          <label for="birth-date">Birth Date:</label>
+          <input type="date" id="birth-date" required />
+        </p>
+      </form>
     </section>
     <section class="parallax face">
       <h3><a class="down-arrow" href="#">&#8675;</a></h3>
@@ -44,6 +45,7 @@
           <p>
             <label for="name">Name:</label>
             <input
+              id="name"
               type="text"
               placeholder="first and last"
               name="name"
@@ -51,12 +53,12 @@
             />
           </p>
           <p>
-            <label for="name">Email:</label>
-            <input type="email" name="email" required />
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required />
           </p>
           <p>
-            <label for="name">Message:</label>
-            <textarea name="message" required></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
           </p>
           <input
             type="hidden"
