@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="styles.css" />
     <script src="contactme.js"></script>
+    <script src="form.js"></script>
   </head>
   <body>
     <nav id="main-menu">
@@ -13,17 +14,66 @@
       </ul>
     </nav>
     <div class="parallax home"><h1>Welcome</h1></div>
-    <section class="info-section text-center">
-      <form id="form-raccoon">
+    <section class="info-section columns">
+      <section>
+        <h4>Raccoon Rehabilitation</h4>
         <p>
-          <label for="raccoon-name">Name:</label>
-          <input type="text" id="raccoon-name" required />
+          Please enter your raccoons information, and we can find her/him a
+          home.
         </p>
+        <form id="form-raccoon">
+          <p>
+            <label for="raccoon-name">Name:</label>
+            <input type="text" id="raccoon-name" name="raccoon-name" required />
+          </p>
+          <p>
+            <label for="birth-date">Birth Date:</label>
+            <input type="date" id="birth-date" required />
+          </p>
+          Size
+
+          <p>
+            <input type="radio" name="size" value="small" />
+            <label for="small" class="inline">Small</label>
+          </p>
+          <p>
+            <input type="radio" name="size" value="medium" />
+            <label for="medium" class="inline">Meduim</label>
+          </p>
+          <p>
+            <input type="radio" name="size" value="large" />
+            <label for="large" class="inline">Large</label>
+          </p>
+          <p>
+            <label for="demeanor">Demeanor</label>
+            <select name="demeanor">
+              <option value="playful">Playful</option>
+              <option value="cuddly">Cuddly</option>
+              <option value="agressive">Agressive</option>
+              <option value="violent">Violet</option>
+            </select>
+          </p>
+
+          <p>
+            <input type="checkbox" name="terms" /><label
+              for="terms"
+              class="inline"
+              >I agree to the terms.</label
+            >
+          </p>
+
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </section>
+      <section id="results" class="hidden">
+        <h4>Results</h4>
         <p>
-          <label for="birth-date">Birth Date:</label>
-          <input type="date" id="birth-date" required />
+          Your raccoons information has been added to the system, soemone will
+          contact you shortly.
         </p>
-      </form>
+      </section>
     </section>
     <section class="parallax face">
       <h3><a class="down-arrow" href="#">&#8675;</a></h3>

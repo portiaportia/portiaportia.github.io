@@ -33,13 +33,14 @@ html {
 .info-section {
   background-color: #595a5c;
   font-size: 36px;
-  padding: 1%;
+  flex: 1;
   color: white;
 }
 
 .info-section section {
   padding: 0 10px;
   margin: 0 10px;
+  flex: 1;
 }
 
 img {
@@ -82,6 +83,10 @@ img {
   padding: 10px;
 }
 
+.info-section form {
+  margin-right: 10px;
+}
+
 /* Form */
 form {
   margin: 0 2%;
@@ -92,10 +97,31 @@ form label {
   display: block;
 }
 
-form input,
+form input:not([type="checkbox"]):not([type="radio"]),
 form textarea,
-form button {
+form button,
+select {
   font-size: 0.75em;
+  width: 200px;
+  padding: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 20px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.inline {
+  display: inline;
 }
 
 form textarea {
@@ -143,6 +169,19 @@ form textarea {
 
 .info-section h3 {
   text-align: center;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+p {
+  font-size: 0.75em;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Larger resolutions */
