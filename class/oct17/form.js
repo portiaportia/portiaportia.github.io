@@ -1,30 +1,30 @@
 const submitRaccoon = (e) => {
-  e.preventDefault();
-  document.getElementById("results").classList.remove("hidden");
-  const form = document.getElementById("form-raccoon");
+    e.preventDefault();
+    document.getElementById("results").classList.remove("hidden");
 
-  const userName = form.elements["raccoon-name"].value;
-  const birthDay = form.elements["birth-date"].value;
-  const demeanor = form.elements["demeanor"].value;
-  const termsChecked = form.elements["terms"].checked;
-  const size = getRadioValue("size");
-  console.log("Name: " + userName);
-  console.log("Dob: " + birthDay);
-  console.log("Size: " + size);
-  console.log("Demeanor: " + demeanor);
-  console.log("Agreed to terms: " + termsChecked);
+    const form = document.getElementById("form-raccoon");
+    const raccName = form.elements["raccoon-name"].value;
+    const demeanor = form.elements["demeanor"].value;
+    const termsChecked = form.elements["terms"].checked;
+
+    console.log(raccName);
+    console.log(getRadioValue("size"));
+    console.log(demeanor);
+    console.log(termsChecked);
 };
 
-const getRadioValue = (itemName) => {
-  let radios = document.getElementsByName(itemName);
-  for (let i in radios) {
-    if (radios[i].checked) {
-      return radios[i].value;
+const getRadioValue = (radioName) => {
+    let radios = document.getElementsByName(radioName);
+
+    for (let i in radios) {
+        if (radios[i].checked) {
+            return radios[i].value;
+        }
     }
-  }
-  return "";
+    return "";
 };
+
 
 window.onload = () => {
-  document.getElementById("form-raccoon").onsubmit = submitRaccoon;
+    document.getElementById("form-raccoon").onsubmit = submitRaccoon;
 };

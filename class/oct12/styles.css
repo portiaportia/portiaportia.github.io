@@ -1,131 +1,138 @@
 body,
 html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .parallax {
-  height: 100%;
-  opacity: 0.65;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; /* So we can center content inside */
+    height: 100%;
+    opacity: 0.65;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* So we can center content inside */
 }
 
 .home {
-  background-image: url("images/jasp-tree.jpg");
+    background-image: url("images/jasp-tree.jpg");
 }
 
 .face {
-  background-image: url("images/jasp-house.jpg");
+    background-image: url("images/jasp-house.jpg");
 }
 
 .leash {
-  background-image: url("images/jasp-leash.jpg");
+    background-image: url("images/jasp-leash.jpg");
 }
 
 .info-section {
-  background-color: #595a5c;
-  font-size: 36px;
-  padding: 1%;
-  color: white;
+    background-color: #595a5c;
+    font-size: 36px;
+    padding: 1%;
+    color: white;
 }
 
 .info-section section {
-  padding: 0 10px;
-  margin: 0 10px;
+    padding: 0 10px;
+    margin: 0 10px;
 }
 
 img {
-  max-width: 90%;
-  max-height: 90%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .info-section img {
-  max-width: 300px;
+    max-width: 300px;
 }
 
 .text-center p {
-  width: 60%;
-  margin: auto;
+    width: 60%;
+    margin: auto;
 }
 
+
 /* Main Menu */
+
 #main-menu {
-  z-index: 1;
-  background-color: #595a5c;
-  position: fixed;
-  top: 0;
-  width: 100%;
+    z-index: 1;
+    background-color: #595a5c;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #main-menu ul {
-  float: right;
-  overflow: hidden;
-  margin-right: 2%;
+    float: right;
+    overflow: hidden;
+    margin-right: 2%;
 }
 
 #main-menu li {
-  list-style-type: none;
-  display: inline-block;
+    list-style-type: none;
+    display: inline-block;
 }
 
 #main-menu a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
 }
 
+
 /* Typography */
+
 .parallax h1 {
-  text-align: center;
-  color: white;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 50%;
-  font-size: 5em;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 50%;
+    font-size: 5em;
 }
 
 .parallax h3 {
-  text-align: center;
-  color: white;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 25%;
-  font-size: 3em;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 25%;
+    font-size: 3em;
 }
 
 .down-arrow {
-  text-decoration: none;
-  color: white;
-  font-size: 3em;
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
 }
+
 
 /* Larger resolutions */
-@media only screen and (min-width: 600px) {
-  .columns {
-    display: flex;
-  }
-  .flex2 {
-    flex: 2;
-  }
 
-  .flex1 {
-    flex: 1;
-  }
+@media only screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+    }
+    .flex2 {
+        flex: 2;
+    }
+    .flex1 {
+        flex: 1;
+    }
 }
 
+
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+
 @media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
+    .parallax {
+        background-attachment: scroll;
+    }
 }
