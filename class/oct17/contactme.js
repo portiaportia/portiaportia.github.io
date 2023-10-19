@@ -34,6 +34,4 @@ const getEmailResult = async (e) => {
   }
 };
 
-window.onload = () => {
-  document.getElementById("contact-form").onsubmit = showEmailResult;
-};
+document.getElementById("contact-form").onsubmit = showEmailResult;
