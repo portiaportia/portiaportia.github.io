@@ -55,13 +55,24 @@ body {
   background-color: blueviolet;
 }
 
+.drink {
+  background: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.drink img {
+  max-width: 40%;
+  display: block;
+  margin: auto;
+}
+
 /* Larger Resolutions */
 @media (min-width: 900px) {
-  #main-nav-items,
-  .form-element {
-    display: flex;
-  }
-
   #main-nav-items li {
     flex: 1;
   }
@@ -78,33 +89,12 @@ body {
     display: none;
   }
 
-  /* forms */
-  .form label {
-    width: 100px;
-  }
-
-  .form input {
-    width: 200px;
-  }
-
-  .form button {
-    width: 310px;
-  }
-
-  #dog-list {
+  .columns {
     display: flex;
+    flex-wrap: wrap;
   }
 
-  .dog {
-    flex: 1;
-  }
-
-  #children {
-    display: flex;
-  }
-
-  #children table,
-  #children section {
-    flex: 1;
+  .drink {
+    flex: 30%;
   }
 }

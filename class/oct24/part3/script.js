@@ -20,10 +20,15 @@ const showCocktails = async () => {
 
 const getCocktail = (cocktail) => {
   let section = document.createElement("section");
+  section.classList.add("drink");
 
   let h3 = document.createElement("h3");
   h3.innerText = cocktail.strDrink;
   section.append(h3);
+
+  let img = document.createElement("img");
+  section.append(img);
+  img.src = cocktail.strDrinkThumb;
 
   return section;
 };
