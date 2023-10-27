@@ -1,0 +1,105 @@
+:root {
+  --primary: coral;
+  --secondary: cornflowerblue;
+}
+
+/* Structure */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: azure;
+}
+
+.recipe {
+  padding: 10px;
+  margin: 10px;
+  background: lightblue;
+  border-radius: 5px;
+}
+
+.recipe img {
+  max-width: 90%;
+  display: block;
+  margin: auto;
+}
+
+#recipe-details-column {
+  padding: 10px;
+  margin: 10px;
+  background: lightblue;
+  border-radius: 5px;
+}
+
+#add-link {
+  font-size: 2em;
+  border: 1px solid crimson;
+}
+
+#edit-link {
+  float: right;
+  margin-right: 10px;
+}
+
+#delete-link {
+  float: right;
+}
+
+#add-edit-recipe-container {
+  padding: 10px;
+  margin: 10px;
+  background: lightblue;
+  border-radius: 5px;
+}
+
+/* Form */
+label {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+#ingredients-p input {
+  margin-top: 5px;
+}
+
+#add-ingredient {
+  color: darkblue;
+  font-size: 0.75em;
+  text-align: right;
+}
+
+/* Typography */
+#main-nav-items {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: crimson;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Larger Resolutions */
+@media (min-width: 800px) {
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .two-columns div {
+    flex: 1;
+  }
+
+  .recipe {
+    width: 25%;
+  }
+
+  #add-edit-recipe-container {
+    max-width: 30%;
+    margin: auto;
+  }
+}
