@@ -1,59 +1,43 @@
-const getShoes = async () => {
-  const url = "https://portiaportia.github.io/json/shoes.json";
+const getShoes = async() => {
+    const url = "https://portiaportia.github.io/json/shoes.json";
 
-  try {
-    const response = await fetch(url);
-    return await response.json();
-  } catch (error) {
-    console.log(error);
-  }
+    try {
+        const response = await fetch(url);
+        return response.json();
+    } catch (error) {
+        console.log(error);
+    }
 };
 
-const showShoes = async () => {
-  let shoes = await getShoes();
-  let shoesSection = document.getElementById("shoes-section");
+const showShoes = async() => {
+    const shoes = await getShoes();
+    const shoeList = document.getElementById("shoes-section");
 
-  shoes.forEach((shoe) => {
-    shoesSection.append(getShoeItem(shoe));
-  });
-};
+    shoes.forEach(shoe => {
+        shoeList.append(getShoeSection(shoe));
+    });
+}
 
-const getShoeItem = (shoe) => {
-  let section = document.createElement("section");
+const getShoeSection = (shoe) => {
+    const section = document.createElement("section");
+    const h3 = document.createElement("h3");
+    section.append(h3);
+    h3.innerHTML = shoe.name;
 
-  let h3 = document.createElement("h3");
-  h3.innerText = shoe.name;
-  section.append(h3);
+    const brandP = document.createElement("p");
+    section.append(brandP);
+    brandP.innerHTML = shoe.brand;
 
-  let ul = document.createElement("ul");
-  section.append(ul);
-  ul.append(getLi(shoe.brand));
-  ul.append(getLi(`Price: $${shoe.price}`));
-  ul.append(getLi(shoe.material));
-  ul.append(getLi(shoe.description));
-  ul.append(getLi(`Rating: ${shoe.rating}`));
+    const ul = document.createElement("ul");
+    section.append(ul);
 
-  section.append(getReviews(shoe.reviews));
+    for (let i in shoe.reviews) {
+        const li = document.createElement("li");
+        ul.append(li);
+        li.innerHTML = shoe.reviews[i];
+    }
 
-  return section;
-};
-
-const getLi = (data) => {
-  const li = document.createElement("li");
-  li.textContent = data;
-  return li;
-};
-
-const getReviews = (reviews) => {
-  const section = document.createElement("section");
-
-  reviews.forEach((review) => {
-    const p = document.createElement("p");
-    p.textContent = review;
-    section.append(p);
-  });
-
-  return section;
-};
+    return section;
+}
 
 window.onload = () => showShoes();

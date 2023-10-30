@@ -1,52 +1,40 @@
-const getBreweries = async () => {
-  const url = "https://api.openbrewerydb.org/breweries";
-
-  try {
-    const response = await fetch(url);
-    return await response.json();
-  } catch (error) {
-    console.log(error);
-  }
+const getBreweries = async() => {
+    try {
+        return (await fetch("https://api.openbrewerydb.org/breweries")).json();
+    } catch (error) {
+        console.log(error);
+    }
 };
 
-const showBreweries = async () => {
-  let breweries = await getBreweries();
-  let breweriesSection = document.getElementById("breweries-section");
+const showBreweries = async() => {
+    const breweries = await getBreweries();
+    const breweriesList = document.getElementById("breweries-section");
 
-  breweries.forEach((brewery) =>
-    breweriesSection.append(getBreweryItem(brewery))
-  );
+    console.log(breweries);
+
+    breweries.forEach((brewery) => {
+        const section = document.createElement("section");
+        breweriesList.append(section);
+        section.classList.add("brewery");
+
+        const a = document.createElement("a");
+        a.href = brewery.website_url;
+        section.append(a);
+
+        const h3 = document.createElement("h3");
+        a.append(h3);
+        h3.innerHTML = brewery.name;
+
+        const p = document.createElement("p");
+        a.append(p);
+        p.innerHTML = `${brewery.brewery_type} brewery`;
+
+        const iframe = document.createElement("iframe");
+        iframe.src = `https://maps.google.com/maps?q=${brewery.latitude},${brewery.longitude}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+
+        a.append(iframe);
+
+    });
 };
 
-const getBreweryItem = (brewery) => {
-  const brewerySection = document.createElement("section");
-  brewerySection.classList.add("brewery");
-
-  const a = document.createElement("a");
-  a.href = brewery.website_url;
-  brewerySection.append(a);
-
-  const h3 = document.createElement("h3");
-  h3.innerText = brewery.name;
-  a.append(h3);
-
-  const p = document.createElement("p");
-  p.textContent = `${brewery.brewery_type} Brewery`;
-  a.append(p);
-
-  a.append(getBreweryAddress(brewery));
-
-  const iframe = document.createElement("iframe");
-
-  iframe.src = `https://maps.google.com/maps?q=${brewery.latitude},${brewery.longitude}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
-  brewerySection.append(iframe);
-  return brewerySection;
-};
-
-const getBreweryAddress = (brewery) => {
-  const p = document.createElement("p");
-  p.innerHTML = `${brewery.street}<br> ${brewery.city}, ${brewery.state}<br> ${brewery.country} ${brewery.postal_code}`;
-  return p;
-};
-
-window.onload = () => showBreweries();
+window.onload = showBreweries();
