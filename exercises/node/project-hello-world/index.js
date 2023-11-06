@@ -2,10 +2,7 @@ const mongoose = require("mongoose");
 
 //testdb is name of database, it will automatically make it
 mongoose
-  .connect("mongodb://localhost/testdb", {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-  })
+  .connect("mongodb://localhost/testdb")
   .then(() => console.log("Connected to mongodb..."))
   .catch((err) => console.error("could not connect ot mongodb...", err));
 
