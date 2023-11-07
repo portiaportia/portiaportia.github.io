@@ -1,0 +1,174 @@
+:root {
+    --primary: coral;
+    --secondary: cornflowerblue;
+}
+
+
+/* Structure */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+
+.recipe {
+    padding: 10px;
+    margin: 10px;
+    background: lightblue;
+    border-radius: 5px;
+}
+
+.recipe img {
+    max-width: 90%;
+    display: block;
+    margin: auto;
+}
+
+#recipe-details-column {
+    padding: 10px;
+    margin: 10px;
+    background: lightblue;
+    border-radius: 5px;
+}
+
+#add-link {
+    font-size: 2em;
+    border: 1px solid crimson;
+}
+
+#edit-link {
+    float: right;
+    margin-right: 10px;
+}
+
+#delete-link {
+    float: right;
+}
+
+#add-edit-recipe-container {
+    padding: 10px;
+    margin: 10px;
+    background: lightblue;
+    border-radius: 5px;
+}
+
+
+/* Form */
+
+label {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+#ingredients-p input {
+    margin-top: 5px;
+}
+
+#add-ingredient {
+    color: darkblue;
+    font-size: 0.75em;
+    text-align: right;
+}
+
+
+/* Modal Dialog */
+
+#modal-background {
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: scroll;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.dialog {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+.dialog img {
+    max-width: fit-content;
+    display: block;
+    padding: 30px 5px 30px 30px;
+    margin: auto;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Typography */
+
+#main-nav-items {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
+
+.hidden {
+    display: none;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+
+/* Larger Resolutions */
+
+@media (min-width: 600px) {
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .two-columns div {
+        flex: 1;
+    }
+    .recipe {
+        width: 25%;
+    }
+    #add-edit-recipe-container {
+        max-width: 30%;
+        margin: auto;
+    }
+}
