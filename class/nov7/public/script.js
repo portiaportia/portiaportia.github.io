@@ -96,7 +96,14 @@ const addEditRecipe = async(e) => {
         });
     }
 
+    //successfully got data from server
+    if (response.status != 200) {
+        console.log("Error posting data");
+    }
+
     response = await response.json();
+    resetForm();
+    document.querySelector(".dialog").classList.add("transparent");
     showRecipes();
 };
 
