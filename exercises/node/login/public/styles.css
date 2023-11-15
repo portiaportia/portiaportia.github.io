@@ -1,0 +1,11 @@
+h1 {
+  color: skyblue;
+}
+
+.columns {
+  display: flex;
+}
+
+.columns form {
+  padding: 20px;
+}
