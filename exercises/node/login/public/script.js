@@ -20,7 +20,7 @@ const signupSend = async (e) => {
   });
 
   if (response.status != 200) {
-    message.innerHTML = "Error Signing up";
+    message.innerHTML = await response.text();
     return;
   }
 

@@ -38,29 +38,26 @@ app.post("/api/signup", async (req, res) => {
   const salt = await bcrypt.genSalt(10);
   user.password = await bcrypt.hash(user.password, salt);
 
-  console.log(user);
-
   await user.save();
-
   res.send("success");
 });
 
 app.post("/api/login", async (req, res) => {
   const result = validateLoginUser(req.body);
 
+  if (result.error) {
+    res.status(400).send(result.error.details[0].message);
+    return;
+  }
+
   const user = await User.findOne({ username: req.body.username });
 
   if (!user) {
-    return res.status(400).json({
-      message: "Username not found",
-    });
+    return res.status(400).send("Username not found");
   }
 
   const isMatch = await bcrypt.compare(req.body.password, user.password);
-  if (!isMatch)
-    return res.status(400).json({
-      message: "Incorrect Password !",
-    });
+  if (!isMatch) return res.status(400).send("Incorrect Password!");
 
   currentUser = user;
   res.send("Success");
