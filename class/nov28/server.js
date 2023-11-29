@@ -6,72 +6,37 @@ app.use(express.static("public"));
 app.use(express.json());
 const cors = require("cors");
 app.use(cors());
+const mongoose = require("mongoose");
 
 const upload = multer({ dest: __dirname + "/public/images" });
+
+mongoose
+    .connect("mongodb+srv://portiaportia:0dPiOW0RS3hQWyjY@data.ng58qmq.mongodb.net/")
+    .then(() => console.log("Connected to mongodb..."))
+    .catch((err) => console.error("could not connect ot mongodb...", err));
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
 
-let recipes = [{
-        _id: 1,
-        name: "Banana Bread",
-        description: "Extra soft and bannanny",
-        img: "images/banana-bread.jpg",
-        rating: 4,
-        ingredients: [
-            "3 very ripe bananas, (medium/large)",
-            "½ cup unsalted butter, (8 Tbsp) at room temperature",
-            "3/4 cup granulated sugar",
-            "2 large eggs, lightly beaten",
-            "1 ½ cups all-purpose flour",
-            "1 tsp baking soda",
-            "½ tsp salt",
-            "½ tsp vanilla extract",
-            "1 cup walnuts",
-            "½ cup raisins",
-        ],
-    },
-    {
-        _id: 2,
-        name: "Chocolate Chip Cookies",
-        img: 'images/chocolate-chip.jpg',
-        description: "Very chocolately cookies",
-        ingredients: [
-            "1 cup salted butter softened",
-            "1 cup granulated sugar",
-            "1 cup light brown sugar packed",
-            "2 teaspoons pure vanilla extract",
-            "2 large eggs",
-            "3 cups all-purpose flour",
-            "1 teaspoon baking soda",
-            "½ teaspoon baking powder",
-            "1 teaspoon sea salt",
-            "2 cups chocolate chips (14 oz)",
-        ],
-    },
-    {
-        _id: 3,
-        name: "Vanilla Cake",
-        description: "Real vanilla bean in a cake",
-        img: 'images/vanilla-cake.jpg',
-        ingredients: [
-            "3 and 2/3 cups (433g) cake flour (spoon & leveled)",
-            "1 teaspoon salt",
-            "2 teaspoons baking powder",
-            "3/4 teaspoon baking soda",
-            "1 and 1/2 cups (345g) unsalted butter, softened to room temperature",
-            "2 cups (400g) granulated sugar",
-            "3 large eggs + 2 additional egg whites, at room temperature*",
-            "1 Tablespoon pure vanilla extract (yes, Tbsp!)",
-            "1 and 1/2 cups (360ml) buttermilk, at room temperature*",
-        ],
-    },
-];
+const recipeSchema = new mongoose.Schema({
+    name: String,
+    description: String,
+    ingredients: [String],
+    img: String,
+    /*  _id: mongoose.SchemaTypes.ObjectId*/
+});
+
+const Recipe = mongoose.model("Recipe", recipeSchema);
 
 app.get("/api/recipes", (req, res) => {
-    res.send(recipes);
+    getRecipes(res);
 });
+
+const getRecipes = async(res) => {
+    const recipes = await Recipe.find();
+    res.send(recipes);
+};
 
 app.post("/api/recipes", upload.single("img"), (req, res) => {
     const result = validateRecipe(req.body);
@@ -81,26 +46,25 @@ app.post("/api/recipes", upload.single("img"), (req, res) => {
         return;
     }
 
-    const recipe = {
-        _id: recipes.length + 1,
+    const recipe = new Recipe({
         name: req.body.name,
         description: req.body.description,
         ingredients: req.body.ingredients.split(",")
-    }
+    });
 
     if (req.file) {
         recipe.img = "images/" + req.file.filename;
     }
 
-    recipes.push(recipe);
-    res.send(recipes);
+    createRecipe(recipe, res);
 });
 
+const createRecipe = async(recipe, res) => {
+    const result = await recipe.save();
+    res.send(recipe);
+}
+
 app.put("/api/recipes/:id", upload.single("img"), (req, res) => {
-    const id = parseInt(req.params.id);
-
-    const recipe = recipes.find((r) => r._id === id);;
-
     const result = validateRecipe(req.body);
 
     if (result.error) {
@@ -108,32 +72,32 @@ app.put("/api/recipes/:id", upload.single("img"), (req, res) => {
         return;
     }
 
-    recipe.name = req.body.name;
-    recipe.description = req.body.description;
-    recipe.ingredients = req.body.ingredients.split(",");
+    updateRecipe(req, res);
+});
+
+const updateRecipe = async(req, res) => {
+    let fieldsToUpdate = {
+        name: req.body.name,
+        description: req.body.description,
+        ingredients: req.body.ingredients.split(",")
+    }
 
     if (req.file) {
-        recipe.img = "images/" + req.file.filename;
+        fieldsToUpdate.img = "images/" + req.file.filename;
     }
 
-    res.send(recipe);
-});
+    const result = await Recipe.updateOne({ _id: req.params.id }, fieldsToUpdate);
+    res.send(result);
+};
 
 app.delete("/api/recipes/:id", upload.single("img"), (req, res) => {
-    const id = parseInt(req.params.id);
-
-    const recipe = recipes.find((r) => r._id === id);
-
-    if (!recipe) {
-        res.status(404).send("The recipe was not found");
-        return;
-    }
-
-    const index = recipes.indexOf(recipe);
-    recipes.splice(index, 1);
-    res.send(recipe);
-
+    removeRecipe(res, req.params.id);
 });
+
+const removeRecipe = async(res, id) => {
+    const recipe = await Recipe.findOneAndDelete(id);
+    res.send(recipe);
+};
 
 const validateRecipe = (recipe) => {
     const schema = Joi.object({
