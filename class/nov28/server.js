@@ -89,7 +89,8 @@ const updateRecipe = async (req, res) => {
   }
 
   const result = await Recipe.updateOne({ _id: req.params.id }, fieldsToUpdate);
-  res.send(result);
+  const recipe = await Recipe.findById(req.params.id);
+  res.send(recipe);
 };
 
 app.delete("/api/recipes/:id", upload.single("img"), (req, res) => {
