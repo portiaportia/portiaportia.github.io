@@ -1,0 +1,47 @@
+:root {
+  --primary: coral;
+  --secondary: cornflowerblue;
+}
+
+/* Structure */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: azure;
+}
+
+/* Form */
+form {
+  background: var(--secondary);
+  border-radius: 10px;
+  margin: 3%;
+  padding: 1% 3%;
+  color: white;
+}
+
+label {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+/* Larger Resolutions */
+
+@media (min-width: 600px) {
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  form {
+    max-width: 40%;
+  }
+  .recipe {
+    width: 25%;
+  }
+  #add-edit-recipe-container {
+    max-width: 30%;
+    margin: auto;
+  }
+}

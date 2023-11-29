@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Login / Signup</h1>
+
+    <div class="columns">
+      <form id="signup" name="signup" method="post">
+        <h3>Signup</h3>
+        <p>
+          <label for="username">UserName:</label>
+          <input type="text" name="username" required minlength="6" />
+        </p>
+        <p>
+          <label for="Email">Email:</label>
+          <input type="text" name="email" />
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input type="password" name="password" minlength="6" />
+        </p>
+
+        <p><input type="submit" name="submit" /></p>
+        <p id="message"></p>
+      </form>
+      <form id="login-form" name="login" method="post">
+        <h3>Login</h3>
+        <p>
+          <label for="username">UserName:</label>
+          <input type="text" name="username" required minlength="6" />
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input type="password" name="password" minlength="6" />
+        </p>
+
+        <p><input type="submit" name="submit" /></p>
+        <p id="message-login"></p>
+      </form>
+    </div>
+  </body>
+</html>
