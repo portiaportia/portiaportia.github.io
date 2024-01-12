@@ -8,8 +8,8 @@
             "wrap around porch",
             "attached garage"
         ],
-        "main-image": "farm.webp",
-        "floor-plans": [
+        "main_image": "farm.webp",
+        "floor_plans": [
             {
                 "name": "Main Level",
                 "image": "farm-floor-1.webp"
