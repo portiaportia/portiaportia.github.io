@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Farmhouse",
+        "size": 2000,
+        "bedrooms": 3,
+        "bathrooms": 2.5,
+        "features": [
+            "wrap around porch",
+            "attached garage"
+        ],
+        "main-image": "farm.webp",
+        "floor-plans": [
+            {
+                "name": "Main Level",
+                "image": "farm-floor-1.webp"
+            },
+            {
+                "name": "Basement",
+                "image": "farm-floor-2.webp"
+            }
+        ]
+    }
+]
