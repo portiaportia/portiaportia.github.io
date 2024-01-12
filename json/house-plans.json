@@ -36,11 +36,11 @@
                 "image": "mountain-house1.webp"
             },
             {
-                "name": "Basement",
+                "name": "Optional Lower Level",
                 "image": "mountain-house2.webp"
             },
             {
-                "name": "Basement",
+                "name": "Main Level Slab Option",
                 "image": "mountain-house3.webp"
             }
         ]
