@@ -9,7 +9,7 @@
             "attached garage"
         ],
         "main-image": "farm.webp",
-        "floor-plans": [
+        "floor_plans": [
             {
                 "name": "Main Level",
                 "image": "farm-floor1.webp"
@@ -56,7 +56,7 @@
             "pool house"
         ],
         "main-image": "farm.webp",
-        "floor-plans": [
+        "floor_plans": [
             {
                 "name": "Main Level",
                 "image": "lake-house1.webp"
