@@ -1,5 +1,26 @@
 [
     {
+        "name": "Farmhouse",
+        "size": 2000,
+        "bedrooms": 3,
+        "bathrooms": 2.5,
+        "features": [
+            "wrap around porch",
+            "attached garage"
+        ],
+        "main-image": "farm.webp",
+        "floor-plans": [
+            {
+                "name": "Main Level",
+                "image": "farm-floor1.webp"
+            },
+            {
+                "name": "Basement",
+                "image": "farm-floor2.webp"
+            }
+        ]
+    },
+    {
         "name": "Mountain House",
         "size": 1700,
         "bedrooms": 3,
@@ -17,6 +38,32 @@
             {
                 "name": "Basement",
                 "image": "mountain-house2.webp"
+            },
+            {
+                "name": "Basement",
+                "image": "mountain-house3.webp"
+            }
+        ]
+    },
+    {
+        "name": "Lake House",
+        "size": 3000,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "features": [
+            "covered deck",
+            "outdoor kitchen",
+            "pool house"
+        ],
+        "main-image": "farm.webp",
+        "floor-plans": [
+            {
+                "name": "Main Level",
+                "image": "lake-house1.webp"
+            },
+            {
+                "name": "Lower Level",
+                "image": "lake-house2.webp"
             }
         ]
     }
