@@ -1,22 +1,22 @@
 [
     {
-        "name": "Farmhouse",
-        "size": 2000,
+        "name": "Mountain House",
+        "size": 1700,
         "bedrooms": 3,
-        "bathrooms": 2.5,
+        "bathrooms": 2,
         "features": [
-            "wrap around porch",
-            "attached garage"
+            "grand porch",
+            "covered deck"
         ],
-        "main_image": "farm.webp",
+        "main_image": "mountain-house.webp",
         "floor_plans": [
             {
                 "name": "Main Level",
-                "image": "farm-floor-1.webp"
+                "image": "mountain-house1.webp"
             },
             {
                 "name": "Basement",
-                "image": "farm-floor-2.webp"
+                "image": "mountain-house2.webp"
             }
         ]
     }
