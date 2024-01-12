@@ -8,7 +8,7 @@
             "wrap around porch",
             "attached garage"
         ],
-        "main-image": "farm.webp",
+        "main_image": "farm.webp",
         "floor_plans": [
             {
                 "name": "Main Level",
@@ -55,7 +55,7 @@
             "outdoor kitchen",
             "pool house"
         ],
-        "main-image": "farm.webp",
+        "main_image": "farm.webp",
         "floor_plans": [
             {
                 "name": "Main Level",
