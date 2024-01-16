@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(images/icream-bg.jpg);
+}
+
+
+/* Structure */
+
+#content {
+    background: #D9BE6C;
+    padding: 5px;
+    width: 80%;
+    /* center horizontally */
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+/* Navigation */
+
+#main-nav a {
+    /* remove the underline */
+    text-decoration: none;
+    background: #D9961A;
+    color: #F2EBDC;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#main-nav a:hover {
+    background: deeppink;
+}
+
+
+/* Typography */
+
+h1 {
+    color: #BF5C06;
+}
+
+.special {
+    color: deepskyblue;
+}
