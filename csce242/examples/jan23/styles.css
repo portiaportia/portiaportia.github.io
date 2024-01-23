@@ -1,0 +1,78 @@
+                           :root {
+                              --background-color: #f6c1c1;
+                              --primary-color: #8c5e54;
+                              --secondary-color: #404040;
+                          }
+                          
+                          body {
+                              font-family: Arial, Helvetica, sans-serif;
+                              background: var(--background-color);
+                          }
+                          /* Structure */
+                          
+                          #content {
+                              background: #fff;
+                              padding: 5px;
+                              width: 80%;
+                              /* center horizontally */
+                              margin: auto;
+                              border-radius: 5px;
+                          }
+                          
+                          #play-area {
+                              width: 100%;
+                              height: 400px;
+                              background: violet;
+                          }
+                          
+                          #block {
+                              width: 150px;
+                              height: 150px;
+                              background: skyblue;
+                              animation-name: play;
+                              animation-duration: 2s;
+                              animation-iteration-count: infinite;
+                              position: relative;
+                          }
+                          /* Animations */
+                          
+                          @keyframes play {
+                              0% {
+                                  background: red;
+                                  opacity: 1;
+                                  left: 0;
+                                  transform: rotate(0deg);
+                              }
+                              15% {
+                                  background: orange;
+                              }
+                              30% {
+                                  background: yellow;
+                              }
+                              45% {
+                                  background: green;
+                                  opacity: 0;
+                                  left: 0%;
+                                  transform: rotate(100deg);
+                              }
+                              60% {
+                                  background: blue;
+                              }
+                              80% {
+                                  background: indigo;
+                              }
+                              100% {
+                                  background: violet;
+                                  left: 0%;
+                              }
+                          }
+                          /* Typography */
+                          
+                          h1 {
+                              color: darkslategray;
+                          }
+                          
+                          #block p {
+                              text-align: center;
+                              line-height: 150px;
+                          }
