@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Chocolate Chip",
+        "image": "chocolae-chip.jpg"
+    },
+    {
+        "name": "Birthday Cake",
+        "image": "birthday-cake.jpg"
+    },
+    {
+        "name": "Caramel",
+        "image": "caramel.jpg"
+    },
+    {
+        "name": "Cheese Cake",
+        "image": "cheese-cake.jpg"
+    },
+    {
+        "name": "Cookie Monster",
+        "image": "cookie-monster.jpg"
+    },
+    {
+        "name": "Matcha",
+        "image": "matcha.jpg"
+    },
+    {
+        "name": "Strawberry",
+        "image": "strawberry.jpg"
+    },
+    {
+        "name": "Watermellon",
+        "image": "watermellon.jpg"
+    }
+]
