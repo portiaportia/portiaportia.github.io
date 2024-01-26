@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comment version="3.0">
+  <caption>Ice cream cone</caption>
+  <note>Delicious ice cream cone on a dish</note>
+  <place/>
+  <categories>
+    <category value="background"/>
+    <category value="ball"/>
+    <category value="close-up"/>
+    <category value="cold"/>
+    <category value="cone"/>
+    <category value="creamy"/>
+    <category value="dairy"/>
+    <category value="delicious"/>
+    <category value="dessert"/>
+    <category value="eat"/>
+    <category value="food"/>
+    <category value="gelato"/>
+    <category value="ice cream"/>
+    <category value="ice"/>
+    <category value="cream"/>
+    <category value="icecream"/>
+    <category value="ice-cream"/>
+    <category value="melt"/>
+    <category value="nobody"/>
+    <category value="refreshing"/>
+    <category value="snack"/>
+    <category value="summer"/>
+    <category value="sundae"/>
+    <category value="sweet"/>
+    <category value="waffle"/>
+    <category value="wafer"/>
+    <category value="table"/>
+    <category value="yummy"/>
+    <category value="scoop"/>
+    <category value="pink"/>
+    <category value="strawberry"/>
+    <category value="milk"/>
+    <category value="dish"/>
+  </categories>
+</comment>

@@ -1,34 +1,42 @@
 [
     {
         "name": "Chocolate Chip",
-        "image": "chocolate-chip.jpg"
+        "image": "chocolate-chip.jpg",
+        "image2": "chocolate-chip-2.jpg"
     },
     {
         "name": "Birthday Cake",
-        "image": "birthday-cake.jpg"
+        "image": "birthday-cake.jpg",
+        "image2": "birthday-cake-2.jpg"
     },
     {
         "name": "Caramel",
-        "image": "caramel.jpg"
+        "image": "caramel.jpg",
+        "image2": "caramel-2.jpg"
     },
     {
         "name": "Cheese Cake",
-        "image": "cheese-cake.jpg"
+        "image": "cheese-cake.jpg",
+        "image2": "cheese-cake-2.jpg"
     },
     {
         "name": "Cookie Monster",
-        "image": "cookie-monster.jpg"
+        "image": "cookie-monster.jpg",
+        "image2": "cookie-monster-2.jpg"
     },
     {
         "name": "Matcha",
-        "image": "matcha.jpg"
+        "image": "matcha.jpg",
+        "image2": "matcha-2.jpg"
     },
     {
         "name": "Strawberry",
-        "image": "strawberry.jpg"
+        "image": "strawberry.jpg",
+        "image2": "strawberry-2.jpg"
     },
     {
         "name": "Watermellon",
-        "image": "watermellon.jpg"
+        "image": "watermellon.jpg",
+        "image2": "watermellon-2.jpg"
     }
 ]
