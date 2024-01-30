@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Chocolate Chip",
+        "image": "chocolate-chip.jpg",
+        "image2": "chocolate-chip-2.jpg",
+        "description": "Chocolate ice cream is generally made by blending cocoa powder, and the eggs, cream, vanilla, and sugar used to make vanilla ice cream. Sometimes chocolate liquor is used in addition to cocoa powder or used exclusively to create the chocolate flavor.",
+        "colors": [
+            "#40231D",
+            "#592202",
+            "#8C4B26"
+        ]
+    },
+    {
+        "name": "Birthday Cake",
+        "image": "birthday-cake.jpg",
+        "image2": "birthday-cake-2.jpg",
+        "description": "A celebratory blend of cake pieces and sprinkles in cake batter ice cream.",
+        "colors": [
+            "#F28E85",
+            "#F2CF8D",
+            "#F2E9F2"
+        ]
+    },
+    {
+        "name": "Caramel",
+        "image": "caramel.jpg",
+        "image2": "caramel-2.jpg",
+        "description": "What makes caramel ice cream so delicious is the use of caramelized sugar, which gives the ice cream a rich, smooth, and creamy texture with a sweet and slightly nutty flavor. Caramel ice cream is often paired with other flavors like chocolate, toffee, and nuts to create a unique and delicious taste experience.",
+        "colors": [
+            "#731702",
+            "#BF815E",
+            "#F2E9D8"
+        ]
+    },
+    {
+        "name": "Cheese Cake",
+        "image": "cheese-cake.jpg",
+        "image2": "cheese-cake-2.jpg",
+        "description": "Cheesecake, a dessert consisting of a thick, creamy filling of cheese, eggs, and sugar over a thinner crust and topped with sweet or sometimes salty items.",
+        "colors": [
+            "#6D6F8C",
+            "#AEB1BF",
+            "#E9EBF2"
+        ]
+    },
+    {
+        "name": "Cookie Monster",
+        "image": "cookie-monster.jpg",
+        "image2": "cookie-monster-2.jpg",
+        "description": "When the stomach starts to growl and those cookie cravings grow stronger, there’s only way to beat them: with the ultimate cookie combo, Cookie Monster Ice Cream",
+        "colors": [
+            "#458C78",
+            "#77D9C7",
+            "#F2DB94"
+        ]
+    },
+    {
+        "name": "Matcha",
+        "image": "matcha.jpg",
+        "image2": "matcha-2.jpg",
+        "description": "The ideal flavor of this refreshing treat should be a perfect balance of earthy, sweet, and slightly bitter. Because matcha is much more concentrated than regular green tea, you often don't need much to experience its robust profile.",
+        "colors": [
+            "#D9AA71",
+            "#C8D9A3",
+            "#0D0D0D"
+        ]
+    },
+    {
+        "name": "Strawberry",
+        "image": "strawberry.jpg",
+        "image2": "strawberry-2.jpg",
+        "description": "Fresh strawberries contain a combination of fruity, caramel, spice and green notes. A green note is a characteristic note used to describe that leafy sometimes woody or smoky sensation you taste with fruits and vegetables.",
+        "colors": [
+            "#735158",
+            "#688C7B",
+            "#F2CFBB"
+        ]
+    },
+    {
+        "name": "Watermellon",
+        "image": "watermellon.jpg",
+        "image2": "watermellon-2.jpg",
+        "description": "It's packed with vitamins, has a fruity, sweet flavor, and is slightly creamy. With this recipe, you can expect a full-on watermelon taste—no additives.",
+        "colors": [
+            "#A6652D",
+            "#F2CEDB",
+            "#C9EBF2"
+        ]
+    }
+]
