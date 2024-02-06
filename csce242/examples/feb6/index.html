@@ -24,9 +24,30 @@
         </nav>
     </header>
 
-    <main id="main-content" class="padded-area">
+    <main id="main-content" class="padded-area columns">
+        <section>
+            <a href="index.html" id="link-click">Click Me</a>
+            <p id="display"></p>
+        </section>
 
+        <section>
+            <p>
+                <label for="txt-mood">Color</label>
+                <input id="txt-mood" type="text" placeholder="enter color">
+            </p>
 
+            <p id="mood"></p>
+        </section>
+        <section>
+            <form id="form" action="index.html" method="get">
+                <p>
+                    <label for="txt-first-name">First Name:</label>
+                    <input id="txt-first-name" name="txt-first-name">
+                </p>
+
+                <button type="submit">continue</button>
+            </form>
+        </section>
     </main>
 
     <footer id="main-footer" class="padded-area">
