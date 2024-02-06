@@ -52,6 +52,20 @@ body {
 }
 
 
+/* Hamburger */
+
+#hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.hide-small {
+    display: none;
+}
+
+
 /* Typography */
 
 body {
@@ -74,5 +88,11 @@ h1 {
     }
     .col1of2 {
         flex: 1;
+    }
+    #hamburger {
+        display: none;
+    }
+    .hide-small {
+        display: block;
     }
 }
