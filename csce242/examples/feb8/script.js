@@ -20,4 +20,11 @@ const updateThermomether = () => {
 
 };
 
+const evalForm = (e) => {
+    e.preventDefault();
+
+
+};
+
 document.getElementById("btn-cont").onclick = updateThermomether;
+document.getElementById("my-form").onsubmit = evalForm;
