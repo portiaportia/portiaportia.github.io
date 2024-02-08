@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!--
             Author: Portia Plante
         -->
     <title>Custom Title</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="content">
-      <h1>Learning JavaScript</h1>
+        <h1>Learning JavaScript</h1>
 
-      <div class="columns">
-        <section class="one">
-          <h3>Learning Gradinets</h3>
-        </section>
-        <section class="one">
-          <h3>Gradient Changer</h3>
-        </section>
-        <section>
-          <h3>Forms and Numbers</h3>
-        </section>
-      </div>
+        <div class="columns">
+            <section class="one">
+                <h3>Learning Gradinets</h3>
+
+                <section id="rainbow">
+
+                </section>
+            </section>
+            <section class="one">
+                <h3>Gradient Changer</h3>
+                <p>Let's get to $10000</p>
+                <p>
+                    <label for="txt-funds">Funds Earned: </label>
+                    <input type="text" id="txt-funds">
+                    <span id="funds-error" class="error"></span>
+                </p>
+                <p>
+                    <button id="btn-cont">Continue</button>
+                </p>
+                <section id="thermometer">
+
+                </section>
+            </section>
+            <section>
+                <h3>Forms and Numbers</h3>
+            </section class="one">
+        </div>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
