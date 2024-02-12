@@ -1,29 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!--
             Author: Portia Plante
         -->
     <title>Custom Title</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="content">
-      <h1>Learning JavaScript</h1>
+        <h1>Learning JavaScript</h1>
 
-      <div class="columns">
-        <section class="one">
-          <h3>Learning Gradinets</h3>
-        </section>
-        <section class="one">
-          <h3>Gradient Changer</h3>
-        </section>
-        <section>
-          <h3>Forms and Numbers</h3>
-        </section>
-      </div>
+        <div class="columns">
+            <section class="one">
+                <h3>Learning Gradinets</h3>
+
+                <section id="rainbow">
+
+                </section>
+            </section>
+            <section class="one">
+                <h3>Gradient Changer</h3>
+                <p>Let's get to $10000</p>
+                <p>
+                    <label for="txt-funds">Funds Earned: </label>
+                    <input type="text" id="txt-funds">
+                    <span id="funds-error" class="error"></span>
+                </p>
+                <p>
+                    <button id="btn-cont">Continue</button>
+                </p>
+                <section id="thermometer">
+
+                </section>
+            </section>
+            <section class="one">
+                <h3>Forms and Numbers</h3>
+                <form id="my-form" action="#" method="get">
+
+                    <p>
+                        <label for="txt-first-name">First Name:</label>
+                        <input type="text" name="txt-first-name" required minlength="5">
+                    </p>
+                    <p>
+                        <label for="txt-last-name">Last Name:</label>
+                        <input type="text" name="txt-last-name">
+                    </p>
+                    <p>
+                        <label for="txt-age">Age:</label>
+                        <input type="number" min="18" name="txt-age">
+                    </p>
+                    <p>
+                        <label for="txt-birth-day">Birthday:</label>
+                        <input type="date">
+                    </p>
+                    <p>
+                        <label for="txt-email">Email:</label>
+                        <input type="email">
+                    </p>
+
+
+                    <button type="submit">Continue</button>
+                </form>
+            </section>
+        </div>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
