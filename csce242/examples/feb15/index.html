@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!--
             Author: Portia Plante
         -->
     <title>Custom Title</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="content">
-      <h1>Learning JavaScript</h1>
+        <h1>Learning JavaScript</h1>
 
-      <div class="columns">
-        <section class="one">
-          <h3>Looping Through Numbers</h3>
-        </section>
-        <section class="one">
-          <h3>Eat Fruits</h3>
-        </section>
-        <section>
-          <h3>Count Numbers</h3>
-        </section>
-      </div>
+        <div class="columns">
+            <section class="one">
+                <h3>Looping Through Numbers</h3>
+                <p>
+                    <label for="txt-start-num">Enter Starting Number:</label>
+                    <input type="text" id="txt-start-num">
+                </p>
+                <p>
+                    <label for="txt-end-num">Enter Ending Number:</label>
+                    <input type="text" id="txt-end-num">
+                </p>
+                <button id="btn-loop-nums">Show Numbers</button>
+                <p id="error-nums" class="error"></p>
+                <ul id="num-list"></ul>
+            </section>
+            <section class="one">
+                <h3>Counting</h3>
+                <button id="btn-count">Start</button>
+                <p id="count-p"></p>
+            </section>
+            <section>
+                <h3>List Item Clicks</h3>
+                <ul id="toys">
+                    <li rel="The coolest mini cars.">Matchbox Car</li>
+                    <li rel="Like a real baby but not.">Baby Doll</li>
+                    <li rel="Exercise and fun.">Skipping Rope</li>
+                    <li rel="Mini fun for all.">Toy House</li>
+                    <li rel="A whole day of sports">Soccer Ball</li>
+                </ul>
+            </section>
+        </div>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
