@@ -10,12 +10,15 @@ const getBreweries = async() => {
 
 const getMap = async(latitude, longitude) => {
     try {
-        return await fetch(`https://maps.google.com/maps?q=${latitude},${longitude}&t=&z=15&ie=UTF8&iwloc=&&output=embed`);
-
+        return (
+            await fetch(
+                `https://maps.google.com/maps?q=${latitude},${longitude}&t=&z=15&ie=UTF8&iwloc=&&output=embed`
+            )
+        ).url;
     } catch (error) {
-        console.log("error");
+        console.log(error);
     }
-}
+};
 
 const showBreweries = async() => {
     const breweries = await getBreweries();
