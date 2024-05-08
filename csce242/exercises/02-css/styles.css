@@ -1,14 +1,47 @@
 /* Structure */
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background:skyblue;
+    background:url('images/background.jpg');
+    background-size:100%;
 }
 
-div {
-    background:white;
+#content {
+    background:rgba(255,255,255,0.8);
     width:70%;
     margin:auto;    /*Centering */
+    border-radius: 5px 50px 50px 0px;    /* Round corners */
+    /*box-shadow: 10px 10px #daa96d;*/
+}
+
+#main-header, #main-footer {
+    background:#f5b894;
+    padding:10px;
+}
+
+#main-content {
+    padding:10px;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left:0;
+}
+
+#main-nav li {
+    list-style-type: none;
+    display:inline-block;   /* made horizontal */
+    background:#8c617d;
     padding:5px;
+    border-radius:2px;
+}
+
+#main-nav a {
+    color:white;
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+    color:#f29188;
 }
 
 /* Images */
@@ -18,11 +51,11 @@ img {
 
 /* Typography */
 h1 {
-    color:magenta;
+    color:#f29188;
 }
 
 h2 {
-    color:orange;
+    color:#8c617d;
 }
 
 strong {
