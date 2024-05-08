@@ -1,4 +1,10 @@
 /* Structure */
+:root {
+    --primary-color: #f29188;
+    --secondary-color: #8c617d;
+    --background-color:#f5b894;
+}
+
 body {
     font-family:Arial, Helvetica, sans-serif;
     background:url('images/background.jpg');
@@ -14,7 +20,7 @@ body {
 }
 
 #main-header, #main-footer {
-    background:#f5b894;
+    background:var(--background-color);
     padding:10px;
 }
 
@@ -30,7 +36,7 @@ body {
 #main-nav li {
     list-style-type: none;
     display:inline-block;   /* made horizontal */
-    background:#8c617d;
+    background:var(--secondary-color);
     padding:5px;
     border-radius:2px;
 }
@@ -41,25 +47,40 @@ body {
 }
 
 #main-nav a:hover {
-    color:#f29188;
+    color:var(--primary-color);
+}
+
+/* Tables */
+#about-table {
+    border-collapse: collapse;
+}
+
+#about-table th, #about-table td{
+    border:1px solid var(--primary-color);
+    padding:5px;
+}
+
+#about-table th {
+    background-color:var(--secondary-color);
+    color:white;
 }
 
 /* Images */
 img {
-    border:2px solid pink;
+    border:2px solid var(--primary-color);
 }
 
 /* Typography */
 h1 {
-    color:#f29188;
+    color:var(--primary-color);
 }
 
 h2 {
-    color:#8c617d;
+    color:var(--secondary-color);
 }
 
 strong {
-    background:yellow;
+    background:var(--secondary-color);
     padding:5px;
     text-decoration-line: underline;
 }
