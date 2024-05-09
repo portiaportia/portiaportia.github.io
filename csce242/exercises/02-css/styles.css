@@ -72,7 +72,7 @@ img {
 
 /* Typography */
 h1 {
-    color:var(--primary-color);
+    color:var(--primary-color); 
 }
 
 h2 {

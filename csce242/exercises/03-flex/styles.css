@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #f29188;
+    --secondary-color: #8c617d;
+    --background-color:#f5b894;
+    --header-bg:#20B2AA;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+
+#content {
+    background:white;
+    width:80%;
+    margin:auto;
+}
+
+#main-header, #main-footer {
+    background-color:var(--header-bg);
+    padding:5px;
+}
+
+#main-content {
+    padding:5px;
+}
+
+#main-sidebar {
+    background:LemonChiffon;
+    padding:5px;
+}
+
+#information {
+    background:lavender;
+    padding:5px;
+}
+
+#information section {
+    background:plum;
+    margin:5px;
+}
+
+#main-footer {
+
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left:0;
+    list-style-type: none;
+}
+
+#main-nav li {
+    background:navy;
+    padding:5px;
+    margin-bottom:2px;
+}
+
+#main-nav li:hover {
+    background:mistyrose;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+    display:block;
+}
+
+/* Login Nav */
+#main-header {
+    position:relative;
+}
+
+#login-nav {
+    width:fit-content;
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+#login-nav ul {
+    padding-left:0;
+    list-style-type: none;
+}
+
+#login-nav li {
+    padding:5px;
+}
+
+/* Typography */
+#information h3 {
+    text-align: center;
+}
+
+/* Media Query */
+/* For larger devices e.g. labtops */
+@media only screen and (min-width: 600px) {
+
+    .columns {
+        display:flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    #main-nav li {
+        flex:1;
+    }
+
+    #information section {
+        flex:25%;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    img {
+        max-width:95%;
+    }
+}
