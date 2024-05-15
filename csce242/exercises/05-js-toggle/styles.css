@@ -66,6 +66,13 @@ body {
     display:block;
 }
 
+#toggle div {
+    width:25px;
+    height:2px;
+    background:var(--primary-color);
+    margin:6px 0;
+}
+
 /* Special */
 .special {
     background:skyblue;
@@ -123,8 +130,45 @@ body {
     }
 }
 
+/* Arrows */
+#arrows {
+    position:relative;
+    min-height:100px;
+}
+
+#arrows a {
+    position:absolute;
+    text-decoration: none;
+    color:var(--primary-color);
+    font-weight: 600;
+}
+
+#top-arrow {
+    top:0px;
+    left:15px;
+}
+
+#bottom-arrow {
+    top:30px;
+    left:15px;
+}
+
+#right-arrow {
+    top:15px;
+    left:30px;
+}
+
+#left-arrow {
+    top:15px;
+    left:0px;
+}
+
 /* Hide / Show */
 .hidden {
+    display:none;
+}
+
+.hide-small {
     display:none;
 }
 
@@ -179,5 +223,13 @@ h2 {
 
     #main-content section {
         flex:1;
+    }
+
+    #toggle {
+        display:none;
+    }
+
+    .hide-small {
+        display:flex;
     }
 }

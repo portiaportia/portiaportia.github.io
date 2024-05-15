@@ -15,7 +15,12 @@
         <h2>Sub Title</h2>
 
         <nav id="main-nav">
-          <ul class="columns">
+          <div id="toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul id="nav-items" class="columns hide-small">
             <li><a href="#">Nav Item 1</a></li>
             <li><a href="#">Nav Item 2</a></li>
             <li><a href="#">Nav Item 3</a></li>
@@ -26,7 +31,14 @@
       </header>
       <main id="main-content" class="columns">
         <section>
-          <h3>Column 1</h3>
+          <h3>Arrows</h3>
+          <section id="arrows">
+            <a href="#" id="top-arrow">^</a>
+            <a href="#" id="bottom-arrow">v</a>
+            <a href="#" id="right-arrow">&gt;</a>
+            <a href="#" id="left-arrow">&lt;</a>
+          </section>
+          <div id="ball"></div>
         </section>
         <section>
           <h3>Column 2</h3>
