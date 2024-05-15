@@ -31,3 +31,26 @@ document.getElementById("bottom-arrow").onclick = () => {
     ballTop += 10;
     moveBall();
 }
+
+/* Color Mood Message Generator */
+document.getElementById("txt-color").onkeyup = e => {
+    //const color = document.getElementById("txt-color").value;
+    //console.log(color);
+
+    const color = e.currentTarget.value.toLowerCase();
+    const messageP = document.getElementById("color-message");
+
+    if(color == "red"){
+        messageP.innerHTML = "You are angry!";
+        messageP.style.color = "red";
+    } 
+    else if(color == "blue") {
+        messageP.innerHTML = "You are moody";
+        messageP.style.color = "blue";
+    }
+    else {
+        messageP.innerHTML = "We don't know what you are"
+        messageP.style.color = "black";
+    }
+
+}
