@@ -55,10 +55,15 @@ const validNum = (num, errorId) =>{
 document.getElementById("btn-count").onclick = () => {
     const startNum = document.getElementById("txt-start").value;
     const endNum = document.getElementById("txt-end").value;
+    const ul = document.getElementById("ul-count");
 
-    if(!validNum(startNum, "error-start") || ! validNum(endNum, "error-end")){
+    if(!validNum(startNum, "error-start") | ! validNum(endNum, "error-end")){
         return;
     }
 
-    console.log("yay");
+    for(let i = parseInt(startNum); i <= parseInt(endNum); i++){
+        const li = document.createElement("li");
+        li.innerHTML = i;
+        ul.append(li);
+    }
 }
