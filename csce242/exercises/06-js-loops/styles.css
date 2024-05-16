@@ -220,6 +220,12 @@ h2 {
     color:red;
 }
 
+.special {
+    background:magenta;
+    padding:5px;
+    color:white;
+}
+
 /* Media Query */
 /* For larger devices e.g. labtops */
 @media only screen and (min-width: 600px) {

@@ -65,5 +65,10 @@ document.getElementById("btn-count").onclick = () => {
         const li = document.createElement("li");
         li.innerHTML = i;
         ul.append(li);
+
+        li.onclick = () => {
+            const special = document.getElementById("info");
+            info.innerHTML= `You clicked ${i}`;
+        }
     }
 }
