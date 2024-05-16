@@ -18,8 +18,19 @@ document.getElementById("btn-funds").onclick = () => {
         errorFunds.innerHTML = "* Number needs to be >= 0";
     }
     else {
-        percent = (funds * goal * 100) + "%";
+        percent = (funds / goal * 100) + "%";
     }
 
     document.querySelector(":root").style.setProperty("--funds", percent);
+}
+
+//loops
+document.getElementById("btn-loops").onclick = () => {
+    const result = document.getElementById("loops-result");
+
+    for(let i=0; i < 10; i++){
+        const p = document.createElement("p");
+        p.innerHTML = i+1;
+        result.append(p);
+    }
 }
