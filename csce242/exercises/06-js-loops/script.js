@@ -34,3 +34,31 @@ document.getElementById("btn-loops").onclick = () => {
         result.append(p);
     }
 }
+
+const validNum = (num, errorId) =>{
+    const errorSpan = document.getElementById(errorId);
+    errorSpan.innerHTML = "";
+
+    if(isNaN(num)){
+        errorSpan.innerHTML = "* Not a number";
+        return false;
+    }
+    else if(num < 0){
+        errorSpan.innerHTML = "* Number should be >= 0";
+        return false;
+    }
+
+    return true;
+}
+
+//loop with start and end
+document.getElementById("btn-count").onclick = () => {
+    const startNum = document.getElementById("txt-start").value;
+    const endNum = document.getElementById("txt-end").value;
+
+    if(!validNum(startNum, "error-start") || ! validNum(endNum, "error-end")){
+        return;
+    }
+
+    console.log("yay");
+}
