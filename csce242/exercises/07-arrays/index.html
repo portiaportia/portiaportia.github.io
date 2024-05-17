@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+            Author: Portia Plante
+        -->
+    <title>Arrays</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+
+  <body>
+    <div id="content">
+      <h1>Learning JavaScript</h1>
+
+      <section id="slideshow">
+        <div id="preview">
+            <img src="images/strawberry.jpg" />
+            <img src="images/cherry.jpeg" class="hidden" />
+            <img src="images/grapes.jpg" class="hidden" />
+            <img src="images/mango.jpg" class="hidden" />
+            <img src="images/apple.jpg" class="hidden" />
+        </div>
+        <div id="thumbs">
+            <img src="images/strawberry-small.jpg" />
+            <img src="images/cherry-small.jpeg" />
+            <img src="images/grapes-small.jpg" />
+            <img src="images/mango-small.jpg" />
+            <img src="images/apple-small.jpg" />
+        </div>
+        <p id="forward-arrow">&gt;</p>
+        <p id="backward-arrow">&lt;</p>
+    </section>
+      <div class="columns gallery items">
+        <section>
+          <h3>Title 1</h3>
+          <img src="https://place-hold.it/200/FF7F50/fff" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            sem et tortor consequat id. Neque sodales ut etiam sit amet.
+          </p>
+        </section>
+        <section>
+          <h3>Title 2</h3>
+          <img src="https://place-hold.it/200/9932CC/fff" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            sem et tortor consequat id. Neque sodales ut etiam sit amet.
+          </p>
+        </section>
+        <section>
+          <h3>Title 3</h3>
+          <img src="https://place-hold.it/200/20B2AA/fff" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            sem et tortor consequat id. Neque sodales ut etiam sit amet.
+          </p>
+        </section>
+        <section>
+          <h3>Title 4</h3>
+          <img src="https://place-hold.it/200/C71585/fff" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            sem et tortor consequat id. Neque sodales ut etiam sit amet.
+          </p>
+        </section>
+        <section>
+          <h3>Title 5</h3>
+          <img src="https://place-hold.it/200/FA8072/fff" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            sem et tortor consequat id. Neque sodales ut etiam sit amet.
+          </p>
+        </section>
+        <section>
+          <h3>Title 6</h3>
+          <img src="https://place-hold.it/200/008080/fff" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            sem et tortor consequat id. Neque sodales ut etiam sit amet.
+          </p>
+        </section>
+        <section>
+          <h3>Title 7</h3>
+          <img src="https://place-hold.it/200/FFDAB9/fff" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            sem et tortor consequat id. Neque sodales ut etiam sit amet.
+          </p>
+        </section>
+        <section>
+          <h3>Title 8</h3>
+          <img src="https://place-hold.it/200/FFD700/fff" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            sem et tortor consequat id. Neque sodales ut etiam sit amet.
+          </p>
+        </section>
+        <section>
+          <h3>Title 9</h3>
+          <img src="https://place-hold.it/200/6495ED/fff" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            sem et tortor consequat id. Neque sodales ut etiam sit amet.
+          </p>
+        </section>
+      </div>
+
+      <!-- The Modal -->
+      <div id="dialog" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('dialog').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+            <section id="dialog-content" class="columns">
+              <section>
+                <img src="">
+              </section>
+              <section id="dialog-details"></section>
+            </section>
+          </div>
+        </div>
+      </div>
+    <script src="slide-script.js"></script>
+    <script src="gallery-script.js"></script>
+  </body>
+</html>
