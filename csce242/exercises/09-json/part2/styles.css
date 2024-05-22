@@ -1,0 +1,127 @@
+:root {
+  --primary: coral;
+  --secondary: cornflowerblue;
+}
+
+/* Structure */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: azure;
+}
+
+/* Navigation */
+#main-nav ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+#main-nav li {
+  background: var(--secondary);
+  padding: 10px;
+  margin: 2px 0;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+/* Hamburger Menu */
+#nav-toggle div {
+  width: 35px;
+  height: 5px;
+  background-color: var(--primary);
+  margin: 6px 0;
+}
+
+/* Typography */
+#main-nav-items {
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#square {
+  --x: 100px;
+  width: var(--x);
+  height: var(--x);
+  margin-top: 10px;
+  background-color: blueviolet;
+}
+
+.brewery {
+  background-color: cornflowerblue;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.brewery:hover {
+  background-color: coral;
+}
+
+.brewery a {
+  color: white;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+/* Larger Resolutions */
+@media (min-width: 900px) {
+  #main-nav-items,
+  .form-element {
+    display: flex;
+  }
+
+  #main-nav-items li {
+    flex: 1;
+  }
+
+  #main-nav-items a {
+    border-bottom: 2px solid transparent;
+  }
+
+  #main-nav-items a:hover {
+    border-bottom: 2px solid var(--primary);
+  }
+
+  #nav-toggle {
+    display: none;
+  }
+
+  /* forms */
+  .form label {
+    width: 100px;
+  }
+
+  .form input {
+    width: 200px;
+  }
+
+  .form button {
+    width: 310px;
+  }
+
+  #dog-list {
+    display: flex;
+  }
+
+  .dog {
+    flex: 1;
+  }
+
+  #breweries-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .brewery {
+    flex: 22%;
+  }
+}
