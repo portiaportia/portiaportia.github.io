@@ -1,14 +1,16 @@
-//"https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
-const getDrinks = async () => {
+const url1 = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
+const urlRandom = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+
+const getDrinks = async (url) => {
     try {
-      return (await fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a")).json();
+      return (await fetch(url)).json();
     } catch (error) {
       console.log(error);
     }
   };
   
-  const showDrinks = async () => {
-    const drinks = (await getDrinks()).drinks;
+  const showDrinkList = async (url) => {
+    const drinks = (await getDrinks(url)).drinks;
     const drinkList = document.getElementById("cocktails");
     
     console.log(drinks);
@@ -27,6 +29,31 @@ const getDrinks = async () => {
       drinkList.append(section);
     });
   };
+
+  const showDrinkPreview = async (url) => {
+    const drink = ((await getDrinks(url)).drinks)[0];
+    const preview = document.getElementById("preview");
+    
+    console.log(drink);
+
+    const img = preview.querySelector("img");
+    img.src= drink.strDrinkThumb;
+
+    const details = document.getElementById("details");
+    details.innerHTML = "";
+    
+    const h3 = document.createElement("h3");
+    h3.innerHTML = drink.strDrink;
+    details.append(h3);
+
+    const instructions = document.createElement("p");
+    instructions.innerHTML = drink.strInstructions;
+    details.append(instructions);
+  };
+
   
-  window.onload = showDrinks();
+
+showDrinkPreview(urlRandom);
+
+showDrinkList(url1);
   

@@ -71,6 +71,28 @@ h3 {
   margin: auto;
 }
 
+#preview {
+  background:black;
+}
+
+#preview {
+  color:white;
+  font-size:1.5em;
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+
+#preview section {
+  text-align:left !important;
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+
+#preview img {
+  max-width:60%;
+  border-radius:5px;
+}
+
 /* Larger Resolutions */
 @media (min-width: 900px) {
   #main-nav-items li {
@@ -91,10 +113,17 @@ h3 {
 
   .columns {
     display: flex;
-    flex-wrap: wrap;
   }
 
   .drink {
     flex: 30%;
+  }
+
+  .col1of4 {
+    flex:40%;
+  }
+
+  .col3of4 {
+    flex:60%;
   }
 }
