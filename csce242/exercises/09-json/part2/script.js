@@ -8,6 +8,15 @@ const getBreweries = async() => {
     }
 }
 
+const getMap = async(lat, long) => {
+    try {
+        return fetch(`https://maps.google.com/maps?q=${lat},${long}&t=&z=15&ie=UTF8&iwloc=&&output=embed`
+        ).url;
+    } catch(error){
+        console.log(error);
+    }
+}
+
 const showBreweries = async() => {
     const breweries = await getBreweries();
     const breweriesList = document.getElementById("breweries-section");
