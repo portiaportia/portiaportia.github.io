@@ -34,6 +34,35 @@
             />
           </p>
           <p>
+            <label for="birth-date">Birth Date:</label>
+            <input type="date" id="birth-date" required>
+          </p>
+          <p>
+            <input type="radio" name="size" id="small" value="small" required>
+            <label for="small" class="inline">Small</label>
+          </p>
+          <p>
+            <input type="radio" name="size" id="medium" value="medium">
+            <label for="medium" class="inline">Medium</label>
+          </p>
+          <p>
+            <input type="radio" name="size" id="large" value="large">
+            <label for="large" class="inline">Large</label>
+          </p>
+          <p>
+            <label for="demeanor">Demeanor</label>
+            <select name="demeanor">
+              <option value="playful">Playful</option>
+              <option value="cuddly">Cuddly</option>
+              <option value="agressive">Agressive</option>
+              <option value="violent">Violent</option>
+            </select>
+          </p>
+          <p>
+            <input type="checkbox" required name="terms" id="terms" />
+            <label for="terms" class="inline">I agree to the terms.</label>
+          </p>
+          <p>
             <button type="submit">Submit</button>
           </p>
         </form>
