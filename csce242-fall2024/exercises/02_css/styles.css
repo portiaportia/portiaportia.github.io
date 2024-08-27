@@ -1,0 +1,22 @@
+/* Structure */
+body {
+    background:violet;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+div {
+    background:white;
+    padding:5px;
+    margin:20px auto;
+    width:70%;
+}
+
+
+/* Typography */
+h1 {
+    color:red;
+}
+
+p {
+    color:blue;
+}
