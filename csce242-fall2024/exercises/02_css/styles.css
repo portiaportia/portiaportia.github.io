@@ -1,22 +1,47 @@
 /* Structure */
 body {
-    background:violet;
+    background:#513416;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-div {
-    background:white;
+#content {
+    background:#EFDAC3;
     padding:5px;
     margin:20px auto;
     width:70%;
+    border-radius:10px;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left:0; /* removes the left padding */
+}
+
+#main-nav li {
+    list-style-type: none;  /* no bullets */
+    display:inline-block;   /* appear on one line */
+}
+
+#main-nav a { 
+    text-decoration: none;  /* no underline */
+    background:#FF8DA1;
+    color:white;
+    padding:5px;
+    margin:5px;
+    border-radius:2px;
+}
+
+#main-nav a:hover {
+    background:black;
+    color:#FF8DA1;
 }
 
 
 /* Typography */
 h1 {
-    color:red;
+    color:#4B6758;
 }
 
 p {
-    color:blue;
+    color:#281A0B;
 }
