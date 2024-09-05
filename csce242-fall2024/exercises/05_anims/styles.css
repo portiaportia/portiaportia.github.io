@@ -1,6 +1,10 @@
 /* Structure */
 :root {
     --main-background-color:skyblue;
+    --gallery-back:aliceblue;
+    --primary-color:darkblue;
+    --secondary-color:skyblue;
+    --highlight-color:pink;
 }
 
 body {
@@ -30,7 +34,7 @@ img {
 
 /* gallery */
 #gallery section {
-    background:aliceblue;
+    background:var(--gallery-back);
     padding:10px;
     margin:10px;
 }
@@ -62,6 +66,40 @@ img {
     text-decoration: underline;
 }
 
+/* Ball animation */
+#ball {
+    width:50px;
+    height:50px;
+    background:magenta;
+    border-radius:50%;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position:relative;
+}
+
+@keyframes bounce {
+    0% {
+        background:magenta;
+        top:0
+    }
+    25% {
+        background:cyan;
+    }
+    50% {
+        background:yellow;
+        top:100px;
+    }
+    75% {
+        background:blue;
+    }
+    100% {
+        background:green;
+        top:0px;
+    }
+
+  }
+
 
 /* Larger Resolutions */
 @media only screen and (min-width:600px) {
@@ -84,5 +122,13 @@ img {
 
     .one {
         flex:1;
+    }
+
+    #gallery {
+        flex-wrap: wrap;
+    }
+
+    #gallery section {
+        flex:30%;
     }
 }
