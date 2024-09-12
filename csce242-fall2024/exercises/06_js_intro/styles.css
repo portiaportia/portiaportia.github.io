@@ -43,6 +43,10 @@ p {
   border: 2px dotted #04b2d9;
 }
 
+.hide {
+  display:none;
+}
+
 /* Larger Resolutions */
 @media only screen and (min-width: 600px) {
   #content {
