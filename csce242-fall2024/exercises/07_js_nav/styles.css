@@ -1,0 +1,65 @@
+/* Structure */
+
+body {
+  background-color: azure;
+}
+
+#main-header {
+  padding: 10px 10px 0;
+  margin: 0 auto;
+  background-color: bisque;
+}
+
+#main-content {
+  padding: 10px;
+  margin: 0 auto;
+  background-color: honeydew;
+}
+
+#main-footer {
+  padding: 10px;
+  margin: auto;
+  background-color: bisque;
+}
+
+/* Main Navigation */
+#main-nav ul {
+  padding-left: 0px;
+  margin: 0;
+}
+
+#main-nav li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+#main-nav a:hover {
+  border-bottom: 1px solid black;
+}
+
+/* Typography */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Larger Resolutions */
+
+@media only screen and (min-width: 600px) {
+  #main-nav li {
+    flex: 1;
+  }
+  .columns {
+    display: flex;
+  }
+}
