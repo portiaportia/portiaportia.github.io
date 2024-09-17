@@ -23,6 +23,13 @@ body {
 }
 
 /* Main Navigation */
+#toggle-nav div {
+  width:25px;
+  height:2px;
+  background-color:black;
+  margin:6px 0;
+}
+
 #main-nav ul {
   padding-left: 0px;
   margin: 0;
@@ -61,5 +68,9 @@ h1 {
   }
   .columns {
     display: flex;
+  }
+
+  #toggle-nav {
+    display:none;
   }
 }
