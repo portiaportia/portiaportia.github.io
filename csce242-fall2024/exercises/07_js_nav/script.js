@@ -10,3 +10,9 @@ document.getElementById("click-link").onclick = (event) => {
     event.preventDefault(); //don't go to the links destination
     console.log("you clicked a link");
 };
+
+/* Change the ball color */
+document.getElementById("txt-color").onchange = (e) => {
+    //document.getElementById("ball").style.setProperty("background-color", e.target.value);
+    document.querySelector(":root").style.setProperty("--ball-color", e.target.value);
+}
