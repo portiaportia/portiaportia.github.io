@@ -60,6 +60,15 @@ h1 {
   text-align: center;
 }
 
+/* Visibility */
+.hidden {
+  display:none;
+}
+
+.hidden-small {
+  display:none;
+}
+
 /* Larger Resolutions */
 
 @media only screen and (min-width: 600px) {
@@ -72,5 +81,9 @@ h1 {
 
   #toggle-nav {
     display:none;
+  }
+
+  .hidden-small {
+    display:flex;
   }
 }
