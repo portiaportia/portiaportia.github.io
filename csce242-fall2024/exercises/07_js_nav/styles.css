@@ -70,6 +70,7 @@ h1 {
   border-radius:25px;
   background-color:var(--ball-color);
   border:1px solid gray;
+  position:relative;
 }
 
 /* Visibility */

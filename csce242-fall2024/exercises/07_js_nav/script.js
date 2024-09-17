@@ -16,3 +16,10 @@ document.getElementById("txt-color").onchange = (e) => {
     //document.getElementById("ball").style.setProperty("background-color", e.target.value);
     document.querySelector(":root").style.setProperty("--ball-color", e.target.value);
 }
+
+/* Move the ball down when the button is clicked */
+let pos = 0;
+document.getElementById("move-down").onclick = () => {
+    pos++;
+    document.getElementById("ball").style.setProperty("top", pos + "px");
+}
