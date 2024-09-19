@@ -62,4 +62,5 @@ document.getElementById("btn-donate").onclick = () => {
    
     const percentGoal = donation / goal * 100;
     console.log(percentGoal + "%");
+    document.querySelector(":root").style.setProperty("--funds", percentGoal + "%");
 }
