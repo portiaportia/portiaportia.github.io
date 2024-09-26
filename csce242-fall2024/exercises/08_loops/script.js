@@ -6,7 +6,12 @@ document.querySelector("#toggle-nav").onclick = () => {
 };
 
 document.getElementById("btn-loop").onclick = () => {
+  const startNum = parseInt(document.getElementById("txt-first-num").value);
+  const endNum = parseInt(document.getElementById("txt-last-num").value);
   const ul = document.getElementById("numbers");
+
+
+  console.log(`counting from ${startNum} to ${endNum}`);
 
   for(let i = 0; i < 10; i++){
     const li = document.createElement("li");
