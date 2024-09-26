@@ -84,6 +84,20 @@ toyPrices["ken"] = 5.3;
 toyPrices["bike"] = 7.4;
 
 /* Associative array */
+const table = document.querySelector("#list-prices tbody");
+
 for(let toy in toyPrices){
+  let tr = document.createElement("tr");
+  table.append(tr);
+  const td1 = document.createElement("td");
+  td1.innerHTML = toy;
+  tr.append(td1);
+
+  const td2 = document.createElement("td");
+  td2.innerHTML = toyPrices[toy];
+  tr.append(td2);
   
+  tr.onclick = () => {
+    console.log(toy + ": " + toyPrices[toy]);
+  }
 }
