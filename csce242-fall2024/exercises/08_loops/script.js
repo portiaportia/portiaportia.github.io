@@ -10,18 +10,28 @@ document.getElementById("btn-loop").onclick = () => {
   const endNum = parseInt(document.getElementById("txt-last-num").value);
   const ul = document.getElementById("numbers");
 
-
   console.log(`counting from ${startNum} to ${endNum}`);
 
-  for(let i = 0; i < 10; i++){
-    const li = document.createElement("li");
-    li.innerHTML = i+1;
-    ul.append(li);
-    li.setAttribute("id", "li" + i);
-
-    li.onclick = () => {
-      console.log(`Lucky number ${i+1}`);
-    };
+  if(endNum >= startNum){
+    for(let i = startNum; i <= endNum; i++){
+      ul.append(createLi(i));
+    }
+  } else {
+    for(let i = endNum; i >= startNum; i--){
+      ul.append(createLi(i));
+    }
   }
+}
+
+const createLi = (num) => {
+  const li = document.createElement("li");
+  li.innerHTML = num;
+  li.setAttribute("id", "li" + num);
+
+  li.onclick = () => {
+    console.log(`Lucky number ${num}`);
+  };
+
+  return li;
 }
 
