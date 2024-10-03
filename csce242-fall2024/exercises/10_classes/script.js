@@ -30,8 +30,21 @@ class Dog {
         firstColumn.append(this.picture(this.pic));
 
         //create info data and add to second column
+        secondColumn.classList.add("hidden");
         secondColumn.append(this.paragraph("Breed", this.breed));
         secondColumn.append(this.paragraph("Age", this.age));
+
+        //create exand / contract arrow
+        const expCon = document.createElement("a");
+        expCon.href="#";
+        expCon.innerHTML = "&#x2964;";
+        h3.append(expCon);
+
+        expCon.onclick = () => {
+            secondColumn.classList.toggle("hidden");
+        };
+
+
         return section;
     }
 

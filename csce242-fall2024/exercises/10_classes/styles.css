@@ -154,9 +154,9 @@ h1 {
   display: none;
 }
 
-/*.hidden {
+.hidden {
   display: none;
-}*/
+}
 
 .columns section {
   padding: 1%;
