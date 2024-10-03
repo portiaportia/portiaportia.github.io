@@ -11,7 +11,38 @@ class Dog {
     get item(){
         const section = document.createElement("section");
         section.classList.add("dog");
+
+        //create a header
+        const h3 = document.createElement("h3");
+        h3.innerHTML = this.title;
+        section.append(h3);
+
+        //create my columns
+        const columnsDiv = document.createElement("div");
+        columnsDiv.classList.add("columns");
+        section.append(columnsDiv);
+        const firstColumn = document.createElement("div");
+        columnsDiv.append(firstColumn);
+        const secondColumn = document.createElement("div");
+        columnsDiv.append(secondColumn);
+
+        //create image and add to first column
+
+        //create info data and add to second column
+
         return section;
+    }
+
+    picture(info){
+        const pic = document.createElement("img");
+        pic.src = "images/" + info;
+        return pic;
+    }
+
+    paragraph(title, info){
+        const p =document.createElement("p");
+        p.innerHTML = `<strong>${title}</strong>: ${info}`;
+        return p;
     }
 }
 
