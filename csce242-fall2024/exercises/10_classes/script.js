@@ -27,9 +27,11 @@ class Dog {
         columnsDiv.append(secondColumn);
 
         //create image and add to first column
+        firstColumn.append(this.picture(this.pic));
 
         //create info data and add to second column
-
+        secondColumn.append(this.paragraph("Breed", this.breed));
+        secondColumn.append(this.paragraph("Age", this.age));
         return section;
     }
 
