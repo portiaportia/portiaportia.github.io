@@ -7,6 +7,12 @@ class Dog {
         this.size = size;
         this.pic = pic;
     }
+
+    get item(){
+        const section = document.createElement("section");
+        section.classList.add("dog");
+        return section;
+    }
 }
 
 const dogs = [];
@@ -16,5 +22,5 @@ dogs.push(new Dog("Sam", "Golden", "Yellow", 1, "med", "golden-retriever.jpg"));
 dogs.push(new Dog("Gerald","Pit Bull", "White", 3, "lg", "pitt-bull.jpg"));
 
 dogs.forEach((dog)=>{
-    console.log(dog);
+    document.getElementById("dog-list").append(dog.item);
 });
