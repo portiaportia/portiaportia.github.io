@@ -31,6 +31,13 @@ const getShoeSection = (shoe) => {
     const ul = document.createElement("ul");
     section.append(ul);
 
+    //loop through the reviews
+    shoe.reviews.forEach((review)=>{
+        const li = document.createElement("li");
+        li.innerHTML = review;
+        ul.append(li);
+    });
+
     return section;
 }
 
