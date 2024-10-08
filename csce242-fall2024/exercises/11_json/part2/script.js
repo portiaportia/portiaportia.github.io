@@ -21,6 +21,11 @@ const showBreweries = async() => {
         const h3 = document.createElement("h3");
         h3.innerHTML = brewery.name;
         a.append(h3);
+
+        //brewery type
+        const p = document.createElement("p");
+        p.innerHTML = brewery.brewery_type + " brewery";
+        section.append(p);
         
     });
 }
