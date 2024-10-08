@@ -11,8 +11,18 @@ const getShoes = async() => {
 
 const showShoes = async() => {
     const shoes = await getShoes();
-    console.log(shoes);
+    
+    shoes.forEach((shoe)=>{
+        document.getElementById("shoes-section").append(getShoeSection(shoe));
+    });
 };
+
+const getShoeSection = (shoe) => {
+    const section = document.createElement("section");
+
+    return section;
+}
+
 
 //show all of the shoes when the page loads
 showShoes();
