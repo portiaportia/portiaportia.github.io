@@ -20,6 +20,17 @@ const showShoes = async() => {
 const getShoeSection = (shoe) => {
     const section = document.createElement("section");
 
+    const h3 = document.createElement("h3");
+    h3.innerHTML = shoe.name;
+    section.append(h3);
+
+    const brandP = document.createElement("p");
+    brandP.innerHTML = shoe.brand;
+    section.append(brandP);
+
+    const ul = document.createElement("ul");
+    section.append(ul);
+
     return section;
 }
 
