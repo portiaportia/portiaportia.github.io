@@ -1,0 +1,207 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parallax {
+  height: 100%;
+  opacity: 0.65;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* So we can center content inside */
+}
+
+.home {
+  background-image: url("images/jasp-tree.jpg");
+}
+
+.face {
+  background-image: url("images/jasp-house.jpg");
+}
+
+.leash {
+  background-image: url("images/jasp-leash.jpg");
+}
+
+.info-section {
+  background-color: #595a5c;
+  font-size: 36px;
+  flex: 1;
+  color: white;
+}
+
+.info-section section {
+  padding: 0 10px;
+  margin: 0 10px;
+  flex: 1;
+}
+
+img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.info-section img {
+  max-width: 300px;
+}
+
+.text-center p {
+  width: 60%;
+  margin: auto;
+}
+
+/* Main Menu */
+#main-menu {
+  z-index: 1;
+  background-color: #595a5c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#main-menu ul {
+  float: right;
+  overflow: hidden;
+  margin-right: 2%;
+}
+
+#main-menu li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#main-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.info-section form {
+  margin-right: 10px;
+}
+
+/* Form */
+form {
+  margin: 0 2%;
+}
+
+form label {
+  font-size: 0.75em;
+  display: block;
+}
+
+form input:not([type="checkbox"]):not([type="radio"]),
+form textarea,
+form button,
+select {
+  font-size: 0.75em;
+  width: 200px;
+  padding: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 20px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.inline {
+  display: inline;
+}
+
+form textarea {
+  min-height: 200px;
+}
+
+#form-raccoon p {
+  margin-bottom: 1%;
+}
+
+#map {
+  display: block;
+  padding: 5px;
+  max-width: 100%;
+  width: 40%;
+  margin: 0 2%;
+}
+
+/* Typography */
+.parallax h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 50%;
+  font-size: 5em;
+}
+
+.parallax h3 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 25%;
+  font-size: 3em;
+}
+
+.down-arrow {
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
+}
+
+.info-section h3 {
+  text-align: center;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+p {
+  font-size: 0.75em;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Larger resolutions */
+@media only screen and (min-width: 600px) {
+  .columns {
+    display: flex;
+    justify-content: center;
+  }
+  .flex2 {
+    flex: 2;
+  }
+
+  .flex1 {
+    flex: 1;
+  }
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
