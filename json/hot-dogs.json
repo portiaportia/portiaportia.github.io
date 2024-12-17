@@ -3,24 +3,28 @@
        "name":"Chicago Dog",
        "meat":"Beef",
        "toppings":["Tomatoes", "Pickles", "Sport Peppers", "Greem Relish", "Onions", "Mustard", "Celery"],
-       "bun": "Poppy Seed"
+       "bun": "Poppy Seed",
+       "image":"chicago.jpg"
     },
     {
         "name": "BLT",
         "meat":"Beef",
         "toppings":["Baccon", "Lettuce", "Tomato", "Mayo"],
-        "bun":"Traditional"
+        "bun":"Traditional",
+        "image":"blt.jpg"
     },
     {
         "name":"LA Dog",
         "meat":"Beef",
         "toppings":["Baccon", "Chili Cheese Fries", "Grilled Onions"],
-        "bun": "Traditional"
+        "bun": "Traditional",
+        "image":"chili-fries.jpg"
     },
     {
         "name":"Street Polish Dog",
         "meat": "Polish Sausage",
         "toppings":["Grilled Onions", "Mustard", "Sports Peppers"],
-        "bun":"Poppy Seed"
+        "bun":"Poppy Seed",
+        "image":"polish.jpg"
     }
 ]
