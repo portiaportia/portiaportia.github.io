@@ -4,27 +4,31 @@
        "meat":"Beef",
        "toppings":["Tomatoes", "Pickles", "Sport Peppers", "Greem Relish", "Onions", "Mustard", "Celery"],
        "bun": "Poppy Seed",
-       "image":"chicago.jpg"
+       "image":"chicago.jpg",
+       "colors":["#26A59E", "#B71018", "#AE7138"]
     },
     {
         "name": "BLT",
         "meat":"Beef",
         "toppings":["Baccon", "Lettuce", "Tomato", "Mayo"],
         "bun":"Traditional",
-        "image":"blt.jpg"
+        "image":"blt.jpg",
+        "colors":["#29272A", "#4E5801", "#CCAD74"]
     },
     {
         "name":"LA Dog",
         "meat":"Beef",
         "toppings":["Baccon", "Chili Cheese Fries", "Grilled Onions"],
         "bun": "Traditional",
-        "image":"chili-fries.jpg"
+        "image":"chili-fries.jpg",
+        "colors":["#1F0B0D", "#AE1800", "#D38D5C"]
     },
     {
         "name":"Street Polish Dog",
         "meat": "Polish Sausage",
         "toppings":["Grilled Onions", "Mustard", "Sports Peppers"],
         "bun":"Poppy Seed",
-        "image":"polish.jpg"
+        "image":"polish.jpg", 
+        "colors":["#533E13", "#4F2A17", "#E08738"]
     }
 ]
