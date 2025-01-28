@@ -35,6 +35,14 @@ main {
     text-align: center;
 }
 
+.gallery {
+    background:#FFB58A;
+}
+
+.links {
+    background:#CDECEF;
+}
+
 /* Navigation */
 #main-nav ul {
     padding-left:0;
@@ -79,5 +87,17 @@ footer p {
 
     #main-nav li:not(:last-child) {
         border-right: 1px solid white;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
     }
 }
