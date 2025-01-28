@@ -14,7 +14,6 @@ body {
 
 header, footer {
     background:#2B91AD;
-    padding:5px;
     color:white;
 }
 
@@ -30,6 +29,8 @@ main {
 #main-nav li {
     list-style-type: none;  /* remove the bullets */
     background:#FFB58A;
+    text-align: center;
+    border-bottom:1px solid white;
 }
 
 #main-nav a {
@@ -54,5 +55,15 @@ footer p {
 
 /* Larger screens */
 @media only screen and (min-width: 768px) { 
+    .columns {
+        display:flex;
+    }
+
+    #main-nav li {
+        flex:1;
+    }
     
+    #main-nav li:not(:last-child) {
+        border-right: 1px solid white;
+    }
 }
