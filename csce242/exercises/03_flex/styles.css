@@ -21,6 +21,20 @@ main {
     padding:5px;
 }
 
+.idea {
+    padding:5px;
+}
+
+.idea:nth-child( even ) {
+    background:#CDECEF;
+}
+
+.idea-img {
+    margin-top:20px;
+    padding:5px;
+    text-align: center;
+}
+
 /* Navigation */
 #main-nav ul {
     padding-left:0;
@@ -62,7 +76,7 @@ footer p {
     #main-nav li {
         flex:1;
     }
-    
+
     #main-nav li:not(:last-child) {
         border-right: 1px solid white;
     }
