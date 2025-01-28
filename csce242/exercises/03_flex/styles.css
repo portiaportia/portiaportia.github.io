@@ -1,0 +1,58 @@
+/* Structure */
+body {
+    background:#CDECEF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background:white;
+    width:70%;
+    margin:auto; /* center */
+    border-radius:5px;
+    box-shadow: 10px 10px lightblue;
+}
+
+header, footer {
+    background:#2B91AD;
+    padding:5px;
+    color:white;
+}
+
+main {
+    padding:5px;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left:0;
+}
+
+#main-nav li {
+    list-style-type: none;  /* remove the bullets */
+    background:#FFB58A;
+}
+
+#main-nav a {
+    color:white;
+    text-decoration: none;  /* remove the underlines */
+    border-bottom:1px solid transparent;
+}
+
+#main-nav a:hover {
+    color:crimson;
+    border-bottom:1px solid white;
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align:center;
+}
+
+/* Larger screens */
+@media only screen and (min-width: 768px) { 
+    
+}
