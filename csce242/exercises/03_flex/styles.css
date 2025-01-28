@@ -40,7 +40,12 @@ main {
 }
 
 .links {
-    background:#CDECEF;
+    background:#D3DDEA;
+}
+
+.tile, .node {
+    text-align:center;
+    padding:5px;
 }
 
 /* Navigation */
@@ -89,6 +94,11 @@ footer p {
         border-right: 1px solid white;
     }
 
+    .gallery {
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
     .one {
         flex:1;
     }
@@ -99,5 +109,13 @@ footer p {
 
     .three {
         flex:3;
+    }
+
+    .tile {
+        flex-basis:45%;
+    }
+
+    .node {
+        flex-basis:30%;
     }
 }
