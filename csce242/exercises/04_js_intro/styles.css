@@ -1,6 +1,8 @@
 /* Structure */
 :root {
     --main-background-color:#CDECEF;
+    --primary-color:#2B91AD;
+    --gallery-color:#FFB58A;
 }
 
 body {
@@ -17,7 +19,7 @@ body {
 }
 
 header, footer {
-    background:#2B91AD;
+    background:var(--primary-color);
     color:white;
     position:relative;
     padding:20px 0;
@@ -37,7 +39,7 @@ main {
 }
 
 .idea:nth-child( even ) {
-    background:#CDECEF;
+    background:var(--main-background-color);
 }
 
 .idea-img {
@@ -49,12 +51,12 @@ main {
 
 .idea-img p {
     padding:5px;
-    background:#2B91AD;
+    background:var(--primary-color);
     color:white;
 }
 
 .gallery {
-    background:#FFB58A;
+    background:var(--gallery-color);
 }
 
 .links {
@@ -130,7 +132,7 @@ main {
 }
 
 #main-nav li {
-    background:#FFB58A;
+    background:var(--gallery-color);
 }
 
 #sub-nav li {
