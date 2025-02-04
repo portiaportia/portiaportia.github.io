@@ -68,6 +68,10 @@ main {
     padding:5px;
 }
 
+.sad {
+    color:purple;
+}
+
 /* Animations */
 #animation-fun {
     background:#a0ccd8;
