@@ -31,3 +31,10 @@ document.getElementById("btn-sad").onclick = () => {
 document.getElementById("btn-clear").onclick = () => {
     document.getElementById("display").classList.add("hidden");
 };
+
+//key down
+document.getElementById("txt-emotion").onkeyup = (event) => {
+    //const emotion = document.getElementById("txt-emotion").value;
+    document.getElementById("emotional-message").innerHTML = 
+    "You are feeling " + event.currentTarget.value;
+}
