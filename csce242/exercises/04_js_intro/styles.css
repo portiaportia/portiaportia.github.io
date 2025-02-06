@@ -68,8 +68,16 @@ main {
     padding:5px;
 }
 
+.happy {
+    color:pink;
+}
+
 .sad {
     color:purple;
+}
+
+.hidden {
+    display:none;
 }
 
 /* Animations */
