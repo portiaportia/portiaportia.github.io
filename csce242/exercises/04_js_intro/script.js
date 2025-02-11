@@ -38,3 +38,5 @@ document.getElementById("txt-emotion").onkeyup = (event) => {
     document.getElementById("emotional-message").innerHTML = 
     "You are feeling " + event.currentTarget.value;
 }
+
+//toggling the nav
