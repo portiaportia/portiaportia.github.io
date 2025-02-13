@@ -95,7 +95,6 @@ main {
 
 #ball-area {
     position:relative;
-    height:200px;
 }
 
 #ball, #circle {
@@ -111,6 +110,19 @@ main {
     animation-name: fun;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+}
+
+/* Donations */
+#txt-donation {
+    max-width:40%;
+}
+
+#thermometer {
+    width:25%;
+    height:200px;
+    background:white;
+    margin-right:10%;
+    border:2px solid var(--primary-color);
 }
 
 @keyframes fun {
