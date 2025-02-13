@@ -91,6 +91,23 @@ let donations = 0;
 
 document.getElementById("goal-display").innerHTML = `Goal $${GOAL}`;
 
+document.getElementById("btn-add-donation").onclick = () => {
+    //validate donation amount
+    const donation = document.getElementById("txt-donation").value;
+    document.getElementById("donation-error").classList.add("hidden");
 
-//when add clicked if donation is negative display the error
-//otherwise update the donations and display in console;
+    if(isNaN(donation) ||donation <= 0){
+        document.getElementById("donation-error").classList.remove("hidden");
+        return;
+    }
+
+    //update donation
+    donations += donation;
+    donationPercent = donations / GOAL * 100;
+
+    //show donation message.
+    document.getElementById("donation-message").innerHTML = `$${GOAL - donations} to go!`;
+
+    //update thermometer
+    document.getElementById("thermometer").style.setProperty("--donation-percent", donationPercent + "%");
+};

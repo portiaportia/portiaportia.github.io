@@ -4,6 +4,7 @@
     --primary-color:#2B91AD;
     --gallery-color:#FFB58A;
     --circle-color: black;
+    --donation-percent: 0%;
 }
 
 body {
@@ -120,9 +121,9 @@ main {
 #thermometer {
     width:25%;
     height:200px;
-    background:white;
     margin-right:10%;
     border:2px solid var(--primary-color);
+    background:linear-gradient(0deg, red 0% var(--donation-percent), white var(--donation-percent) 100%);
 }
 
 .error {
