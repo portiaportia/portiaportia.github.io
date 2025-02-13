@@ -78,6 +78,8 @@ document.getElementById("btn-up").onclick = () => {
     changeCirclePos(-10);
 }
 
-document.getElementById("btn-pick-color").onclick = () => {
-    console.log("color");
+document.getElementById("btn-pick-color").onchange = (event) => {
+    const color = event.currentTarget.value;
+    //document.getElementById("circle").style.setProperty("background", color);
+    document.getElementById("circle").style.setProperty("--circle-color", color);
 }

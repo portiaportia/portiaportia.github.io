@@ -3,6 +3,7 @@
     --main-background-color:#CDECEF;
     --primary-color:#2B91AD;
     --gallery-color:#FFB58A;
+    --circle-color: black;
 }
 
 body {
@@ -100,7 +101,7 @@ main {
 #ball, #circle {
     height: 30px;
     width:30px;
-    background:blue;
+    background:var(--circle-color);
     border-radius:50px;
     position:relative;
     left:35%;
