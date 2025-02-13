@@ -92,13 +92,22 @@ main {
     position:relative;
 }
 
-#ball {
+#ball-area {
+    position:relative;
+    height:200px;
+}
+
+#ball, #circle {
     height: 30px;
     width:30px;
     background:blue;
     border-radius:50px;
-    animation-name: fun;
     position:relative;
+    left:35%;
+}
+
+#ball {
+    animation-name: fun;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }

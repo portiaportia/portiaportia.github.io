@@ -63,3 +63,21 @@ document.getElementById("btn-choose-color").onclick = () => {
     document.getElementById("color-message").innerHTML = 
     `You chose ${color}. You are feeling ${mood}.`
 };
+
+let pos = 0;
+const changeCirclePos = (increment) => {
+    pos += increment;
+    document.getElementById("circle").style.setProperty("top", pos + "px");
+};
+
+document.getElementById("btn-down").onclick = () => {
+    changeCirclePos(10);
+}
+
+document.getElementById("btn-up").onclick = () => {
+    changeCirclePos(-10);
+}
+
+document.getElementById("btn-pick-color").onclick = () => {
+    console.log("color");
+}
