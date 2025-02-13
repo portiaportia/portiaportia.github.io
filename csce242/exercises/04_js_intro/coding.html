@@ -77,13 +77,14 @@
                     <div id="circle"></div>
                 </section>
                 <section>
-                    <h3>Goal $1000</h3>
+                    <h3 id="goal-display"></h3>
                     <p>
                         <label for="txt-donation">Enter Donation:</label>
                     </p>
                     <p>
                         <input type="number" id="txt-donation">
                         <button id="btn-add-donation">Add</button>
+                        <span id="donation-error" class="error hidden">* Invalid</span>
                     </p>
                     <div class="columns">
                         <div id="thermometer"></div>

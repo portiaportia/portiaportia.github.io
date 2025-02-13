@@ -64,6 +64,7 @@ document.getElementById("btn-choose-color").onclick = () => {
     `You chose ${color}. You are feeling ${mood}.`
 };
 
+/* moving the circle */
 let pos = 0;
 const changeCirclePos = (increment) => {
     pos += increment;
@@ -83,3 +84,13 @@ document.getElementById("btn-pick-color").onchange = (event) => {
     //document.getElementById("circle").style.setProperty("background", color);
     document.getElementById("circle").style.setProperty("--circle-color", color);
 }
+
+/* Donations thermometer */
+const GOAL = 1000;
+let donations = 0;
+
+document.getElementById("goal-display").innerHTML = `Goal $${GOAL}`;
+
+
+//when add clicked if donation is negative display the error
+//otherwise update the donations and display in console;

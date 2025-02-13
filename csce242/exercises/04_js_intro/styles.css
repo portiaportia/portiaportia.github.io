@@ -125,6 +125,10 @@ main {
     border:2px solid var(--primary-color);
 }
 
+.error {
+    color:darkred;
+}
+
 @keyframes fun {
     0% {
         background-color: red;
