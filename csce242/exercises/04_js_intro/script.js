@@ -102,11 +102,16 @@ document.getElementById("btn-add-donation").onclick = () => {
     }
 
     //update donation
-    donations += donation;
+    donations += parseFloat(donation);
     donationPercent = donations / GOAL * 100;
 
-    //show donation message.
+    if(donations >= GOAL){
+        document.getElementById("donation-message").innerHTML = `Goal Reached!`;
+        donationPercent = 100;
+    } else {
+        //show donation message.
     document.getElementById("donation-message").innerHTML = `$${GOAL - donations} to go!`;
+    }
 
     //update thermometer
     document.getElementById("thermometer").style.setProperty("--donation-percent", donationPercent + "%");
