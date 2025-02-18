@@ -1,6 +1,7 @@
 document.getElementById("btn-display").onclick = () => {
     const startNum = document.getElementById("txt-start").value;
     const endNum = document.getElementById("txt-end").value;
+    const displayArea = document.getElementById("start-end-display");
     const errorDisplay = document.getElementById("error-num-order");
     errorDisplay.innerHTML = "";    //clear out any previous errors
 
