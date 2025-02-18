@@ -19,7 +19,7 @@ document.getElementById("btn-display").onclick = () => {
         displayArea.append(li);
         //attach event to onclick li
         li.onclick = () => {
-            console.log("I clicked one!");
+            favMessageP.innerHTML = `You clicked ${i}.`
         }
     }
 }
