@@ -23,3 +23,16 @@ document.getElementById("btn-display").onclick = () => {
         }
     }
 }
+
+//let's loop through the numbers and display a count
+document.querySelector("#btn-count").onclick = (event) => {
+
+    //start the counter
+    if(event.currentTarget.innerHTML.toLowerCase() == "start"){
+        event.currentTarget.innerHTML = "Stop";
+    } 
+    //stop the counter
+    else {
+        event.currentTarget.innerHTML = "Start";
+    }
+};
