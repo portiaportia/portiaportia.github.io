@@ -67,8 +67,13 @@ document.querySelector("#btn-show-toys").onclick = (event) => {
     }
     */
 
+    const ul = document.createElement("ul");
+    document.getElementById("display-toys").append(ul);
+
     toys.forEach((toy, i)=>{
-        console.log(`${i+1}. ${toy}`);
+        const li = document.createElement("li");
+        ul.append(li);
+        li.innerHTML = `${i+1}. ${toy}`;
     });
 
 
