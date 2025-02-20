@@ -80,9 +80,20 @@ document.querySelector("#btn-show-toys").onclick = (event) => {
 //loop through an associative array
 document.getElementById("btn-show-toy-desc").onclick = () => {
     const toys = [];
-    toys["ball", "An item to throw"];
-    toys["doll", "An item to love"];
-    toys["rope", "An item to exercise with"];
-    toys["car", "An item to push around"];
-    toys["lego", "An item to build with"];
+    toys["ball"] = "An item to throw";
+    toys["doll"] = "An item to love";
+    toys["rope"] = "An item to exercise with";
+    toys["car"] = "An item to push around";
+    toys["lego"] = "An item to build with";
+    const section = document.getElementById("display-toy-descs");
+
+    for(let toy in toys){
+        const p = document.createElement("p");
+        section.append(p);
+        p.innerHTML = `${toy}: ${toys[toy]}`;
+        p.onclick = () => {
+            document.getElementById("toy-message").innerHTML = 
+            `Best ${toy} Ever. ${toys[toy]}`;
+        };
+    }
 };
