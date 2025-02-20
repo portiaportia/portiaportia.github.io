@@ -45,3 +45,10 @@ document.querySelector("#btn-count").onclick = (event) => {
         clearInterval(updateCount);
     }
 };
+
+document.querySelector("#btn-reset-count").onclick = () => {
+    count = 0;
+    clearInterval(updateCount);
+    document.querySelector("#btn-count").innerHTML = "Start";
+    document.querySelector("#count-display").innerHTML = "";
+}
