@@ -46,9 +46,30 @@ document.querySelector("#btn-count").onclick = (event) => {
     }
 };
 
+//reset the counter
 document.querySelector("#btn-reset-count").onclick = () => {
     count = 0;
     clearInterval(updateCount);
     document.querySelector("#btn-count").innerHTML = "Start";
     document.querySelector("#count-display").innerHTML = "";
+}
+
+//display an array of toys
+document.querySelector("#btn-show-toys").onclick = (event) => {
+    const toys = ["ball", "skipping rope", "doll", "mini car", "elmo"];
+
+    event.currentTarget.disabled = true;    //can only click this button once
+
+    //loop through the toys
+    /*
+    for(let i = 0; i < toys.length; i++){
+        console.log(toys[i]);
+    }
+    */
+
+    toys.forEach((toy, i)=>{
+        console.log(`${i+1}. ${toy}`);
+    });
+
+
 }
