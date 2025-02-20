@@ -24,15 +24,24 @@ document.getElementById("btn-display").onclick = () => {
     }
 }
 
+let count = 0;
+let updateCount;
+
 //let's loop through the numbers and display a count
 document.querySelector("#btn-count").onclick = (event) => {
 
     //start the counter
     if(event.currentTarget.innerHTML.toLowerCase() == "start"){
         event.currentTarget.innerHTML = "Stop";
+
+        updateCount = setInterval(()=>{
+            count++;
+            document.querySelector("#count-display").innerHTML = count;
+        },300);
     } 
     //stop the counter
     else {
         event.currentTarget.innerHTML = "Start";
+        clearInterval(updateCount);
     }
 };
