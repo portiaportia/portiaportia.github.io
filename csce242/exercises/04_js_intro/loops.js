@@ -79,5 +79,10 @@ document.querySelector("#btn-show-toys").onclick = (event) => {
 
 //loop through an associative array
 document.getElementById("btn-show-toy-desc").onclick = () => {
-    console.log("button clicked");
+    const toys = [];
+    toys["ball", "An item to throw"];
+    toys["doll", "An item to love"];
+    toys["rope", "An item to exercise with"];
+    toys["car", "An item to push around"];
+    toys["lego", "An item to build with"];
 };
