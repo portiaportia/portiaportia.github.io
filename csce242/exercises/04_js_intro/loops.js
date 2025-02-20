@@ -75,6 +75,9 @@ document.querySelector("#btn-show-toys").onclick = (event) => {
         ul.append(li);
         li.innerHTML = `${i+1}. ${toy}`;
     });
-
-
 }
+
+//loop through an associative array
+document.getElementById("btn-show-toy-desc").onclick = () => {
+    console.log("button clicked");
+};
