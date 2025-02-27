@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>Tab Name</title>
     </head>
     <body>
@@ -145,6 +146,28 @@
             <footer>
                 <p>&copy; myname</p>
             </footer>
+
+            <div id="popup" class="w3-modal">
+                <div class="w3-modal-content">
+              
+                  <header class="w3-container w3-teal">
+                    <span onclick="document.getElementById('popup').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                    <h2></h2>
+                  </header>
+              
+                  <div class="w3-container">
+                    <p>Some text..</p>
+                    <img src="">
+                  </div>
+              
+                  <footer class="w3-container w3-teal">
+                    <p>Modal Footer</p>
+                  </footer>
+              
+                </div>
+              </div>
+              
         </div>
         <script src="js/slideshow.js"></script>
         <script src="js/tile-modal.js"></script>
