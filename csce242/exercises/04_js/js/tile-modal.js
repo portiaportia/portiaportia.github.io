@@ -1,5 +1,7 @@
 document.querySelectorAll(".gallery section").forEach((tile)=>{
     tile.onclick = () => {
-        console.log("Hi");
+        const label = tile.querySelector("h4").innerHTML;
+        const imgSRC = tile.querySelector("img").src;
+        console.log(label);
     }
 });
