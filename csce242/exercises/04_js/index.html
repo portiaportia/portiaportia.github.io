@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>Tab Name</title>
     </head>
     <body>
@@ -33,6 +34,13 @@
                 </nav>
             </header>
             <main>
+                <section id="slideshow">
+                    <img src="images/slideshow/boat.jpg">
+                    <img src="images/slideshow/hill.jpg" class="hidden">
+                    <img src="images/slideshow/nature-path.jpg" class="hidden">
+                    <img src="images/slideshow/water-mountains.jpg" class="hidden">
+                    <img src="images/slideshow/waterfall.jpg" class="hidden">
+                </section>
                 <section id="big-ideas">
                     <h2>Big Ideas</h2>
                     <section class="idea columns">
@@ -67,22 +75,22 @@
                 <div class="columns">
                     <section class="two gallery columns">
                         <section class="tile">
-                            <h4>Title</h4>
+                            <h4>Mouse</h4>
                             <img src="https://picsum.photos/100">
                             <p>Hi Portia</p>
                         </section>
                         <section class="tile">
-                            <h4>Title</h4>
+                            <h4>Bunny</h4>
                             <img src="https://picsum.photos/100">
                             <p>Hi Portia</p>
                         </section>
                         <section class="tile">
-                            <h4>Title</h4>
+                            <h4>Funny</h4>
                             <img src="https://picsum.photos/100">
                             <p>Hi Portia</p>
                         </section>
                         <section class="tile">
-                            <h4>Title</h4>
+                            <h4>Phone</h4>
                             <img src="https://picsum.photos/100">
                             <p>Hi Portia</p>
                         </section>
@@ -99,32 +107,32 @@
                     </section>
                     <section class="three gallery columns">
                         <section class="node">
-                            <h4>Title</h4>
+                            <h4>Car</h4>
                             <img src="https://picsum.photos/100">
                             <p>Hi Portia</p>
                         </section>
                         <section class="node">
-                            <h4>Title</h4>
+                            <h4>Dog</h4>
                             <img src="https://picsum.photos/100">
                             <p>Hi Portia</p>
                         </section>
                         <section class="node">
-                            <h4>Title</h4>
+                            <h4>Cat</h4>
                             <img src="https://picsum.photos/100">
                             <p>Hi Portia</p>
                         </section>
                         <section class="node">
-                            <h4>Title</h4>
+                            <h4>Bike</h4>
                             <img src="https://picsum.photos/100">
                             <p>Hi Portia</p>
                         </section>
                         <section class="node">
-                            <h4>Title</h4>
+                            <h4>Exercise</h4>
                             <img src="https://picsum.photos/100">
                             <p>Hi Portia</p>
                         </section>
                         <section class="node">
-                            <h4>Title</h4>
+                            <h4>Tree</h4>
                             <img src="https://picsum.photos/100">
                             <p>Hi Portia</p>
                         </section>
@@ -138,7 +146,30 @@
             <footer>
                 <p>&copy; myname</p>
             </footer>
+
+            <div id="popup" class="w3-modal">
+                <div class="w3-modal-content">
+              
+                  <header class="w3-container w3-teal">
+                    <span onclick="document.getElementById('popup').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                    <h2></h2>
+                  </header>
+              
+                  <div class="w3-container">
+                    <p>Some text..</p>
+                    <img src="">
+                  </div>
+              
+                  <footer class="w3-container w3-teal">
+                    <p>Modal Footer</p>
+                  </footer>
+              
+                </div>
+              </div>
+              
         </div>
         <script src="js/slideshow.js"></script>
+        <script src="js/tile-modal.js"></script>
     </body>
 </html>
