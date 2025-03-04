@@ -45,7 +45,7 @@ const showBreweries = async() => {
         section.append(p);
 
         const iframe = document.createElement("iframe");
-        iframe.src= await getMap(brewery.longitude, brewery.latitude);
+        iframe.src= await getMap(brewery.latitude, brewery.longitude);
         section.append(iframe);
 
     });
