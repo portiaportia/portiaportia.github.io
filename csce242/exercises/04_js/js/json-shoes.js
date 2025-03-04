@@ -11,7 +11,11 @@ const getShoes = async() => {
 
 const showShoes = async() => {
     const shoes = await getShoes();
-    console.log(shoes);
+    const shoesSection = document.getElementById("shoes-section");
+    
+    shoes.forEach((shoe)=>{
+        shoesSection.append(shoe.name);
+    });
 };
 
 showShoes();
