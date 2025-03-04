@@ -14,7 +14,15 @@ const showShoes = async() => {
     const shoesSection = document.getElementById("shoes-section");
     
     shoes.forEach((shoe)=>{
-        shoesSection.append(shoe.name);
+        const section = document.createElement("section");
+        shoesSection.append(section);
+        const h3 = document.createElement("h3");
+        h3.innerHTML = shoe.name;
+        section.append(h3);
+
+        const ul = document.createElement("ul");
+        
+
     });
 };
 
