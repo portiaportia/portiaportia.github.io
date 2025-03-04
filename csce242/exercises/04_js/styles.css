@@ -268,6 +268,13 @@ footer p {
     #shoes-section section {
         max-width:100% !important;
     }
+
+    .brewery {
+        background-color:var(--gallery-color);
+        padding:10px;
+        border-radius: 5px;
+        margin:5px;
+    }
 }
 /* Larger screens */
 @media only screen and (min-width: 1200px) { 
