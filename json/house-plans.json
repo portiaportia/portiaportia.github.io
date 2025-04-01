@@ -1,5 +1,6 @@
 [
     {
+        "_id":1,
         "name": "Farmhouse",
         "size": 2000,
         "bedrooms": 3,
@@ -21,6 +22,7 @@
         ]
     },
     {
+        "_id":2,
         "name": "Mountain House",
         "size": 1700,
         "bedrooms": 3,
@@ -46,6 +48,7 @@
         ]
     },
     {
+        "_id":3,
         "name": "Lake House",
         "size": 3000,
         "bedrooms": 4,
