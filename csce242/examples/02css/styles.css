@@ -1,6 +1,7 @@
 /* Structure */
 body {
-    background:white;
+    background:url(images/background.jpg);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #content {
@@ -12,7 +13,7 @@ body {
 }
 
 header, footer {
-    background-color:aquamarine;
+    background-color:#726E03;
     border: 1px solid #abc;
     padding:5px;
     margin:10px 0;  /*10px top and bottom, 0px right and left */
@@ -22,6 +23,18 @@ header, footer {
     padding:5px;
     border: 1px solid #abc;
     background-color:ivory;
+}
+
+/* Picture Sections */
+.giraffe-pic {
+    background-color:#726E03;
+    text-align: center;
+    width:50%;
+    padding:20px 5px 10px;
+    border-radius: 5px;
+    margin:10px auto 20px;
+    color:white;
+    box-shadow: 5px 5px gray;
 }
 
 /* Navigation */
