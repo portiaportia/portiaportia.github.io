@@ -1,0 +1,53 @@
+/* Structure */
+body {
+    background:white;
+}
+
+#content {
+    width:80%;
+    margin:auto;    /* center */
+    /*padding:10px 20px; */
+    /*padding:20px 40px 10px 5px;*/
+    /* padding-left:20px; */
+}
+
+header, footer {
+    background-color:aquamarine;
+    border: 1px solid #abc;
+    padding:5px;
+    margin:10px 0;  /*10px top and bottom, 0px right and left */
+}
+
+#main-content {
+    padding:5px;
+    border: 1px solid #abc;
+    background-color:ivory;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding-left:0;
+}
+
+#main-nav li {
+    display:inline-block;
+}
+
+#main-nav a {
+    text-decoration: none;
+    background-color:black;
+    color:white;
+    padding:5px;
+    border-radius:5px;  /* rounded corners */
+}
+
+#main-nav a:hover {
+    background-color:white;
+    color:black;
+}
+
+/* Typography */
+header h1, header h2, footer p {
+    text-align:center;
+}
