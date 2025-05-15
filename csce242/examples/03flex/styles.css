@@ -81,6 +81,15 @@ h1, h2 {
         margin:0 10px 10px;
     }
 
+    #gallery {
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+
+    #gallery section {
+        max-width:20%;
+    }
+
     .one {
         flex:1;
     }
