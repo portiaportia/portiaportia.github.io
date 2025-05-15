@@ -15,7 +15,7 @@ header, footer, .main-area {
     border-radius: 5px;
 }
 
-#side-navigation {
+aside {
     background:#F2D5C4;
     padding:5px;
     border-radius: 5px;
@@ -33,6 +33,14 @@ header, footer, .main-area {
 .pic-area img {
     display:block;
     margin:auto;
+}
+
+/* Gallery */
+#gallery section {
+    background-color: #D9A38F;
+    color:white;
+    border-radius: 5px;
+    padding:5px;
 }
 
 /* Images */
