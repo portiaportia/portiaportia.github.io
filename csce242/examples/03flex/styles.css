@@ -1,35 +1,68 @@
 /* Structure */
 body {
     font-family: Arial, Helvetica, sans-serif;
-
+    background-color:#84B1D9;
 }
+
+#content {
+   
+}
+
+header, footer, #main-content {
+    padding:5px;
+    margin:10px 0px;
+    background:white;
+    border-radius: 5px;
+}
+
+.pic-area {
+    background:#163359;
+    padding:5px;
+    border-radius:5px;
+    margin:10px auto;
+    color:white;
+}
+
+/* Turn the image into a block level element so we can center it */
+.pic-area img {
+    display:block;
+    margin:auto;
+}
+
 
 /* Navigation */
 
 
 
 /* Typography */
-
+h1, h2 {
+    text-align: center;
+}
 
 
 
 /* Media Queries */
 /* Portrait Tablet */
 @media screen and (min-width: 600px) {
-
+    
 }
 
 /* Landscape Tablet */
 @media screen and (min-width: 768px) {
-
+    header, footer, #main-content {
+        width:85%;
+        margin:10px auto;
+    }
 }
 
 /* Labtop / Desktop */
 @media screen and (min-width: 992px) {
-
+    header, footer, #main-content {
+        width:70%;
+    }
 }
 
 /* Extra Large Devices */
-@media screen and (min-width: 1200px) {
-
+@media screen and (min-width: 1600px) {
+    
 }
