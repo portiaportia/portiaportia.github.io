@@ -29,9 +29,13 @@ header, footer, #main-content {
     margin:auto;
 }
 
+/* Images */
+img {
+    max-width:100%;
+}
+
 
 /* Navigation */
-
 
 
 /* Typography */
@@ -52,6 +56,15 @@ h1, h2 {
     header, footer, #main-content {
         width:85%;
         margin:10px auto;
+    }
+
+    /* Columns */
+    .columns {
+        display:flex;
+    }
+
+    .pic-area {
+        margin:0 10px 10px;
     }
 }
 
