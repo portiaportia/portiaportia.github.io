@@ -1,0 +1,35 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Navigation */
+
+
+
+/* Typography */
+
+
+
+
+/* Media Queries */
+/* Portrait Tablet */
+@media screen and (min-width: 600px) {
+
+}
+
+/* Landscape Tablet */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Labtop / Desktop */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Extra Large Devices */
+@media screen and (min-width: 1200px) {
+
+}
