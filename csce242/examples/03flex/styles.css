@@ -8,7 +8,7 @@ body {
    
 }
 
-header, footer, #side-and-main {
+header, footer, .main-area {
     padding:5px;
     margin:10px 0px;
     background:white;
@@ -59,7 +59,7 @@ h1, h2 {
 
 /* Landscape Tablet */
 @media screen and (min-width: 768px) {
-    header, footer, #side-and-main {
+    header, footer, .main-area {
         width:85%;
         margin:10px auto;
     }
@@ -93,7 +93,7 @@ h1, h2 {
 
 /* Labtop / Desktop */
 @media screen and (min-width: 992px) {
-    header, footer, #side-and-main {
+    header, footer, .main-area {
         width:70%;
     }
 }
