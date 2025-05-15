@@ -15,6 +15,12 @@ header, footer, #side-and-main {
     border-radius: 5px;
 }
 
+#side-navigation {
+    background:#F2D5C4;
+    padding:5px;
+    border-radius: 5px;
+}
+
 .pic-area {
     background:#163359;
     padding:5px;
@@ -66,6 +72,23 @@ h1, h2 {
     .pic-area {
         margin:0 10px 10px;
     }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
 }
 
 /* Labtop / Desktop */
