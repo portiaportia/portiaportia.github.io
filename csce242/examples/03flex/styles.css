@@ -48,6 +48,24 @@ img {
     max-width:100%;
 }
 
+header {
+    /* doesn't change the look pease we didn't use top, left....*/
+    position:relative;
+    min-height: 150px;
+}
+
+#logo {
+    border:2px solid gold;
+    position:absolute;
+    left:50px;
+}
+
+#sub-header {
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+
 
 /* Navigation */
 
