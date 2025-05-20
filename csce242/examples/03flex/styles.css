@@ -8,11 +8,55 @@ body {
    
 }
 
-header, footer, .main-area {
+header, .main-area {
     padding:5px;
     margin:10px 0px;
     background:white;
     border-radius: 5px;
+}
+
+#footer-main {
+    padding:0px;
+    margin:10px auto;
+    background:white;
+    border-radius: 5px;
+    position:relative;
+}
+
+#footer-banner {
+    border-radius:5px;
+    padding:5px;
+    color:white;
+}
+
+#footer-banner p {
+    position:absolute;
+    top:0;
+    right:5px;
+}
+
+#footer-info ul {
+    padding-left:0;
+    background:lightblue;
+    padding:10px 0;
+    margin:10px;
+}
+
+#footer-info li {
+    list-style-type: none;
+    text-align:center;
+}
+
+#footer-info2 section {
+    padding:5px;
+    margin:10px;
+    background:#abc;
+}
+
+#footer-images section {
+    flex:1;
+    margin:1%;
+    text-align: center;
 }
 
 aside {
@@ -64,6 +108,10 @@ header {
     position:absolute;
     right:10px;
     top:10px;
+}
+
+#footer-banner {
+    background:#163359;
 }
 
 
