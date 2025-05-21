@@ -60,6 +60,49 @@ nav ul {
     color:black;
 }
 
+/* Animations */
+#item {
+    width:50px;
+    height:50px;
+    background:navy;
+    border-radius:25px;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes bounce {
+    0% {
+        top:0px;
+        background:navy;
+    }
+    50% {
+        top:-200px;
+        background:green;
+    }
+    100% {
+        top:0px;
+        background:red;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        background:navy;
+    }
+    25% {
+        background:green;
+    }
+    50% {
+        background:yellow;
+    }
+    100% {
+        background:red;
+    }
+}
+
 /* Typography */
 header h1, header h2, footer p {
     text-align:center;
