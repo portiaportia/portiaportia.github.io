@@ -23,11 +23,16 @@ document.getElementById("btn-write").onclick = (event) => {
 
 document.getElementById("btn-start").onclick = (event) => {
     event.target.innerHTML = "Started";
-    document.getElementById("startstopp").innerHTML = "Starting";
+    document.getElementById("startstopp").innerHTML += "<strong>Starting</strong>";
 }
 
 document.getElementById("btn-end").onclick = (event) => {
     event.target.innerHTML = "Ended";
-    document.getElementById("startstopp").innerHTML = "Ending";
+    document.getElementById("startstopp").innerHTML += "Ending";
+}
+
+document.getElementById("txt-name").onkeyup = (event) => {
+    const userName = event.target.value;
+    document.getElementById("welcomep").innerHTML = `Welcome ${userName}!`;
 }
 
