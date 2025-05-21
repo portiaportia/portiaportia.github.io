@@ -1,0 +1,187 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#84B1D9;
+}
+
+#content {
+   
+}
+
+header, .main-area {
+    padding:5px;
+    margin:10px 0px;
+    background:white;
+    border-radius: 5px;
+}
+
+#footer-main {
+    padding:0px;
+    margin:10px auto;
+    background:white;
+    border-radius: 5px;
+    position:relative;
+}
+
+#footer-banner {
+    border-radius:5px;
+    padding:5px;
+    color:white;
+}
+
+#footer-banner p {
+    position:absolute;
+    top:0;
+    right:5px;
+}
+
+#footer-info ul {
+    padding-left:0;
+    background:lightblue;
+    padding:10px 0;
+    margin:10px;
+}
+
+#footer-info li {
+    list-style-type: none;
+    text-align:center;
+}
+
+#footer-info2 section {
+    padding:5px;
+    margin:10px;
+    background:#abc;
+}
+
+#footer-images section {
+    flex:1;
+    margin:1%;
+    text-align: center;
+}
+
+aside {
+    background:#F2D5C4;
+    padding:5px;
+    border-radius: 5px;
+}
+
+.pic-area {
+    background:#163359;
+    padding:5px;
+    border-radius:5px;
+    margin:10px auto;
+    color:white;
+}
+
+/* Turn the image into a block level element so we can center it */
+.pic-area img {
+    display:block;
+    margin:auto;
+}
+
+/* Gallery */
+#gallery section {
+    background-color: #D9A38F;
+    color:white;
+    border-radius: 5px;
+    padding:5px;
+}
+
+/* Images */
+img {
+    max-width:100%;
+}
+
+header {
+    /* doesn't change the look pease we didn't use top, left....*/
+    position:relative;
+    min-height: 150px;
+}
+
+#logo {
+    border:2px solid gold;
+    position:absolute;
+    left:50px;
+}
+
+#sub-header {
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+
+#footer-banner {
+    background:#163359;
+}
+
+
+/* Navigation */
+
+
+/* Typography */
+h1, h2 {
+    text-align: center;
+}
+
+
+
+/* Media Queries */
+/* Portrait Tablet */
+@media screen and (min-width: 600px) {
+    
+}
+
+/* Landscape Tablet */
+@media screen and (min-width: 768px) {
+    header, footer, .main-area {
+        width:85%;
+        margin:10px auto;
+    }
+
+    /* Columns */
+    .columns {
+        display:flex;
+    }
+
+    .pic-area {
+        margin:0 10px 10px;
+    }
+
+    #gallery {
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+
+    #gallery section {
+        max-width:20%;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+}
+
+/* Labtop / Desktop */
+@media screen and (min-width: 992px) {
+    header, footer, .main-area {
+        width:70%;
+    }
+}
+
+/* Extra Large Devices */
+@media screen and (min-width: 1600px) {
+    
+}

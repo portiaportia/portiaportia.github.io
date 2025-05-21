@@ -1,0 +1,191 @@
+/* Structure */
+body {
+    background:#CDECEF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background:white;
+    width:70%;
+    margin:auto; /* center */
+    border-radius:5px;
+    box-shadow: 10px 10px lightblue;
+}
+
+header, footer {
+    background:#2B91AD;
+    color:white;
+    position:relative;
+    padding:20px 0;
+}
+
+header {
+   /* position:fixed;
+    width:70%;*/
+}
+
+main {
+    padding:5px;
+}
+
+.idea {
+    padding:5px;
+}
+
+.idea:nth-child( even ) {
+    background:#CDECEF;
+}
+
+.idea-img {
+    margin-top:20px;
+    padding:5px;
+    text-align: center;
+    position:relative;
+}
+
+.idea-img p {
+    padding:5px;
+    background:#2B91AD;
+    color:white;
+}
+
+.gallery {
+    background:#FFB58A;
+}
+
+.links {
+    background:#D3DDEA;
+}
+
+.tile, .node {
+    text-align:center;
+    padding:5px;
+}
+
+/* Animations */
+#animation-fun {
+    background:#a0ccd8;
+    padding:20px;
+    height:200px;
+    position:relative;
+}
+
+#ball {
+    height: 30px;
+    width:30px;
+    background:blue;
+    border-radius:50px;
+    animation-name: fun;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fun {
+    0% {background-color: red;}
+    20% {background-color: orange;}
+    40% {background-color: yellow;}
+    60% {background-color:aqua;}
+    70% {background-color: green;}
+    80% {background-color: indigo;}
+    100% {background-color: violet;}
+  }
+
+/* Playing with positioning */
+#main-logo {
+    position:absolute;
+    left:50px;
+}
+
+/* Navigation */
+#sub-nav {
+    position:absolute;
+    top:0;
+    right:5px;
+}
+
+#main-nav ul, #sub-nav ul {
+    padding-left:0;
+}
+
+#main-nav li, #sub-nav li {
+    list-style-type: none;  /* remove the bullets */
+    text-align: center;
+    border-bottom:1px solid white;
+}
+
+#main-nav li {
+    background:#FFB58A;
+}
+
+#sub-nav li {
+    margin:0 5px;
+}
+
+#main-nav a, #sub-nav a {
+    color:white;
+    text-decoration: none;  /* remove the underlines */
+    border-bottom:1px solid transparent;
+}
+
+#main-nav a:hover, #sub-nav a:hover {
+    border-bottom:1px solid white;
+}
+
+#main-nav a:hover {
+    color:crimson;
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align:center;
+}
+
+/* Larger screens */
+@media only screen and (min-width: 768px) { 
+    .columns {
+        display:flex;
+    }
+
+    #main-nav li {
+        flex:1;
+    }
+
+    #main-nav li:not(:last-child) {
+        border-right: 1px solid white;
+    }
+
+    .gallery {
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .tile {
+        flex-basis:45%;
+    }
+
+    .node {
+        flex-basis:30%;
+    }
+
+    .idea-img p {
+        position:absolute;
+        padding:5px;
+        bottom:0;
+    }
+}
