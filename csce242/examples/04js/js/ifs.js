@@ -1,6 +1,14 @@
 document.getElementById("btn-color-mood").onclick = (event) => {
-    const color = document.getElementById("txt-color").value;
+    const color = document.getElementById("txt-color").value.toLowerCase().trim();
     const colorP = document.getElementById("color-mood");
 
-    colorP.innerHTML = color;
+    if(color == "red"){
+        colorP.innerHTML = "You are feeling angry";
+    } else if(color == "blue") {
+        colorP.innerHTML = "You are feeling sad";
+    } else {
+        colorP.innerHTML = "You don't have feelings";
+    }
+
+    
 }
