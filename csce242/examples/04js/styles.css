@@ -75,6 +75,15 @@ h1, h2 {
     #main-nav a:hover {
         border-bottom:1px solid var(--secondary-color);
     }
+
+    .main-area {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main-area section {
+        width:30%;
+    }
 }
 
 /* Landscape Tablet */
