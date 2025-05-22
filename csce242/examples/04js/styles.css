@@ -54,6 +54,11 @@ h1, h2 {
     text-align: center;
 }
 
+/* Hide and Show */
+.hidden {
+    display:none;
+}
+
 
 
 /* Media Queries */
