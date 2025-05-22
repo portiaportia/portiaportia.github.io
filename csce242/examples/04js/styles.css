@@ -49,6 +49,13 @@ img {
     border-bottom:1px solid var(--front-color);
 }
 
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background:var(--secondary-color);
+    margin:6px 0;
+}
+
 .image-bold {
     border:3px solid pink;
 }
@@ -73,6 +80,10 @@ h1, h2 {
 @media screen and (min-width: 600px) {
     .hide-small {
         display:flex;
+    }
+
+    #toggle-nav {
+        display:none;
     }
 
     #main-nav ul {
