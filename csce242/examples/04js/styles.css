@@ -1,14 +1,28 @@
 /* Structure */
+:root {
+    --main-background:#84B1D9;
+    --secondary-color:navy;
+    --front-color:white;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#84B1D9;
+    background-color:var(--main-background);
 }
 
 header, .main-area, footer {
     padding:5px;
     margin:10px 0px;
-    background:white;
+    background:var(--front-color);
     border-radius: 5px;
+}
+
+.main-area section {
+    background:var(--secondary-color);
+    color:var(--front-color);
+    margin:10px;
+    border-radius: 5px;
+    padding:5px;
 }
 
 /* Images */
@@ -30,9 +44,9 @@ img {
     display:block;
     text-decoration: none;
     padding:5px;
-    background-color:navy;
+    background-color:var(--secondary-color);
     color:white;
-    border-bottom:1px solid white;
+    border-bottom:1px solid var(--front-color);
 }
 
 /* Typography */
@@ -59,7 +73,7 @@ h1, h2 {
     }
 
     #main-nav a:hover {
-        border-bottom:1px solid navy;
+        border-bottom:1px solid var(--secondary-color);
     }
 }
 
