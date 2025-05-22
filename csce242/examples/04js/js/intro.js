@@ -36,3 +36,10 @@ document.getElementById("txt-name").onkeyup = (event) => {
     document.getElementById("welcomep").innerHTML = `Welcome ${userName}!`;
 }
 
+/* Change happy and sad pictures */
+document.getElementById("btn-happy").onclick = () => {
+    const moodImage = document.getElementById("image-mood");
+    moodImage.src="images/happy.jpg";
+    moodImage.classList.remove("hidden");
+};
+
