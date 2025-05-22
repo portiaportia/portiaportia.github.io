@@ -63,11 +63,18 @@ h1, h2 {
     display:none;
 }
 
+.hide-small {
+    display:none;
+}
 
 
 /* Media Queries */
 /* Portrait Tablet */
 @media screen and (min-width: 600px) {
+    .hide-small {
+        display:flex;
+    }
+
     #main-nav ul {
         width:fit-content;
         margin:auto;
