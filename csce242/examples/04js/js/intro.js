@@ -43,3 +43,8 @@ document.getElementById("btn-happy").onclick = () => {
     moodImage.classList.remove("hidden");
 };
 
+document.getElementById("btn-style").onclick = () => {
+    const moodImage = document.getElementById("image-mood");
+    moodImage.classList.add("image-bold");
+};
+

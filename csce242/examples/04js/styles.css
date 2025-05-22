@@ -49,6 +49,10 @@ img {
     border-bottom:1px solid var(--front-color);
 }
 
+.image-bold {
+    border:3px solid pink;
+}
+
 /* Typography */
 h1, h2 {
     text-align: center;
