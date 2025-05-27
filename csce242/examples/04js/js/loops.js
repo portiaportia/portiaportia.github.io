@@ -22,8 +22,13 @@ document.getElementById("btn-loop-input").onclick = () => {
 }
 
 //interval
+let count = 0;
+let countInterval;
+
 document.getElementById("btn-start-count").onclick = () => {
-    console.log("Start");
+    countInterval = setInterval(()=>{
+        console.log("hi");
+    },1000);
 };
 
 document.getElementById("btn-pause-count").onclick = () => {
