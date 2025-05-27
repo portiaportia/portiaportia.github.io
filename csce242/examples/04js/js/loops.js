@@ -53,3 +53,8 @@ document.getElementById("btn-highlight").onclick = () => {
         li.classList.toggle("highlight");
     });
 }
+
+//weather buttons
+document.querySelectorAll("#weather-buttons button").forEach((button)=>{
+    console.log(button);
+});
