@@ -20,3 +20,16 @@ document.getElementById("btn-loop-input").onclick = () => {
         loopList.append(li);
     }
 }
+
+//interval
+document.getElementById("btn-start-count").onclick = () => {
+    console.log("Start");
+};
+
+document.getElementById("btn-pause-count").onclick = () => {
+    console.log("Pause");
+};
+
+document.getElementById("btn-reset-count").onclick = () => {
+    console.log("Reset");
+};
