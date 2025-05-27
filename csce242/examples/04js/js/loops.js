@@ -43,6 +43,7 @@ document.getElementById("btn-reset-count").onclick = () => {
 
 /* Looping through a list */
 document.getElementById("btn-eat").onclick = () => {
-    const lis = document.querySelectorAll("#fruit-list li");
-    console.log(lis[0]);
+    document.querySelectorAll("#fruit-list li").forEach((li)=>{
+        li.innerHTML = `I ate ${li.innerHTML}`;
+    });
 }
