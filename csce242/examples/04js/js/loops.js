@@ -14,6 +14,9 @@ document.getElementById("btn-loop-input").onclick = () => {
     const endNum = parseInt(document.getElementById("txt-end-loop").value);
     const loopList = document.getElementById("loop-list");
 
-    
-
+    for(let i=startNum; i <= endNum; i++){
+        const li = document.createElement("li");
+        li.innerHTML = i;
+        loopList.append(li);
+    }
 }
