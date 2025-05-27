@@ -24,17 +24,19 @@ document.getElementById("btn-loop-input").onclick = () => {
 //interval
 let count = 0;
 let countInterval;
+const displayCount = document.getElementById("dispaly-count");
 
 document.getElementById("btn-start-count").onclick = () => {
     countInterval = setInterval(()=>{
-        console.log("hi");
-    },1000);
+        displayCount.innerHTML = count++;
+    },300);
 };
 
 document.getElementById("btn-pause-count").onclick = () => {
-    console.log("Pause");
+    clearInterval(countInterval);
 };
 
 document.getElementById("btn-reset-count").onclick = () => {
-    console.log("Reset");
+    count = 0;
+    displayCount.innerHTML = count;
 };
