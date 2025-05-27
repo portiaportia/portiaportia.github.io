@@ -8,7 +8,9 @@ document.getElementById("btn-color-mood").onclick = (event) => {
         colorP.innerHTML = "You are feeling sad";
     } else {
         colorP.innerHTML = "You don't have feelings";
-    }
+    } 
+}
 
-    
+document.getElementById("btn-start-anim").onclick = () => {
+    document.getElementById("circle").classList.add('bounce');
 }
