@@ -47,3 +47,9 @@ document.getElementById("btn-eat").onclick = () => {
         li.innerHTML = `I ate ${li.innerHTML}`;
     });
 }
+
+document.getElementById("btn-highlight").onclick = () => {
+    document.querySelectorAll("#fruit-list li").forEach((li)=>{
+        li.classList.toggle("highlight");
+    });
+}

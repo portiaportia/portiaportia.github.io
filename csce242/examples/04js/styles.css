@@ -75,6 +75,11 @@ img {
     position: relative;
 }
 
+.highlight {
+    background:purple;
+    color:white;
+}
+
 @keyframes bounce {
     0% {
         top:0px;
