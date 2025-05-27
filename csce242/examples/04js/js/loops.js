@@ -7,3 +7,13 @@ document.getElementById("btn-basic-loop").onclick=() => {
         loopsDiv.append(p);
     }
 };
+
+//loop with input values
+document.getElementById("btn-loop-input").onclick = () => {
+    const startNum = parseInt(document.getElementById("txt-start-loop").value);
+    const endNum = parseInt(document.getElementById("txt-end-loop").value);
+    const loopList = document.getElementById("loop-list");
+
+    
+
+}
