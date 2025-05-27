@@ -49,7 +49,7 @@ document.getElementById("btn-eat").onclick = () => {
 }
 
 document.getElementById("btn-highlight").onclick = () => {
-    document.querySelectorAll("#fruit-list li").forEach((li)=>{
+    document.querySelectorAll("#fruit-list li:nth-child(odd)").forEach((li)=>{
         li.classList.toggle("highlight");
     });
 }
