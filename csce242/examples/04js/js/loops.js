@@ -56,5 +56,16 @@ document.getElementById("btn-highlight").onclick = () => {
 
 //weather buttons
 document.querySelectorAll("#weather-buttons button").forEach((button)=>{
-    console.log(button);
+    button.onclick = () => {
+        document.getElementById("weather-message").innerHTML =
+        `I am a ${button.innerHTML}`;
+
+        //remove highlight from all buttons
+        document.querySelectorAll("#weather-buttons button").forEach((otherButton)=>{
+            otherButton.classList.remove("highlight");
+        });
+
+        //add highlight to only the button you clicked
+        button.classList.add("highlight");
+    };
 });
