@@ -40,3 +40,8 @@ document.getElementById("btn-reset-count").onclick = () => {
     count = 0;
     displayCount.innerHTML = count;
 };
+
+/* Looping through a list */
+document.getElementById("btn-eat").onclick = () => {
+    console.log("Hi");
+}
