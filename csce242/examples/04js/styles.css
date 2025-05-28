@@ -95,6 +95,22 @@ img {
     }
 }
 
+/* Slideshow */
+#slideshow {
+    position:relative;
+}
+
+.arrow {
+    position:absolute;
+    display:block;
+    top:30%;
+    color:darkgray;
+    text-decoration: none;
+    font-size:5em;
+    background:rgba(255,255,255,.5);
+    padding:0 5px;
+}
+
 /* Typography */
 h1, h2 {
     text-align: center;
