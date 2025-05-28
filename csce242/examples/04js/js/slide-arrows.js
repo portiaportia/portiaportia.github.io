@@ -7,8 +7,14 @@ document.getElementById("right-arrow").onclick = (e) => {
     if(nextSlide == null){
         nextSlide = document.querySelector("#slides :first-child");
     }
+
+    switchSlides(currentSlide, nextSlide);
 };
 
 const getCurrentSlide = () => {
     return document.querySelector("#slides :not(hidden)");
+}
+
+const switchSlides = (currentSlide, nextSlide) => {
+
 }
