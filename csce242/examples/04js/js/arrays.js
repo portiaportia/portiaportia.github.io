@@ -14,3 +14,8 @@ document.getElementById("btn-show-toys").onclick = () => {
        ul.append(li);
     });
 }
+
+//when button clicked we will make an array table
+document.getElementById("btn-show-toy-table").onclick = () => {
+    console.log("sdfew");
+};
