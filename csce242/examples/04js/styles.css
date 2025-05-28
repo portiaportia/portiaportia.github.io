@@ -10,7 +10,7 @@ body {
     background-color:var(--main-background);
 }
 
-header, .main-area, footer {
+header, .main-area, footer , #slideshow {
     padding:5px;
     margin:10px 0px;
     background:var(--front-color);
@@ -150,7 +150,7 @@ h1, h2 {
 
 /* Landscape Tablet */
 @media screen and (min-width: 768px) {
-    header, footer, .main-area {
+    header, footer, .main-area, #slideshow {
         width:85%;
         margin:10px auto;
     }
@@ -193,7 +193,7 @@ h1, h2 {
 
 /* Labtop / Desktop */
 @media screen and (min-width: 992px) {
-    header, footer, .main-area {
+    header, footer, .main-area, #slideshow {
         width:70%;
     }
 }
