@@ -104,11 +104,19 @@ img {
     position:absolute;
     display:block;
     top:30%;
-    color:darkgray;
+    color:black;
     text-decoration: none;
     font-size:5em;
     background:rgba(255,255,255,.5);
     padding:0 5px;
+}
+
+#left-arrow {
+    left:10px;
+}
+
+#right-arrow {
+    right:10px;
 }
 
 /* Typography */
