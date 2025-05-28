@@ -12,9 +12,11 @@ document.getElementById("right-arrow").onclick = (e) => {
 };
 
 const getCurrentSlide = () => {
-    return document.querySelector("#slides :not(hidden)");
+    return document.querySelector("#slides :not(.hidden)");
 }
 
 const switchSlides = (currentSlide, nextSlide) => {
-
+    console.log(currentSlide);
+    currentSlide.classList.add("hidden");
+    nextSlide.classList.remove("hidden");
 }
