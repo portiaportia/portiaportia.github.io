@@ -119,6 +119,10 @@ img {
     right:10px;
 }
 
+#thumbnails div{
+ margin:10px;
+}
+
 /* Dialog */
 #modal {
     position:fixed;

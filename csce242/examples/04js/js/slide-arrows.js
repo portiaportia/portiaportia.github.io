@@ -24,6 +24,16 @@ document.getElementById("left-arrow").onclick = (e) => {
     switchSlides(currentSlide, prevSlide);
 };
 
+document.querySelectorAll("#thumbnails img").forEach((img, i)=>{
+    img.onclick = () => {
+        const currentSlide = getCurrentSlide();
+        const nextSlide = document.querySelector(`#slides img:nth-child(${i+1})`);
+        console.log(nextSlide);
+        switchSlides(currentSlide, nextSlide);
+    }
+});
+
+
 const getCurrentSlide = () => {
     return document.querySelector("#slides :not(.hidden)");
 }
