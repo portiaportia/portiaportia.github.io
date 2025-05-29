@@ -38,7 +38,11 @@ document.getElementById("btn-show-toy-table").onclick = () => {
         tr.append(td2);
 
         tr.onclick = () => {
-            console.log(`Toy is ${toy} and price is ${price}`);
+            document.getElementById("modal").classList.remove("hidden");
         }
     }
 };
+
+document.getElementById("close").onclick = () => {
+    document.getElementById("modal").classList.add("hidden");
+}
