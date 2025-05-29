@@ -26,7 +26,16 @@ class Dog {
         h3.innerHTML = this.title;
         textDiv.append(h3); 
 
+        //size
+        textDiv.append(this.paragraph("Size", this.size));
+
         return dogSection;
+    }
+
+    paragraph(title, info) {
+        const p = document.createElement("p");
+        p.innerHTML = `<strong>${title}</strong>: ${info}`;
+        return p;
     }
 }
 
