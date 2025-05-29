@@ -31,6 +31,11 @@ class Dog {
         textDiv.append(this.paragraph("Age", this.age));
         textDiv.append(this.paragraph("Size", this.size));
 
+        image.onclick = () => {
+            document.getElementById("modal").classList.remove("hidden");
+            document.querySelector("#modal img").src=`images/classes/${this.pic}`;
+        }
+
         return dogSection;
     }
 
@@ -49,3 +54,7 @@ dogs.push(new Dog("Gerald", "Pit Bull", "White", 3, "Large", "pitt-bull.jpg"));
 dogs.forEach((dog)=>{
     document.getElementById("dog-house").append(dog.item);
 });
+
+document.getElementById("close").onclick = () => {
+    document.getElementById("modal").classList.add("hidden");
+}
