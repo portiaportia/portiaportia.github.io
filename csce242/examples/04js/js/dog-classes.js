@@ -26,7 +26,9 @@ class Dog {
         h3.innerHTML = this.title;
         textDiv.append(h3); 
 
-        //size
+        textDiv.append(this.paragraph("Size", this.size));
+        textDiv.append(this.paragraph("Breed", this.breed));
+        textDiv.append(this.paragraph("Age", this.age));
         textDiv.append(this.paragraph("Size", this.size));
 
         return dogSection;
