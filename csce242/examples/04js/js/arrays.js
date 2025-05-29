@@ -39,6 +39,8 @@ document.getElementById("btn-show-toy-table").onclick = () => {
 
         tr.onclick = () => {
             document.getElementById("modal").classList.remove("hidden");
+            document.querySelector("#modal h1").innerHTML = toy;
+            document.querySelector("#modal p").innerHTML = `$${price}`;
         }
     }
 };
