@@ -159,8 +159,13 @@ img {
 /* Classes */
 #dog-house section {
     display:flex;
-    color:gray;
+    background:gray;
     padding:10px;
+    width:80%;
+}
+
+#dog-house section div {
+    margin:10px;
 }
 
 /* Typography */

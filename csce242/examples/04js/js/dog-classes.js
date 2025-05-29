@@ -18,6 +18,14 @@ class Dog {
         imageDiv.append(image);
         dogSection.append(imageDiv);
 
+        //create the text area
+        const textDiv = document.createElement("div");
+        dogSection.append(textDiv);
+
+        const h3 = document.createElement("h3");
+        h3.innerHTML = this.title;
+        textDiv.append(h3); 
+
         return dogSection;
     }
 }
