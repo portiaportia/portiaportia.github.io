@@ -156,6 +156,13 @@ img {
     cursor:pointer; 
 }
 
+/* Classes */
+#dog-house section {
+    display:flex;
+    color:gray;
+    padding:10px;
+}
+
 /* Typography */
 h1, h2 {
     text-align: center;

@@ -9,9 +9,16 @@ class Dog {
     }
 
     get item(){
-        const p = document.createElement("p");
-        p.innerHTML = this.title;
-        return p;
+        const dogSection = document.createElement("section");
+
+        //Create the image
+        const imageDiv = document.createElement("div");
+        const image = document.createElement("img");
+        image.src=`images/classes/${this.pic}`;
+        imageDiv.append(image);
+        dogSection.append(imageDiv);
+
+        return dogSection;
     }
 }
 
