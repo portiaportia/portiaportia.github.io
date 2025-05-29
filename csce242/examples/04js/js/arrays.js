@@ -36,5 +36,9 @@ document.getElementById("btn-show-toy-table").onclick = () => {
         let td2 = document.createElement("td");
         td2.innerHTML = price;
         tr.append(td2);
+
+        tr.onclick = () => {
+            console.log(`Toy is ${toy} and price is ${price}`);
+        }
     }
 };
