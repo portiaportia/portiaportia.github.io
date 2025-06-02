@@ -18,6 +18,11 @@ const showShoes = async() => {
     shoes.forEach((shoe)=>{
         const shoeSection = document.createElement("section");
         shoesDiv.append(shoeSection);
+
+        //make the h3
+        const h3 = document.createElement("h3");
+        h3.innerHTML = shoe.name;
+        shoeSection.append(h3);
     });
 };
 
