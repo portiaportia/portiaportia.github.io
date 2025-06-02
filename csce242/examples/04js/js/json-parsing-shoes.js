@@ -5,7 +5,6 @@ const getShoes = async() => {
 
     try {
         const response = await fetch(url);
-        console.log(response);
         return response.json();
     }catch(error){
         console.log(error);
@@ -13,8 +12,13 @@ const getShoes = async() => {
 };
 
 const showShoes = async() => {
-   const shoes = await getShoes();
-   console.log(shoes);
+    const shoes = await getShoes();
+    const shoesDiv = document.getElementById("shoes");
+
+    shoes.forEach((shoe)=>{
+        const shoeSection = document.createElement("section");
+        shoesDiv.append(shoeSection);
+    });
 };
 
 showShoes();

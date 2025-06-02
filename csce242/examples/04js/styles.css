@@ -194,6 +194,16 @@ h1, h2 {
     text-align: center;
 }
 
+#shoes section {
+    width:90%;
+    margin:10px auto;
+    padding:5px;
+}
+
+#shoes h3, #shoes ul, #shoes p {
+    color:white;
+}
+
 
 /* Media Queries */
 /* Portrait Tablet */
