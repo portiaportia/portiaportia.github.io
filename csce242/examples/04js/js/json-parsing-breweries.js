@@ -1,1 +1,1 @@
-//https://api.openbrewerydb.org/breweries
+//https://www.openbrewerydb.org/documentation
