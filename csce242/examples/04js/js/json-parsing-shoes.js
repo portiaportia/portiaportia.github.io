@@ -23,6 +23,18 @@ const showShoes = async() => {
         const h3 = document.createElement("h3");
         h3.innerHTML = shoe.name;
         shoeSection.append(h3);
+
+        //make the brand paragraph
+        const p = document.createElement("p");
+        p.innerHTML = `Brand: ${shoe.brand}`;
+        shoeSection.append(p);
+
+        //make the reviews list
+        const ul = document.createElement("ul");
+        shoeSection.append(ul);
+
+        shoe.reviews.forEach();
+
     });
 };
 
