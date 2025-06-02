@@ -215,6 +215,12 @@ h1, h2 {
     background-color:burlywood;
 }
 
+#breweries iframe {
+    max-width:90%;
+    display:block;
+    margin:auto;
+}
+
 
 /* Media Queries */
 /* Portrait Tablet */
