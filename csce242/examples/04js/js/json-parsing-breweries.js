@@ -29,6 +29,14 @@ const showBreweries = async() => {
     breweries.forEach((brewery)=>{
         const brewerySection = document.createElement("section");
         breweriesDiv.append(brewerySection);
+
+        //create the title
+        const h3 = document.createElement("h3");
+        const a = document.createElement("a");
+        a.href= brewery.website_url;
+        a.innerHTML = brewery.name;
+        h3.append(a);
+        brewerySection.append(h3);
     });
 }
 
