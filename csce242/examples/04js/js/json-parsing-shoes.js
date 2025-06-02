@@ -1,1 +1,1 @@
-//https://github.com/portiaportia/portiaportia.github.io/blob/master/json/shoes.json
+//https://portiaportia.github.io/json/shoes.json
