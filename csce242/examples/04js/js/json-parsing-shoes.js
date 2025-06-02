@@ -33,7 +33,11 @@ const showShoes = async() => {
         const ul = document.createElement("ul");
         shoeSection.append(ul);
 
-        shoe.reviews.forEach();
+        shoe.reviews.forEach((review)=>{
+            const li = document.createElement("li");
+            li.innerHTML = review;
+            ul.append(li);
+        });
 
     });
 };
