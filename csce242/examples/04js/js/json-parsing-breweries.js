@@ -24,7 +24,12 @@ const getBreweries = async() => {
 
 const showBreweries = async() => {
     const breweries = await getBreweries();
-    console.log(breweries);
+    const breweriesDiv = document.getElementById("breweries");
+
+    breweries.forEach((brewery)=>{
+        const brewerySection = document.createElement("section");
+        breweriesDiv.append(brewerySection);
+    });
 }
 
 showBreweries();

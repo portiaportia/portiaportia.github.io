@@ -204,6 +204,17 @@ h1, h2 {
     color:white;
 }
 
+#breweries {
+    flex-wrap: wrap;
+}
+
+#breweries section {
+    width:40%;
+    margin:10px auto;
+    padding:5px;
+    background-color:burlywood;
+}
+
 
 /* Media Queries */
 /* Portrait Tablet */
