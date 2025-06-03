@@ -3,7 +3,7 @@
 const form = document.getElementById('contact-form');
 const result = document.getElementById('result');
 
-form.onsubmit = (event) => {
+form.onsubmit = async(event) => {
     event.preventDefault();     //don't go the action (another page)
     
     //collect all the name value pairs from the form
@@ -11,5 +11,24 @@ form.onsubmit = (event) => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    console.log(json);
+    result.innerHTML = "Please wait..."
+
+    const url = "https://api.web3forms.com/submit";
+
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        });
+        return response.json();
+    }catch(error){
+        console.log(error);
+    }
+
+
+        
 };
