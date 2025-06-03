@@ -24,7 +24,19 @@ form.onsubmit = async(event) => {
             },
             body: json
         });
-        return response.json();
+        
+        const result = response.json();
+
+        if (response.status == 200) {
+            result.innerHTML = result.message;
+        } else {
+            console.log(response);
+            result.innerHTML = result.message;
+        }
+
+
+
+
     }catch(error){
         console.log(error);
     }
