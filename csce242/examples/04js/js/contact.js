@@ -32,16 +32,12 @@ form.onsubmit = async(event) => {
             resultDiv.innerHTML = result.message;
         } else {
             console.log(response);
-            resultDiv.innerHTML = result.message;
+            resultDiv.innerHTML = result.message;result
         }
-
-
-
 
     }catch(error){
         console.log(error);
+        resultDiv.innerHTML = "Email not successfully sent";
     }
-
-
         
 };
