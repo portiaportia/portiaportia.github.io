@@ -1,7 +1,7 @@
 //https://web3forms.com/
 //"2cc869cb-a5d4-4b4b-b609-7d0a0bd4ea78"
 const form = document.getElementById('contact-form');
-const result = document.getElementById('result');
+const resultDiv = document.getElementById('result');
 
 form.onsubmit = async(event) => {
     event.preventDefault();     //don't go the action (another page)
@@ -11,7 +11,7 @@ form.onsubmit = async(event) => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    result.innerHTML = "Please wait..."
+    resultDiv.innerHTML = "Please wait..."
 
     const url = "https://api.web3forms.com/submit";
 
@@ -25,13 +25,14 @@ form.onsubmit = async(event) => {
             body: json
         });
         
-        const result = response.json();
+        const result = await response.json();
+        console.log(result);
 
         if (response.status == 200) {
-            result.innerHTML = result.message;
+            resultDiv.innerHTML = result.message;
         } else {
             console.log(response);
-            result.innerHTML = result.message;
+            resultDiv.innerHTML = result.message;
         }
 
 
