@@ -11,6 +11,7 @@ form.onsubmit = async(event) => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
+    resultDiv.classList.remove("hidden");
     resultDiv.innerHTML = "Please wait..."
 
     const url = "https://api.web3forms.com/submit";
@@ -38,5 +39,10 @@ form.onsubmit = async(event) => {
         console.log(error);
         resultDiv.innerHTML = "Email not successfully sent";
     }
-        
+    
+    //reset form after 3 seconds and clear the div
+    setTimeout(() => {
+        form.reset();
+        resultDiv.classList.add("hidden");
+    }, 3000);
 };
