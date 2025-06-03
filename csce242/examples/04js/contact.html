@@ -33,6 +33,28 @@
                 </div>
                 <div class="two-columns one">
                     <h3>Have a Question?</h3>
+                    <form method="POST" id="contact-form">
+
+                        <input type="hidden" name="access_key" value="2cc869cb-a5d4-4b4b-b609-7d0a0bd4ea78">
+                    
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="message">Message:</label>
+                            <textarea name="message" required></textarea>
+                        </p>
+                        <p>
+                            <button type="submit">Submit</button>
+                        </p>
+                        <div id="result"></div>
+                    
+                    </form>
                 </div>
             </div>
             <footer id="footer-main">

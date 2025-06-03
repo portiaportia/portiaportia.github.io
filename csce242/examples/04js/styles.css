@@ -221,6 +221,46 @@ h1, h2 {
     margin:auto;
 }
 
+/* Forms */
+#contact-form {
+    position:relative;
+}
+
+#contact-form p {
+    display:flex;
+}
+
+#contact-form label {
+    display:block;
+    flex:1;
+    font-weight: 600;
+    padding:5px;
+}
+
+#contact-form input, #contact-form textarea {
+    display:block;
+    flex:5;
+    padding:5px;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+    background-color:cadetblue;
+    color:white;
+}
+
+#contact-form textarea {
+    min-height:200px;
+}
+
+#contact-form button {
+    display:block;
+    position:absolute;
+    right:0;
+    background-color: cadetblue;
+    color:white;
+    padding:5px;
+}
+
 
 /* Media Queries */
 /* Portrait Tablet */
