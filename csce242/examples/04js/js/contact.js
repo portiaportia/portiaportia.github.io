@@ -26,13 +26,12 @@ form.onsubmit = async(event) => {
         });
         
         const result = await response.json();
-        console.log(result);
 
         if (response.status == 200) {
-            resultDiv.innerHTML = result.message;
+            resultDiv.innerHTML = "YAY You sent an email!";
         } else {
             console.log(response);
-            resultDiv.innerHTML = result.message;result
+            resultDiv.innerHTML = "Sorry, we can't send your email";
         }
 
     }catch(error){
