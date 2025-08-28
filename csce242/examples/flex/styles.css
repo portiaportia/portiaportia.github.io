@@ -21,6 +21,7 @@ body {
 /* Main Navigation */
 #main-nav ul {
     list-style-type: none;  /* remove the bullets */
+    padding-left:0;
 }
 
 #main-nav li {
@@ -38,6 +39,11 @@ body {
     text-decoration: none; /* remove the under lines */
 }
 
+#main-nav a:hover {
+    background:white;
+    color:#4F5902;
+}
+
 /* Typography */
 h1 {
     text-align: center;
@@ -52,5 +58,21 @@ h1 {
 
     #content {
         width:70%;
+    }
+
+    /* Columns */
+    .columns {
+        display:flex;
+    }
+
+    /* Main Nav */
+    #main-nav li, #main-nav li:first-child {
+        border:none;
+    }
+
+    #main-nav a:hover {
+        background:#4F5902;
+        color:white;
+        border-bottom:1px solid white;
     }
 }
