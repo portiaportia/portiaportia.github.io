@@ -1,0 +1,56 @@
+body {
+    background:#4F5902;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width:95%;
+    margin:auto;
+    background:rgba(255,255,255,0.7);
+    border-radius:5px;
+    padding:5px;
+}
+
+#main-header {
+    background:#4F5902;
+    color:white;
+    border-radius:5px;
+    padding:5px;
+}
+
+/* Main Navigation */
+#main-nav ul {
+    list-style-type: none;  /* remove the bullets */
+}
+
+#main-nav li {
+    border-bottom:1px solid white;
+}
+
+#main-nav li:first-child {
+    border-top:1px solid white;
+}
+
+#main-nav a {
+    color:white;
+    padding:10px 5px;
+    display:block;
+    text-decoration: none; /* remove the under lines */
+}
+
+/* Typography */
+h1 {
+    text-align: center;
+}
+
+/* Larger devices */
+@media only screen and (min-width: 768px) {
+    body {
+        background: url(images/background.jpg);
+        background-size:cover;
+    }
+
+    #content {
+        width:70%;
+    }
+}
