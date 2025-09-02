@@ -29,11 +29,20 @@ body {
     margin:5px;
 }
 
-/*
-.squirrel .columns div {
-    width:30%;
+/* Gallery */
+#gallery {
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-    */
+
+#gallery section {
+    text-align: center;
+    width:25%;
+}
+
+#gallery img {
+    padding:5px;
+}
 
 /* Images */
 img {
