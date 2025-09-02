@@ -66,8 +66,17 @@ h1 {
     }
 
     /* Main Nav */
+    #main-nav li {
+        flex:1;
+    }
+
     #main-nav li, #main-nav li:first-child {
         border:none;
+    }
+
+    #main-nav a {
+        text-align: center;
+        padding:5px;
     }
 
     #main-nav a:hover {
