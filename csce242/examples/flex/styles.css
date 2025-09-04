@@ -1,5 +1,10 @@
+:root {
+    --primary-color:#4F5902;
+    --secondary-color:#595924;
+}
+
 body {
-    background:#4F5902;
+    background:var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,10 +17,11 @@ body {
 }
 
 #main-header {
-    background:#4F5902;
+    background:var(--primary-color);
     color:white;
     border-radius:5px;
     padding:5px;
+    position:relative;
 }
 
 #main-content section, #main-content aside {
@@ -23,10 +29,26 @@ body {
 }
 
 .squirrel {
-    background:#595924;
+    background:var(--s);
     padding:5px;
     border-radius:5px;
     margin:5px;
+}
+
+/* Showcase */
+#showcase {
+    position:relative;
+}
+
+#showcase p {
+    background:rgba(0,0,0, 0.7);
+    color:white;
+    padding:10px;
+    width:fit-content;
+
+    position:absolute;
+    bottom:20%;
+    left:5%;
 }
 
 /* Gallery */
@@ -50,9 +72,13 @@ img {
 }
 
 /* Main Navigation */
-#main-nav ul {
+nav ul {
     list-style-type: none;  /* remove the bullets */
     padding-left:0;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 #main-nav li {
@@ -67,12 +93,27 @@ img {
     color:white;
     padding:10px 5px;
     display:block;
-    text-decoration: none; /* remove the under lines */
 }
 
 #main-nav a:hover {
     background:white;
     color:#4F5902;
+}
+
+#login-nav {
+    position:absolute;
+    top:2.5%;
+    right:2.5%;
+}
+
+#login-nav a {
+    color:white;
+    padding:5px;
+    display:block;
+}
+
+#login-nav li:hover {
+    border-bottom:1px solid white;
 }
 
 /* Typography */
@@ -142,6 +183,15 @@ h1 {
         background:#4F5902;
         color:white;
         border-bottom:1px solid white;
+    }
+
+    #login-nav a {
+        display:inline;
+    }
+
+    #login-nav li:not(:last-child)::after {
+        content:"|";
+        display:inline;
     }
 
     .hide-small {
