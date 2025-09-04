@@ -24,6 +24,15 @@ body {
     position:relative;
 }
 
+#main-header img {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:75px;
+    border-radius:50px;
+}
+
 #main-content section, #main-content aside {
     padding:5px;
 }
