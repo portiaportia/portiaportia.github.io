@@ -233,6 +233,23 @@ footer p {
     text-align:center;
 }
 
+.clicked {
+    background:magenta;
+    color:white;
+}
+
+.happy {
+    background:yellow;
+    color:blak;
+    border:2px dotted orange;
+}
+
+.sad {
+    background:navy;
+    color:white;
+    border:2px solid skyblue;
+}
+
 #map {
     width:100%;
     height:500px;
