@@ -64,3 +64,15 @@ document.getElementById("btn-mood-ring").onclick = () => {
 
     p.innerHTML = `You choose ${color}, so you are feeling ${mood}`;
 }
+
+document.getElementById("btn-bounce").onclick = (event) => {
+    const ball = document.getElementById("ball");
+
+    if(ball.classList.contains("bounce")){
+        event.currentTarget.innerHTML = "Start";
+    } else {
+        event.currentTarget.innerHTML = "Stop";
+    }
+
+    ball.classList.toggle("bounce");
+}
