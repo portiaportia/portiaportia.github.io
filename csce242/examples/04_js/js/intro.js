@@ -39,12 +39,28 @@ document.getElementById("txt-emotion").onkeyup = (event) => {
 };
 
 document.getElementById("btn-mood-ring").onclick = () => {
-    const color = document.getElementById("txt-color").value.trim();
+    const color = document.getElementById("txt-color").value.trim().toLowerCase();
     const p = document.getElementById("p-mood-result");
-    document.getElementById("error-color").innerHTML = "";  //reset error
+    p.innerHTML = "";   //reset paragraph
+    const error = document.getElementById("error-color");
+    error.innerHTML = "";  //reset error
+    const mood = "";
     
     if(color == ""){
-        document.getElementById("error-color").innerHTML = "* blank";
+        error.innerHTML = "* blank";
         return;
     }
+
+    if(color == "red") {
+        mood = "angry";
+    } else if(color == "yellow") {
+        mood = "mellow";
+    }
+
+    if(mood == ""){
+        error.innerHTML = "* Invalid color";
+        return;
+    }
+
+    p.innerHTML = `You choose ${color}, so you are feeling ${mood}`;
 }
