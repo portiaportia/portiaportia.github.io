@@ -44,7 +44,7 @@ document.getElementById("btn-mood-ring").onclick = () => {
     p.innerHTML = "";   //reset paragraph
     const error = document.getElementById("error-color");
     error.innerHTML = "";  //reset error
-    const mood = "";
+    let mood = "";
     
     if(color == ""){
         error.innerHTML = "* blank";
