@@ -76,3 +76,19 @@ document.getElementById("btn-bounce").onclick = (event) => {
 
     ball.classList.toggle("bounce");
 }
+
+/* Counter */
+let counter = 0;
+let counterInterval;
+const countP = document.getElementById("p-count");
+
+document.getElementById("btn-count-start").onclick = () => {
+    counterInterval = setInterval(()=>{
+        counter++;
+        countP.innerHTML = counter;
+    }, 1000);
+}
+
+document.getElementById("btn-count-pause").onclick = () => {
+    clearInterval(counterInterval);
+}
