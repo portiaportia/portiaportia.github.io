@@ -81,14 +81,21 @@ document.getElementById("btn-bounce").onclick = (event) => {
 let counter = 0;
 let counterInterval;
 const countP = document.getElementById("p-count");
+const btnStartCount = document.getElementById("btn-count-start");
+const btnPauseCount = document.getElementById("btn-count-pause")
+btnPauseCount.disabled = true;
 
-document.getElementById("btn-count-start").onclick = () => {
+btnStartCount.onclick = () => {
+    btnStartCount.disabled = true;
+    btnPauseCount.disabled = false;
     counterInterval = setInterval(()=>{
         counter++;
         countP.innerHTML = counter;
     }, 1000);
 }
 
-document.getElementById("btn-count-pause").onclick = () => {
+btnPauseCount.onclick = () => {
     clearInterval(counterInterval);
+    btnPauseCount.disabled = true;
+    btnStartCount.disabled = false;
 }
