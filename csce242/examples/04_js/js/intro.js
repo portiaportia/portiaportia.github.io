@@ -99,3 +99,20 @@ btnPauseCount.onclick = () => {
     btnPauseCount.disabled = true;
     btnStartCount.disabled = false;
 }
+
+/* Donation stuff */
+const goal = 10000;
+document.getElementById("goal-span").innerHTML = goal;
+
+document.getElementById("btn-donations").onclick = () => {
+    const donation = document.getElementById("txt-donations").value;
+    const errorSpan = document.getElementById("donation-error");
+    errorSpan.innerHTML = "";
+
+    if(isNaN(donation) || donation <= 0){
+        errorSpan.innerHTML = "* Invalid Amount."
+        return;
+    }
+
+    const donationPercent = donation / goal * 100;
+}
