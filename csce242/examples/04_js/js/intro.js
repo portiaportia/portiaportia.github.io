@@ -108,6 +108,8 @@ document.getElementById("btn-donations").onclick = () => {
     const donation = document.getElementById("txt-donations").value;
     const errorSpan = document.getElementById("donation-error");
     errorSpan.innerHTML = "";
+    const donationMessage = document.getElementById("donation-message");
+    donationMessage.innerHTML = "";
 
     if(isNaN(donation) || donation <= 0){
         errorSpan.innerHTML = "* Invalid Amount."
@@ -115,4 +117,12 @@ document.getElementById("btn-donations").onclick = () => {
     }
 
     const donationPercent = donation / goal * 100;
+
+    if(donationPercent >= 100){
+        donationMessage.innerHTML = "Goal Reached!";
+    } else if(donationPercent >= 50) {
+        donationMessage.innerHTML = "Over Half Way There";
+    } else {
+        donationMessage.innerHTML = "Let's get Goaling";
+    }
 }
