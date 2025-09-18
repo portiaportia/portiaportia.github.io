@@ -125,4 +125,6 @@ document.getElementById("btn-donations").onclick = () => {
     } else {
         donationMessage.innerHTML = "Let's get Goaling";
     }
+
+    document.querySelector(":root").style.setProperty("--donation-percent", donationPercent + "%");
 }
