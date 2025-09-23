@@ -102,6 +102,7 @@ btnPauseCount.onclick = () => {
 
 /* Donation stuff */
 const goal = 10000;
+let totalDonations = 0;
 document.getElementById("goal-span").innerHTML = goal;
 
 document.getElementById("btn-donations").onclick = () => {
@@ -116,7 +117,8 @@ document.getElementById("btn-donations").onclick = () => {
         return;
     }
 
-    const donationPercent = donation / goal * 100;
+    totalDonations += parseInt(donation);
+    const donationPercent = totalDonations / goal * 100;
 
     if(donationPercent >= 100){
         donationMessage.innerHTML = "Goal Reached!";
