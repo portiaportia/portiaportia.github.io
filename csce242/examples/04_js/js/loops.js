@@ -25,4 +25,11 @@ document.getElementById("btn-count").onclick = () => {
         error.innerHTML = "* The second number must be bigger than the first";
         return;
     }
+
+    //Loop for ever number from start to end display the number in paragraphs
+    for(let i=startNum; i <= endNum; i++){
+        const p = document.createElement("p");
+        p.innerHTML = i;
+        resultDiv.append(p);
+    }
 };
