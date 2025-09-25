@@ -31,5 +31,12 @@ document.getElementById("btn-count").onclick = () => {
         const p = document.createElement("p");
         p.innerHTML = i;
         resultDiv.append(p);
+        p.onclick = () => {
+            console.log(`You clicked Number ${i}`);
+        };
     }
 };
+
+document.getElementById("btn-show-toys").onclick = () => {
+    console.log("hi");
+}
