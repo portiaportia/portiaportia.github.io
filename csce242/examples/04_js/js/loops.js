@@ -38,5 +38,16 @@ document.getElementById("btn-count").onclick = () => {
 };
 
 document.getElementById("btn-show-toys").onclick = () => {
-    console.log("hi");
+    const toyList = document.getElementById("toy-list");
+    toyList.innerHTML = "";
+
+    const toys = ["ball", "skipping rope", "doll", "mini car", "elmo"];
+
+    /* First way to iterate */
+    //interate over toys  add li's to the ul
+    for(let i=0; i < toys.length; i++){
+        const li = document.createElement("li");
+        li.innerHTML = toys[i];
+        toyList.append(li);
+    }
 }
