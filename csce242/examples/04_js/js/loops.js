@@ -57,4 +57,30 @@ document.getElementById("btn-show-toys").onclick = () => {
         li.innerHTML = toy;
         toyList.append(li);
     });
-}
+};
+
+document.getElementById("btn-show-toy-prices").onclick = () => {
+    const toys = [];
+    toys["ball"] = 2.99;
+    toys["barbie"] = 19.99;
+    toys["skipping rope"] = 1.98;
+    toys["match box car"] = 2.54;
+
+    const toyDiv = document.getElementById("toy-prices");
+    toyDiv.innerHTML = "";
+
+    const priceP = document.getElementById("price-p");
+    priceP.innerHTML = "";
+
+    for(let toy in toys){
+        const p = document.createElement("p");
+        p.innerHTML = toy;
+        toyDiv.append(p);
+
+        //when I click the paragraph... in a div below show the price
+        //LIke "Ball costs $..."
+        p.onclick = () => {
+            priceP.innerHTML = `${toy} costs $${toys[toy]}.`
+        };
+    }
+};
