@@ -45,9 +45,16 @@ document.getElementById("btn-show-toys").onclick = () => {
 
     /* First way to iterate */
     //interate over toys  add li's to the ul
-    for(let i=0; i < toys.length; i++){
+   /* for(let i=0; i < toys.length; i++){
         const li = document.createElement("li");
         li.innerHTML = toys[i];
         toyList.append(li);
-    }
+    }*/
+
+    /* Second way preferred */
+    toys.forEach((toy, i)=>{
+        const li = document.createElement("li");
+        li.innerHTML = toy;
+        toyList.append(li);
+    });
 }
