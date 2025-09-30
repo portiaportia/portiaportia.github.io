@@ -25,12 +25,19 @@ class Dog {
         //first Column
         const divCol1 = document.createElement("div");
         columnContainer.append(divCol1);
+        divCol1.append(this.picture(this.pic));
 
         //second Column
         const divCol2 = document.createElement("div");
         columnContainer.append(divCol2);
 
         return section;
+    }
+
+    picture(filename) {
+        const img = document.createElement("img");
+        img.src = `images/classes/${filename}`;
+        return img;
     }
 }
 
