@@ -7,6 +7,22 @@ class Dog {
         this.size = size; 
         this.pic = pic;
     }
+
+    get item() {
+        const section = document.createElement("section");
+        section.classList.add("dog");
+
+        //header
+        const h3 = document.createElement("h3");
+        h3.innerHTML = this.title;
+        section.append(h3);
+
+        const columnContainer = document.createElement("div");
+        columnContainer.classList.add("columns");
+        section.append(columnContainer);
+
+        return section;
+    }
 }
 
 const dogs = [];
@@ -18,5 +34,5 @@ dogs.push(new Dog("Gerald", "Pit Bull", "White", 3, "large", "pitt-bull.jpg"));
 const dogListDiv = document.getElementById("dog-list");
 
 dogs.forEach((dog)=>{
-    console.log(dog);
+    dogListDiv.append(dog.item);
 });
