@@ -282,6 +282,10 @@ footer p {
     max-width:50%;
 }
 
+.transparent {
+    visibility:hidden;
+}
+
 
 /* Medium screens */
 @media only screen and (min-width: 700px) { 

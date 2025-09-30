@@ -37,6 +37,12 @@ class Dog {
         divCol2.append(this.paragraph("Breed", this.breed));
         divCol2.append(this.paragraph("Size", this.size));
         divCol2.append(this.paragraph("Age", this.age));
+        divCol2.classList.add("transparent");
+
+        arrow.onclick = (e) => {
+            e.preventDefault();     //don't go to destination of link
+            divCol2.classList.toggle("transparent");
+        };
 
         return section;
     }
