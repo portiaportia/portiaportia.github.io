@@ -30,6 +30,9 @@ class Dog {
         //second Column
         const divCol2 = document.createElement("div");
         columnContainer.append(divCol2);
+        divCol2.append(this.paragraph("Breed", this.breed));
+        divCol2.append(this.paragraph("Size", this.size));
+        divCol2.append(this.paragraph("Age", this.age));
 
         return section;
     }

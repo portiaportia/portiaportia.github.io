@@ -267,9 +267,24 @@ footer p {
     height:500px;
 }
 
+/* Dogs */
+
+.dog {
+  background-color: dodgerblue;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+  width:40%;
+}
+
+.dog img {
+    max-width:50%;
+}
+
 
 /* Medium screens */
-@media only screen and (min-width: 800px) { 
+@media only screen and (min-width: 700px) { 
     .columns {
         display:flex;
     }
@@ -309,6 +324,11 @@ footer p {
         border-radius: 5px;
         margin:5px;
     }
+
+    #dog-list {
+    display: flex;
+  }
+  
 }
 
 
