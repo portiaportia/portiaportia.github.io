@@ -16,6 +16,10 @@ class Dog {
         const h3 = document.createElement("h3");
         h3.innerHTML = this.title;
         section.append(h3);
+        const arrow = document.createElement("a");
+        arrow.href="#";
+        arrow.innerHTML = "&#x2964";
+        h3.append(arrow);
 
         //column container
         const columnContainer = document.createElement("div");
