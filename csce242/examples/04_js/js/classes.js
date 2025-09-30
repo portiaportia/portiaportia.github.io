@@ -17,9 +17,18 @@ class Dog {
         h3.innerHTML = this.title;
         section.append(h3);
 
+        //column container
         const columnContainer = document.createElement("div");
         columnContainer.classList.add("columns");
         section.append(columnContainer);
+
+        //first Column
+        const divCol1 = document.createElement("div");
+        columnContainer.append(divCol1);
+
+        //second Column
+        const divCol2 = document.createElement("div");
+        columnContainer.append(divCol2);
 
         return section;
     }
