@@ -39,6 +39,12 @@ class Dog {
         img.src = `images/classes/${filename}`;
         return img;
     }
+
+    paragraph(key, value) {
+        const p = document.createElement("p");
+        p.innerHTML = `<strong>${key}:</strong> ${value}`;
+        return p;
+    }
 }
 
 const dogs = [];
