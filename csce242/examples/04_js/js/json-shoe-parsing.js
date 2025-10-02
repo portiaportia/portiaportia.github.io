@@ -40,6 +40,11 @@ const showShoes = async() => {
             ul.append(li);
         });
 
+        //image
+        //const img = document.createElement("img");
+        //section.append(img);
+        //img.src = `https://portiaportia.github.io/json/${shoe.img}`;
+
         shoeListDiv.append(section);
     });
 };
