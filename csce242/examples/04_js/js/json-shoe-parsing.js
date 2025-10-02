@@ -31,6 +31,14 @@ const showShoes = async() => {
         p.innerHTML = `Brand: ${shoe.brand}`;
 
         //loop through reviews reviews and make ul li list
+        const ul = document.createElement("ul");
+        section.append(ul);
+
+        shoe.reviews.forEach((review) => {
+            const li = document.createElement("li");
+            li.innerHTML = review;
+            ul.append(li);
+        });
 
         shoeListDiv.append(section);
     });
