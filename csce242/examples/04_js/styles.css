@@ -292,6 +292,15 @@ footer p {
     visibility:hidden;
 }
 
+.shoe {
+  background-color: var(--gallery-color);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+  width:40%;
+}
+
 
 /* Medium screens */
 @media only screen and (min-width: 700px) { 
