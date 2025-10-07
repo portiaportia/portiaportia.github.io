@@ -359,6 +359,10 @@ footer p {
         max-width:100% !important;
     }
 
+    #breweries {
+        flex-wrap: wrap;
+    }
+
     .brewery {
         background-color:var(--gallery-color);
         padding:10px;
