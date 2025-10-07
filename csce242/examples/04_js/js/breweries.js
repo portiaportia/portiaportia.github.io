@@ -19,7 +19,18 @@ const showBreweries = async() => {
         breweriesSection.append(section);
         section.classList.add("brewery");
 
+        //title link
+        const h3 = document.createElement("h3");
+        section.append(h3);
+        const a = document.createElement("a");
+        h3.append(a);
+        a.innerHTML = pub.name;
+        a.href= pub.website_url;
 
+        //p for brewery tpye
+        const pType = document.createElement("p");
+        section.append(pType);
+        pType.innerHTML = pub.brewery_type;
     });
 };
 
