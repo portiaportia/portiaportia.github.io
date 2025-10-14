@@ -18,7 +18,7 @@ document.getElementById("contact-form").onsubmit = (event) => {
         .then(async (response) => {
             let json = await response.json();
             if (response.status == 200) {
-                result.innerHTML = "Form submitted successfully";
+                result.innerHTML = "Email Sent";
             } else {
                 console.log(response);
                 result.innerHTML = json.message;
