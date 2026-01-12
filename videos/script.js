@@ -7,7 +7,7 @@ sadSongs["Happier Than Ever By Billie Eilish"] ="5GJWxDKyk3A";
 document.getElementById("sel-mood").onchange = (e) => {
   const list = document.getElementById("list");
   const mood = e.currentTarget.value.toLowerCase();
-  const videoPlayer = document.createElement("video");
+  const videoPlayer = document.getElementById("video");
   videoPlayer.classList.add("hidden");
   list.innerHTML = "";
   let songList = "";
@@ -32,6 +32,7 @@ document.getElementById("sel-mood").onchange = (e) => {
     a.onclick = (e) => {
         e.preventDefault();
         videoPlayer.classList.remove("hidden");
+        
 
         videoPlayer.src = `https://www.youtube.com/embed/${songList[song]}`;
     }
