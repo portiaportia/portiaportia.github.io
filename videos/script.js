@@ -1,9 +1,11 @@
 const happySongs = new Object();
-happySongs["Happy by Pharrell Williams"] = "ZbZSe6N_BXs?si=HYSNWYZFZX-ug64f";
+happySongs["Happy by Pharrell Williams"] = "ZbZSe6N_BXs";
 
 document.getElementById("sel-mood").onchange = (e) => {
   const list = document.getElementById("list");
   const mood = e.currentTarget.value.toLowerCase();
+  const videoPlayer = document.createElement("video");
+  videoPlayer.classList.add("hidden");
   let songList = "";
 
   if(mood == "select"){
@@ -24,7 +26,9 @@ document.getElementById("sel-mood").onchange = (e) => {
     list.append(p);
 
     a.onclick = () => {
-      console.log("clicked");
+        videoPlayer.classList.remove("hidden");
+        console.log("hi");
+        videoPlayer.src = `https://www.youtube.com/embed/${happySongs[song]}`;
     }
   }
 }
