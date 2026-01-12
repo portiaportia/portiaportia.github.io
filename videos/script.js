@@ -1,8 +1,16 @@
 const happySongs = new Object();
 happySongs["Happy by Pharrell Williams"] = "ZbZSe6N_BXs";
+happySongs["Don't Stop me now by Queen"] = "HgzGwKwLmgM";
+happySongs["Can't Stop this Feeling by Justin Timberlake"] = "0Ui-QzihJGo";
+happySongs["Don't Worry be Happy by Bobby McFerrin"] = "d-diB65scQU";
+happySongs["I'm Walking on Sunshine by Katrina & the Waves"] = "iPUmE-tne5U";
 
 const sadSongs = new Object();
-sadSongs["Happier Than Ever By Billie Eilish"] ="5GJWxDKyk3A";
+sadSongs["Happier Than Ever by Billie Eilish"] ="5GJWxDKyk3A";
+sadSongs["Someone You Loved by Lewis Capaldi"] = "zABLecsR5UE";
+sadSongs["Someone Like You by Adele"] = "hLQl3WQQoQ0";
+sadSongs["Fix You by Coldplay"] = "k4V3Mo61fJM";
+sadSongs["Hurt by Johnny Cash"] = "SnEVnvWUJgM";
 
 document.getElementById("sel-mood").onchange = (e) => {
   const list = document.getElementById("list");

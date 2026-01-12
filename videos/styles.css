@@ -19,6 +19,12 @@ main {
   text-align: center;
 }
 
+#list {
+    text-align: left;
+    width:fit-content;
+    margin:auto;
+}
+
 select {
   border:1px solid var(--primary-color);
   color:#5d878c;
