@@ -338,14 +338,26 @@ footer p {
   }
 
   #gallery section {
-    max-width: 20%;
+    max-width: 25%;
     margin:10px;
     border-radius:10px;
-    border:10px solid var(--accent-bold);
+    background: 	#4663ac;
+    color:white;
+  }
+
+  #gallery section h3 {
+    margin-bottom:0px;
+  }
+
+  #gallery p:first-of-type {
+    color:white;
+    margin-top:6px;
   }
 
   #gallery section img {
     max-width:100%;
+    border-radius: 0 0 10px 10px;
+    display:block;
   }
 
   #gallery {
