@@ -29,7 +29,7 @@ document.getElementById("sel-mood").onchange = (e) => {
     songList = sadSongs;
   }
 
-  for(song in songList){
+  for(let song in songList){
     let p = document.createElement("p");
     let a = document.createElement("a");
     a.innerHTML = song;
@@ -40,7 +40,7 @@ document.getElementById("sel-mood").onchange = (e) => {
     a.onclick = (e) => {
         e.preventDefault();
         videoPlayer.classList.remove("hidden");
-        
+        console.log(song);
 
         videoPlayer.src = `https://www.youtube.com/embed/${songList[song]}`;
     }
