@@ -24,6 +24,13 @@ class Song {
 
         section.append(this.picture(this.coverArt));
 
+        section.onclick = () => {
+            document.getElementById("modal").style.display = "block";
+            document.querySelector("#modal-data h3").innerHTML = this.title;
+            document.querySelector("#modal-data #artist").innerHTML = `by ${this.artist}`;
+            document.querySelector("#album").innerHTML = `${this.album}, ${this.year}`;
+        };
+
         return section;
     }
 

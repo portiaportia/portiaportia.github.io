@@ -17,6 +17,10 @@ body {
 
 }
 
+#sidebar {
+    background:lightcoral;
+}
+
 #main-footer {
 
 }
@@ -31,6 +35,16 @@ body {
 
 #gallery section h3 {
     text-align:center;
+}
+
+/* List */
+.item {
+    margin:5px;
+    background:#cdb4db;
+}
+.item img {
+    display:block;
+    margin:auto;
 }
 
 /* Navigation */
@@ -94,4 +108,13 @@ body {
     #main-nav a:hover {
         border-bottom:1px solid darkslateblue;
     }
+
+    .item img {
+        flex:1;
+    }
+
+    .item div {
+        flex:5;
+    }
+
 }

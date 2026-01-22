@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="styles.css" />
-    <title>Arrays</title>
+    <title>Classes</title>
   </head>
   <body>
     <div id="content">
@@ -16,17 +17,31 @@
 
           </div>
 
-          <iframe id="video" class="hidden"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/ZbZSe6N_BXs"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </main>
-
+          <!-- The Modal -->
+        <div id="modal" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span id="close" class="w3-button w3-display-topright">&times;</span>
+              <div id="modal-content">
+                  <iframe id="video"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/ZbZSe6N_BXs"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                  </iframe>
+                  <div id="modal-data">
+                      <h3></h3>
+                      <p id="artist"></p>
+                      <p id="album"></p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
       <footer>
         <p>@portiaplante.com</p>
       </footer>

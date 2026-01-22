@@ -5,3 +5,7 @@ songs.push(new Song("Two-Headed Boy", "Neutral Milk Hotel", "Aeroplane Over the 
 songs.forEach((song)=>{
     document.getElementById("gallery").append(song.card);
 });
+
+document.getElementById("close").onclick = () => {
+  document.getElementById("modal").style.display = "none";
+}

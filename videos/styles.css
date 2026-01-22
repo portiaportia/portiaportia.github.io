@@ -174,11 +174,35 @@ footer {
   max-width:100%;
 }
 
+.w3-container {
+  padding:0;
+}
+
 #close {
   color:var(--accent-bold);
   position:absolute;
   right:15px;
   cursor:pointer;
+}
+
+#modal-content {
+  background:#D4E4F7;   
+  color:#4663AC;  
+  display:flex;
+  text-align:left;
+}
+
+#modal #close {
+  color:#4663AC;
+  font-size:1.25em;
+}
+
+#video {
+  display:block;
+}
+
+#modal-data {
+  margin-left:20px;
 }
 
 /* Slider*/
