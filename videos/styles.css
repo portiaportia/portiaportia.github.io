@@ -83,7 +83,6 @@ footer {
 #gallery section {
   position: relative;
   width: 50%;
-  max-width: 300px;
 }
 
 /* Make the image to responsive */
@@ -370,7 +369,7 @@ footer p {
   }
 
   #gallery section {
-    max-width: 25%;
+    flex:1;
     margin:10px;
     border-radius:10px;
     background: 	#4663ac;
