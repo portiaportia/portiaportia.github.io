@@ -295,6 +295,14 @@ h2 {
   color: var(--accent-bold);
 }
 
+#modal-content p {
+  font-size:1.2em;
+}
+
+#modal-content h3 {
+  font-size:1.6em;
+}
+
 /* forms */
 input {
   border: 1px solid var(--primary-color);
