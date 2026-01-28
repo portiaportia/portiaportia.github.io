@@ -30,7 +30,7 @@ class Song {
             document.querySelector("#modal-data #artist").innerHTML = `by ${this.artist}`;
             document.querySelector("#album").innerHTML = `${this.album}, ${this.year}`;
             document.querySelector("#genre").innerHTML = `${this.genre} Music`;
-            document.querySelector("#video").src = `https://www.youtube.com/embed/5GJWxDKyk3A`;
+            document.querySelector("#video").src = `https://www.youtube.com/embed/${this.YouTubeCode}`;
         };
 
         return section;
