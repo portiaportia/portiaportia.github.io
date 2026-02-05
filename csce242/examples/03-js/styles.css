@@ -1,0 +1,190 @@
+/* Main Structure */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:#bde0fe;
+}
+
+#main-content {
+    width:80%;
+    margin:auto;    /* Center */
+}
+
+#main-header {
+    background:#ffafcc;
+    position:relative;
+}
+
+#content {
+
+}
+
+#sidebar {
+    background:lightcoral;
+}
+
+#main-footer {
+
+}
+
+/* Header */
+#logo {
+    margin:10px;
+}
+
+#login-nav {
+    position:absolute;
+    right:5%;
+    top:5%;
+}
+
+#login-nav li:not(:last-child)::after {
+    content:"|";
+}
+
+
+
+/* Images */
+img {
+    max-width:100%;
+}
+
+/* Square */
+.area {
+    background:#cdb4db;
+    position:relative;
+}
+
+.arrow {
+    font-size:1.5em;
+    color:white;
+    position:absolute;
+    top:32%;
+}
+
+#prev {
+    left:5%;
+}
+
+#next {
+    right:5%;
+}
+
+#slide-desc {
+    position:absolute;
+    bottom:5%;
+    left:5%;
+    background:rgba(255,255,255, 0.8);
+    padding:5px;
+    max-width:40%;
+}
+
+#square {
+    width:100px;
+    height:100px;
+    background:lightsalmon;
+
+    /* Postition absolute is in respect to the upper left hand corner */
+
+    position:absolute;
+    top:50px;
+    left:50px;
+}
+
+/* Gallery */
+#gallery section {
+    background:lightgray;
+    padding:5px;
+    border-radius:5px;
+    margin:5px;
+}
+
+#gallery section h3 {
+    text-align:center;
+}
+
+/* List */
+.item {
+    margin:5px;
+    background:#cdb4db;
+}
+.item img {
+    display:block;
+    margin:auto;
+}
+
+/* Navigation */
+nav ul {
+    padding-left:0;     /* Remove indentation */
+}
+
+nav li {
+    list-style-type:none;   /* Remove bullet */
+    background:#ffc8dd;
+    padding:5px;
+    border-bottom:1px solid #cdb4db;;
+}
+
+nav a {
+    text-decoration: none;  /* Remove underline */
+}
+
+/* Typography */
+#main-header h1 {
+    text-align: center;
+    padding-top:10px;
+}
+
+/* Larger devices */
+@media (min-width: 768px) {
+    #content {
+        justify-content: space-between;
+        gap:1em;
+    }
+
+    .columns {
+        display:flex;
+    }    
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    nav ul {
+        display:flex;
+    }
+
+    nav li {
+        background:transparent;
+        flex:1;
+    }
+
+    nav a {
+        color: darkslateblue;
+        border-bottom:1px solid transparent;
+    }
+
+    nav a:hover {
+        border-bottom:1px solid darkslateblue;
+    }
+
+    .item img {
+        flex:1;
+    }
+
+    .item div {
+        flex:5;
+    }
+
+}
