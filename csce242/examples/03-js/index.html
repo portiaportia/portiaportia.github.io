@@ -9,7 +9,12 @@
             <header id="main-header">
                 <h1>JavaScript</h1>
                 <nav id="main-nav">
-                    <ul>
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="hide-small">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Loops</a></li>
                         <li><a href="#">Arrays</a></li>
@@ -30,6 +35,14 @@
                     <section id="ball-playground">
                         <button id="btn-bounce">Start</button>
                         <div id="ball"></div>
+                    </section>
+                    <section>
+                        <h3>Plant Health</h3>
+                        <p>
+                            <label for="txt-num-days">Enter Number of Days</label>
+                            <input type="number" id="txt-num-days">
+                        </p>
+                        <p id="p-plant-message"></p>
                     </section>
                 </div>
             </main>

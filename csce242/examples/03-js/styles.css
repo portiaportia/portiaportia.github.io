@@ -14,21 +14,9 @@ body {
     margin:auto;    /* Center */
 }
 
-#gallery section {
-    background-color:white;
-    padding:10px;
-    margin:5px;
-    min-width:29%;
-    min-height:250px;
-}
-
 #main-header {
-    background:#ffafcc;
+    background:#00CED1;
     position:relative;
-}
-
-#content {
-
 }
 
 #sidebar {
@@ -111,14 +99,23 @@ img {
 
 /* Gallery */
 #gallery section {
-    background:lightgray;
-    padding:5px;
+    background:AliceBlue;
+    padding:10px;
     border-radius:5px;
     margin:5px;
+    width:30%;
+
 }
 
 #gallery section h3 {
     text-align:center;
+}<div></div>
+
+button {
+    background:turquoise;
+    padding:5px;
+    margin-bottom:5px;
+    border-radius:5px;
 }
 
 /* List */
@@ -145,6 +142,7 @@ nav li {
 
 nav a {
     text-decoration: none;  /* Remove underline */
+    color:white;
 }
 
 /* Ball */
@@ -191,10 +189,19 @@ nav a {
 #main-header h1 {
     text-align: center;
     padding-top:10px;
+    color:white;
+}
+
+.hide-small {
+    display:none;
 }
 
 /* Larger devices */
 @media (min-width: 768px) {
+    .hide-small {
+        display:flex;
+    }
+
     #content {
         justify-content: space-between;
         gap:1em;
@@ -202,7 +209,12 @@ nav a {
 
     .columns {
         display:flex;
-    }    
+        flex-wrap:wrap;
+    }   
+    
+    #gallery {
+        justify-content: space-around;
+    }
 
     .one {
         flex:1;
@@ -230,7 +242,6 @@ nav a {
     }
 
     nav a {
-        color: darkslateblue;
         border-bottom:1px solid transparent;
     }
 
@@ -246,4 +257,7 @@ nav a {
         flex:5;
     }
 
+    #toggle-nav {
+        display:none;
+    }
 }

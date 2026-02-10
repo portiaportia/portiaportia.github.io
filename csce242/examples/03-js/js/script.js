@@ -23,3 +23,24 @@ document.getElementById("btn-bounce").onclick = (e) => {
         ball.classList.remove("bounce");
     }
 }
+
+//plant health
+document.getElementById("txt-num-days").onchange = (e) => {
+    const numEntered = parseInt(e.currentTarget.value);
+    const p = document.getElementById("p-plant-message");
+    
+    if(numEntered <=0) {
+        p.innerHTML = "Yay! We were fed today!";
+    } else if(numEntered <= 2) {
+        p.innerHTML = "I'm getting a little thirsty";
+    } else if(numEntered <=5) {
+        p.innerHTML = "I'm starting to wilt";
+    } else {
+        p.innerHTML = "You killed me :(";
+    }
+};
+
+//toggle nav
+document.getElementById("toggle-nav").onclick = () => {
+    document.querySelector("#main-nav ul").classList.toggle("hide-small");
+};
