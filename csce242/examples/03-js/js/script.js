@@ -10,3 +10,16 @@ document.getElementById("a-click").onclick = (e) => {
     e.preventDefault(); //not go to the links destination
     e.currentTarget.innerHTML = "Clicked";
 };
+
+//start and stop the ball bouncing
+document.getElementById("btn-bounce").onclick = (e) => {
+    const ball = document.getElementById("ball");
+
+    if(e.currentTarget.innerHTML.toLowerCase() == "start") {
+        e.currentTarget.innerHTML = "Stop";
+        ball.classList.add("bounce");
+    } else {
+        e.currentTarget.innerHTML = "Start";
+        ball.classList.remove("bounce");
+    }
+}

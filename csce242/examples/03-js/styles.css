@@ -1,12 +1,25 @@
 /* Main Structure */
+:root {
+    --main-background:#bde0fe;
+    --main-headers: purple;
+}
+
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background:#bde0fe;
+    background:var(--main-background);
 }
 
 #main-content {
     width:80%;
     margin:auto;    /* Center */
+}
+
+#gallery section {
+    background-color:white;
+    padding:10px;
+    margin:5px;
+    min-width:29%;
+    min-height:250px;
 }
 
 #main-header {
@@ -41,7 +54,13 @@ body {
     content:"|";
 }
 
-
+/* Navigation */
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:darkslateblue;
+    margin:6px 0;
+}
 
 /* Images */
 img {
@@ -126,6 +145,46 @@ nav li {
 
 nav a {
     text-decoration: none;  /* Remove underline */
+}
+
+/* Ball */
+#ball-playground {
+    position: relative;
+}
+
+#ball {
+    width:25px;
+    height:25px;
+    background:magenta;
+    border-radius:25px;
+    position:absolute;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {
+        background: magenta;
+        top:0px;
+    }
+    25% {
+        background:orange;
+    }
+    50% {
+        background: green;
+        top:200px;
+    }
+    75% {
+        background:red;
+    }
+    100% {
+        background:pink;
+        top:0px;
+    }
 }
 
 /* Typography */
