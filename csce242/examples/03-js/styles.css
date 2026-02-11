@@ -10,7 +10,6 @@ body {
 }
 
 #main-content {
-    width:80%;
     margin:auto;    /* Center */
 }
 
@@ -43,6 +42,9 @@ body {
 }
 
 /* Navigation */
+#toggle-nav {
+    padding:10px;
+}
 #toggle-nav div {
     width:25px;
     height:2px;
@@ -85,47 +87,26 @@ img {
     max-width:40%;
 }
 
-#square {
-    width:100px;
-    height:100px;
-    background:lightsalmon;
-
-    /* Postition absolute is in respect to the upper left hand corner */
-
-    position:absolute;
-    top:50px;
-    left:50px;
-}
-
 /* Gallery */
 #gallery section {
     background:AliceBlue;
     padding:10px;
     border-radius:5px;
     margin:5px;
-    width:30%;
 
 }
 
 #gallery section h3 {
     text-align:center;
-}<div></div>
+}
 
 button {
     background:turquoise;
     padding:5px;
     margin-bottom:5px;
     border-radius:5px;
-}
-
-/* List */
-.item {
-    margin:5px;
-    background:#cdb4db;
-}
-.item img {
-    display:block;
-    margin:auto;
+    border:1px solid darkslategray;
+    color:darkslategray;
 }
 
 /* Navigation */
@@ -161,13 +142,13 @@ nav a {
 .bounce {
     animation-name: bounce;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
 
 @keyframes bounce {
     0% {
         background: magenta;
-        top:0px;
+        top:100px;
     }
     25% {
         background:orange;
@@ -181,8 +162,17 @@ nav a {
     }
     100% {
         background:pink;
-        top:0px;
+        top:100px;
     }
+}
+
+/* Thermometer */
+#thermometer {
+    width:25%;
+    height:200px;
+    margin-right:10%;
+    border:2px solid turquoise;
+    background:linear-gradient(0deg, red 0% var(--donation-percent), white var(--donation-percent) 100%);
 }
 
 /* Typography */
@@ -192,19 +182,19 @@ nav a {
     color:white;
 }
 
+h3 {
+    color:#05668d;
+}
+
+/* Hide */
 .hide-small {
     display:none;
 }
 
 /* Larger devices */
 @media (min-width: 768px) {
-    .hide-small {
-        display:flex;
-    }
-
     #content {
-        justify-content: space-between;
-        gap:1em;
+        margin:auto;
     }
 
     .columns {
@@ -213,7 +203,12 @@ nav a {
     }   
     
     #gallery {
-        justify-content: space-around;
+        justify-content: flex-start;
+        gap:1em;
+    }
+
+    #gallery section {
+        width:22%;
     }
 
     .one {
@@ -239,6 +234,7 @@ nav a {
     nav li {
         background:transparent;
         flex:1;
+        text-align: center;
     }
 
     nav a {
@@ -246,18 +242,14 @@ nav a {
     }
 
     nav a:hover {
-        border-bottom:1px solid darkslateblue;
-    }
-
-    .item img {
-        flex:1;
-    }
-
-    .item div {
-        flex:5;
+        border-bottom:1px solid white;
     }
 
     #toggle-nav {
         display:none;
+    }
+
+    .hide-small {
+        display:flex;
     }
 }
