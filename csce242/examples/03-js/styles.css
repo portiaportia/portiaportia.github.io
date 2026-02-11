@@ -1,7 +1,6 @@
 /* Main Structure */
 :root {
     --main-background:#bde0fe;
-    --main-headers: purple;
 }
 
 body {
@@ -9,47 +8,10 @@ body {
     background:var(--main-background);
 }
 
-#main-content {
-    margin:auto;    /* Center */
-}
-
 #main-header {
     background:#00CED1;
+    border-radius:5px;
     position:relative;
-}
-
-#sidebar {
-    background:lightcoral;
-}
-
-#main-footer {
-
-}
-
-/* Header */
-#logo {
-    margin:10px;
-}
-
-#login-nav {
-    position:absolute;
-    right:5%;
-    top:5%;
-}
-
-#login-nav li:not(:last-child)::after {
-    content:"|";
-}
-
-/* Navigation */
-#toggle-nav {
-    padding:10px;
-}
-#toggle-nav div {
-    width:25px;
-    height:2px;
-    background-color:darkslateblue;
-    margin:6px 0;
 }
 
 /* Images */
@@ -89,7 +51,7 @@ img {
 
 /* Gallery */
 #gallery section {
-    background:AliceBlue;
+    background:#edf6f9;
     padding:10px;
     border-radius:5px;
     margin:5px;
@@ -110,15 +72,30 @@ button {
 }
 
 /* Navigation */
+#toggle-nav {
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:white;
+    margin:6px 0;
+}
+
 nav ul {
     padding-left:0;     /* Remove indentation */
 }
 
 nav li {
     list-style-type:none;   /* Remove bullet */
-    background:#ffc8dd;
+    background:#90e0ef;
     padding:5px;
-    border-bottom:1px solid #cdb4db;;
+}
+
+nav li:not(:last-child) {
+    border-bottom:1px solid white;;
 }
 
 nav a {
@@ -134,7 +111,7 @@ nav a {
 #ball {
     width:25px;
     height:25px;
-    background:magenta;
+    background:#e29578;
     border-radius:25px;
     position:absolute;
 }
@@ -147,21 +124,21 @@ nav a {
 
 @keyframes bounce {
     0% {
-        background: magenta;
+        background: #ffa69e;
         top:100px;
     }
     25% {
-        background:orange;
+        background:#faf3dd;
     }
     50% {
-        background: green;
+        background: #b8f2e6;
         top:200px;
     }
     75% {
-        background:red;
+        background:#aed9e0;
     }
     100% {
-        background:pink;
+        background:#5e6472;
         top:100px;
     }
 }
@@ -178,12 +155,16 @@ nav a {
 /* Typography */
 #main-header h1 {
     text-align: center;
-    padding-top:10px;
+    padding:10px;
     color:white;
 }
 
 h3 {
     color:#05668d;
+}
+
+a {
+    color:#e29578;
 }
 
 /* Hide */
@@ -243,6 +224,10 @@ h3 {
 
     nav a:hover {
         border-bottom:1px solid white;
+    }
+
+    nav li:not(:last-child) {
+        border-bottom:none;
     }
 
     #toggle-nav {

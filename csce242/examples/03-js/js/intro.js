@@ -39,8 +39,3 @@ document.getElementById("txt-num-days").onchange = (e) => {
         p.innerHTML = "You killed me :(";
     }
 };
-
-//toggle nav
-document.getElementById("toggle-nav").onclick = () => {
-    document.querySelector("#main-nav ul").classList.toggle("hide-small");
-};
