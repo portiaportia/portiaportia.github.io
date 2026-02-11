@@ -1,0 +1,80 @@
+/* Page Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(images/background.jpg);
+    background-size: cover;
+}
+
+#content {
+    width:75%;
+    margin:auto;    /* center */
+    background:rgba(172, 209, 242, 0.8);
+    padding:5px;
+    border-radius:5px;
+}
+
+/* home cards */
+.cards {
+    column-gap: 5px;
+}
+
+.cards article {
+    
+}
+
+/*Typography */
+h1 {
+    color:#17557E;
+    text-align: center;
+}
+
+/* Navigation */
+#main-nav ul {
+    list-style-type: none;
+    background:#165973;
+    padding:0px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+    display:block;
+    padding:10px;
+}
+
+#main-nav li:not(:last-child){
+    border-bottom:1px solid #90CAE6;
+}
+
+#main-nav a:hover {
+    background:#90CAE6;
+    color:#165973;
+}
+
+/* images */
+img {
+    max-width:100%;
+}
+
+/* Larger Resolution */
+@media screen and (min-width: 768px) {
+  #main-nav ul {
+    display:flex;
+  }
+
+    #main-nav li:not(:last-child){
+        border-bottom:none;
+    }
+
+    #main-nav li {
+        flex:1;
+    }
+
+    #main-nav a {
+        text-align: center;
+    }
+
+    .columns {
+        display:flex;
+    }
+}
