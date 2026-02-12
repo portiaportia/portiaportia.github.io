@@ -107,6 +107,12 @@ nav a {
     color:white;
 }
 
+/* Date */
+#p-date {
+    padding:10px;
+    color:white;
+}
+
 /* Ball */
 #ball-playground {
     position: relative;

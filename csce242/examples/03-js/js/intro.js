@@ -63,3 +63,15 @@ document.getElementById("btn-stop-count").onclick = () => {
     clearInterval(countInterval);
 };
 
+/* Display the date */
+setInterval(()=>{
+    const today = new Date();
+    const month = today.getMonth();
+    const day = today.getDay();
+    const year = today.getFullYear();
+    const seconds = today.getSeconds();
+    const minutes = today.getMinutes();
+    const hours = today.getHours();
+
+    document.getElementById("p-date").innerHTML = `${hours}:${minutes}:${seconds}, ${month}/${day}/${year}`;
+}, 500);
