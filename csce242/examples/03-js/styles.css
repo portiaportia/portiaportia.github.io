@@ -10,6 +10,11 @@ body {
     color:darkslategray;
 }
 
+#main-content {
+    width:80%;
+    margin:auto;
+}
+
 #main-header {
     background:#00CED1;
     border-radius:5px;
