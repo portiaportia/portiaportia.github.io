@@ -39,3 +39,27 @@ document.getElementById("txt-num-days").onchange = (e) => {
         p.innerHTML = "You killed me :(";
     }
 };
+
+const p =document.getElementById("p-count-display");
+let count = 0;
+let countInterval;
+const startButton = document.getElementById("btn-start-count");
+
+startButton.onclick = () => {
+    countInterval = setInterval(()=>{
+        startButton.disabled = true;
+        p.innerHTML = count++;
+    },500);
+};
+
+document.getElementById("btn-pause-count").onclick = () => {
+    startButton.disabled = false;
+    clearInterval(countInterval);
+};
+
+document.getElementById("btn-stop-count").onclick = () => {
+    startButton.disabled = false;
+    count = 0;
+    clearInterval(countInterval);
+};
+

@@ -71,6 +71,10 @@ button {
     color:darkslategray;
 }
 
+button:disabled {
+    background:gray;
+}
+
 /* Navigation */
 #toggle-nav {
     position:absolute;
