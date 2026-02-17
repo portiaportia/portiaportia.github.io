@@ -6,7 +6,7 @@ body {
 }
 
 #content {
-    width:75%;
+    width:95%;
     margin:auto;    /* center */
     background:rgba(172, 209, 242, 0.8);
     padding:5px;
@@ -18,14 +18,30 @@ body {
     column-gap: 5px;
 }
 
+.cards h3 {
+    background:#081A28;
+    color:white;
+    padding:10px;
+    text-align:center;
+    margin:0;
+}
+
 .cards article {
-    
+    text-align:center;
 }
 
 /*Typography */
 h1 {
     color:#17557E;
     text-align: center;
+}
+
+footer {
+    text-align:center;
+    background:#165973;
+    padding:10px;
+    margin-top:10px;
+    color:white;
 }
 
 /* Navigation */
@@ -58,9 +74,14 @@ img {
 
 /* Larger Resolution */
 @media screen and (min-width: 768px) {
-  #main-nav ul {
-    display:flex;
-  }
+
+    #content {
+        width:75%;
+    } 
+
+    #main-nav ul {
+        display:flex;
+    }
 
     #main-nav li:not(:last-child){
         border-bottom:none;
@@ -76,5 +97,9 @@ img {
 
     .columns {
         display:flex;
+    }
+
+    .cards {
+        justify-content: space-between;
     }
 }
