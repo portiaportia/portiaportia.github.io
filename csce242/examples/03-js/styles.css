@@ -56,6 +56,10 @@ img {
     max-width:40%;
 }
 
+#movie {
+    width:100%;
+}
+
 /* Gallery */
 #gallery section {
     background:#edf6f9;
