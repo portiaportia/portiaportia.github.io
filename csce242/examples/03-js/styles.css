@@ -32,21 +32,6 @@ img {
     position:relative;
 }
 
-.arrow {
-    font-size:1.5em;
-    color:white;
-    position:absolute;
-    top:32%;
-}
-
-#prev {
-    left:5%;
-}
-
-#next {
-    right:5%;
-}
-
 #slide-desc {
     position:absolute;
     bottom:5%;
@@ -98,6 +83,29 @@ table th, table td {
 table th {
     background-color: #05668d;
     color:white;
+}
+
+/* Slideshow */
+#slideshow {
+    position:relative;
+}
+
+.arrow {
+    display:block;
+    font-size:5em;
+    text-decoration: none;
+    font-weight: 600;
+    position:absolute;
+    top:30%;
+    color:white;
+}
+
+#arrow-prev{
+    left:5%;
+}
+
+#arrow-next {
+    right:5%;
 }
 
 /* Navigation */
@@ -215,6 +223,10 @@ a {
 
 /* Hide */
 .hide-small {
+    display:none;
+}
+
+.hidden {
     display:none;
 }
 
