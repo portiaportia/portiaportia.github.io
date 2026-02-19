@@ -86,6 +86,20 @@ button:disabled {
     background:gray;
 }
 
+/* tables */
+table {
+    border-collapse: collapse;
+}
+table th, table td {
+    padding:5px;
+    border:1px solid darkslategray;
+}
+
+table th {
+    background-color: #05668d;
+    color:white;
+}
+
 /* Navigation */
 #toggle-nav {
     position:absolute;
