@@ -27,11 +27,17 @@ class Dog {
         //more info section
         dogSection.append(this.moreInfo());
 
+        //hide and show more info
+        a1.onclick = () => {
+            dogSection.querySelector("ul").classList.toggle("hidden");
+        };
+
         return dogSection;
     }
 
     moreInfo() {
         const ul = document.createElement("ul");
+        ul.classList.add("hidden");
         ul.append(this.infoLi("Breed", this.breed));
         ul.append(this.infoLi("Size", this.size));
         ul.append(this.infoLi("Age", this.age));
