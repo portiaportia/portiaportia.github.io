@@ -8,9 +8,41 @@ class Dog {
     }
 
     get item() {
-        const p = document.createElement("p");
-        p.innerHTML = "DOG!!!!!";
-        return p;
+        const dogSection = document.createElement("section");
+        dogSection.classList.add("dog");
+
+        //title
+        const a1 = document.createElement("a");
+        a1.href="#";
+        const h3 = document.createElement("h3");
+        a1.append(h3);
+        h3.innerHTML = this.title;
+        dogSection.append(a1);
+
+        //image
+        const img = document.createElement("img");
+        img.src = `images/classes/${this.pic}`;
+        a1.append(img);
+
+        //more info section
+        dogSection.append(this.moreInfo());
+
+        return dogSection;
+    }
+
+    moreInfo() {
+        const ul = document.createElement("ul");
+        ul.append(this.infoLi("Breed", this.breed));
+        ul.append(this.infoLi("Size", this.size));
+        ul.append(this.infoLi("Age", this.age));
+        
+        return ul;
+    }
+
+    infoLi(label, value) {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${label}</strong>: ${value}`;
+        return li;
     }
 }
 
