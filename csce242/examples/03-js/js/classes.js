@@ -28,7 +28,8 @@ class Dog {
         dogSection.append(this.moreInfo());
 
         //hide and show more info
-        a1.onclick = () => {
+        a1.onclick = (e) => {
+            e.preventDefault(); 
             dogSection.querySelector("ul").classList.toggle("hidden");
         };
 

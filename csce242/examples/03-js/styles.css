@@ -192,6 +192,27 @@ nav a {
     }
 }
 
+/* Classes */
+.dog {
+    background:#EDF6F9;
+    border:5px solid #E29578;
+    text-align:center;
+}
+
+.dog img {
+    margin:auto;
+    display:block;
+}
+
+.dog h3 {
+    color:#E29578;
+    font-size:1.5em;
+}
+
+.dog a {
+    text-decoration: none;
+}
+
 /* Thermometer */
 #thermometer {
     width:25%;
@@ -294,5 +315,13 @@ a {
 
     .hide-small {
         display:flex;
+    }
+
+    #dogs {
+        gap:5%;
+    }
+
+    #dogs section {
+        flex:1;
     }
 }
