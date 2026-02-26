@@ -197,6 +197,9 @@ nav a {
     background:#EDF6F9;
     border:5px solid #E29578;
     text-align:center;
+    margin-bottom:20px;
+    padding:10px;
+    padding-bottom:30px;
 }
 
 .dog img {
@@ -209,8 +212,65 @@ nav a {
     font-size:1.5em;
 }
 
+.dog ul {
+    text-align: left;
+    color:darkslategray;
+}
+
+.dog strong {
+    color:#E29578;
+}
+
 .dog a {
     text-decoration: none;
+}
+
+/* Shoes */
+.shoe{
+    background:#EDF6F9;
+    border:5px solid #E29578;
+    text-align:center;
+    margin-bottom:20px;
+    padding:10px;
+    padding-bottom:30px;
+}
+
+.shoe h3 {
+    color:#E29578;
+    font-size:1.5em;
+}
+
+.shoe ul {
+    text-align: left;
+    color:darkslategray;
+}
+
+.shoe strong {
+    color:#E29578;
+}
+
+/* Breweries */
+.brewery, .contact section{
+    background:#EDF6F9;
+    border:5px solid #E29578;
+    text-align:center;
+    margin-bottom:20px;
+    padding:10px;
+    padding-bottom:30px;
+}
+
+.brewery h3, .contact h3 {
+    color:#E29578;
+    font-size:1.5em;
+}
+
+.brewery ul, .contact ul {
+    text-align: left;
+    color:darkslategray;
+}
+
+.brewery strong, .contact strong {
+    color:#E29578;
 }
 
 /* Thermometer */
@@ -222,11 +282,17 @@ nav a {
     background:linear-gradient(0deg, red 0% var(--donation), white var(--donation) 100%);
 }
 
+/* Contact */
+
 /* Typography */
 #main-header h1 {
     text-align: center;
     padding:10px;
     color:white;
+}
+
+h2 {
+    text-align:center;
 }
 
 h3 {
@@ -317,11 +383,11 @@ a {
         display:flex;
     }
 
-    #dogs {
+    #dogs, #shoe-list, #breweries, .contact {
         gap:5%;
     }
 
-    #dogs section {
+    #dogs section, #shoe-list section, #breweries, .contact section {
         flex:1;
     }
 }
