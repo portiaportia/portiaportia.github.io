@@ -225,8 +225,8 @@ nav a {
     text-decoration: none;
 }
 
-/* Shoes */
-.shoe{
+/* Fish */
+.fish{
     background:#EDF6F9;
     border:5px solid #E29578;
     text-align:center;
@@ -235,17 +235,17 @@ nav a {
     padding-bottom:30px;
 }
 
-.shoe h3 {
+.fish h3 {
     color:#E29578;
     font-size:1.5em;
 }
 
-.shoe ul {
+.fish ul {
     text-align: left;
     color:darkslategray;
 }
 
-.shoe strong {
+.fish strong {
     color:#E29578;
 }
 
@@ -383,11 +383,11 @@ a {
         display:flex;
     }
 
-    #dogs, #shoe-list, #breweries, .contact {
+    #dogs, #fish-list, #breweries, .contact {
         gap:5%;
     }
 
-    #dogs section, #shoe-list section, #breweries, .contact section {
+    #dogs section, #fish-list section, #breweries, .contact section {
         flex:1;
     }
 }
