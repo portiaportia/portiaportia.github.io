@@ -347,11 +347,18 @@ nav a {
     color:white;
 }
 
+#contact-us button {
+    width:61%;
+    font-size:16px;
+    
+}
+
 /* Typography */
 #main-header h1 {
     text-align: center;
-    padding:10px;
     color:white;
+    padding-top:20px;
+    margin-bottom:0;
 }
 
 h2 {
