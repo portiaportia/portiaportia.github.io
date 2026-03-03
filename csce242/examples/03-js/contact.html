@@ -28,10 +28,34 @@
                 <section id="contact-us">
                     <h3>Contact Us</h3>
                     <p>Please reach out with any questions you may have.</p>
+
+                    <form id="contact-form" method="POST">
+
+                        <input type="hidden" name="access_key" value="2cc869cb-a5d4-4b4b-b609-7d0a0bd4ea78">
+                        
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+                        
+                        <p>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" required></textarea>
+                        </p>
+                        
+                        <p><button type="submit">Submit Form</button></p>
+
+                        <div id="contact-result"></div>
+                    </form>
                 </section>
                 <section class="one">
                     <h3>Our Location</h3>
                     <p>123 Anywhere St.</p>
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.0021038412383!2d-81.03373772523273!3d33.992479720885186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bad7ff85decd%3A0xeba1e7740d5c10e0!2sM.%20Bert%20Storey%20Engineering%20and%20Innovation%20Center!5e0!3m2!1sen!2sus!4v1772547121327!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
             </main>
             <footer id="main-footer">
@@ -39,6 +63,6 @@
             </footer>
         </div>
         <script src="js/nav.js"></script>
-        <script src="js/jsons.js"></script>
+        <script src="js/contact.js"></script>
     </body>
 </html>

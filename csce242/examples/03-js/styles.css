@@ -283,6 +283,14 @@ nav a {
 }
 
 /* Contact */
+#map {
+    width:100%;
+    height:400px;
+}
+
+#contact-us label {
+    display:block;
+}
 
 /* Typography */
 #main-header h1 {
