@@ -232,7 +232,6 @@ nav a {
     text-align:center;
     margin-bottom:20px;
     padding:10px;
-    padding-bottom:30px;
 }
 
 .fish h3 {
@@ -240,17 +239,31 @@ nav a {
     font-size:1.5em;
 }
 
+.fish h4, .fish p{
+    text-align: left;
+    margin-left:20px;
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
 .fish ul {
     text-align: left;
     color:darkslategray;
+    margin-top:5px;
 }
 
 .fish strong {
     color:#E29578;
 }
 
+.fish img {
+    max-width: 100%;
+    display:block;
+    margin:auto;
+}
+
 /* Breweries */
-.brewery, .contact section{
+.brewery{
     background:#EDF6F9;
     border:5px solid #E29578;
     text-align:center;
@@ -259,17 +272,17 @@ nav a {
     padding-bottom:30px;
 }
 
-.brewery h3, .contact h3 {
+.brewery h3 {
     color:#E29578;
     font-size:1.5em;
 }
 
-.brewery ul, .contact ul {
+.brewery ul {
     text-align: left;
     color:darkslategray;
 }
 
-.brewery strong, .contact strong {
+.brewery strong {
     color:#E29578;
 }
 
@@ -288,8 +301,50 @@ nav a {
     height:400px;
 }
 
+.contact section{
+    background:white;
+    border:5px solid #E29578;
+    text-align:center;
+    margin-bottom:20px;
+    padding:10px;
+    padding-bottom:30px;
+    border-radius:5px;
+}
+
+.contact h3 {
+    color:#E29578;
+    font-size:1.5em;
+}
+
+.contact ul {
+    text-align: left;
+    color:darkslategray;
+}
+
+.contact strong {
+    color:#E29578;
+}
+
 #contact-us label {
     display:block;
+    margin-bottom:5px;
+    color:#00a896;
+}
+
+#contact-us input, #contact-us textarea {
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    width:60%;
+}
+
+#contact-us textarea {
+    height:5em;
+}
+
+
+#contact-us input:focus, #contact-us textarea:focus {
+    background:#00CED1;
+    color:white;
 }
 
 /* Typography */
@@ -391,11 +446,19 @@ a {
         display:flex;
     }
 
-    #dogs, #fish-list, #breweries, .contact {
+    #dogs, #breweries, .contact {
         gap:5%;
     }
 
-    #dogs section, #fish-list section, #breweries, .contact section {
+    #dogs section, #breweries, .contact section {
         flex:1;
+    }
+
+    #fish-list {
+        justify-content: space-around;
+    }
+    #fish-list section {
+        max-width:20%;
+        
     }
 }

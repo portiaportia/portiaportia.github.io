@@ -1,10 +1,18 @@
 //json file parsing
 //https://github.com/portiaportia/portiaportia.github.io/blob/master/json/shoes.json
 
+const base_url = "https://portiaportia.github.io/json";
+
 const getFish = async() => {
-    const url = "https://portiaportia.github.io/json/fish.json";
+    const url = `${base_url}/fish.json`;
     const response = await fetch(url);
     return response.json();
+};
+
+const makeP = (title, content) => {
+    const p = document.createElement("p");
+    p.innerHTML = `<strong>${title}</strong> ${content}`;
+    return p;
 };
 
 const showFish = async() => {
@@ -20,27 +28,17 @@ const showFish = async() => {
         h3.innerHTML = fish.title;
         section.appendChild(h3);
 
-        const pLength = document.createElement("p");
-        pLength.innerHTML = `Length: ${fish.length}`;
-        section.appendChild(pLength);
-
-        const h4 = document.createElement("h4");
-        h4.innerHTML = "Colors:";
-        section.append(h4);
-
-        const ul = document.createElement("ul");
-        section.append(ul);
-
-        //loop through the colors
-        fish.colors.forEach((color)=>{
-            const li = document.createElement("li");
-            li.innerHTML = color;
-            ul.append(li);
-        });
+        const pDesc = document.createElement("p");
+        pDesc.innerHTML = fish.description;
+        section.append(pDesc);
+        
+        section.append(makeP("Length", fish.length));
+        section.append(makeP("Lifespan", fish.lifespan))
+        section.append(makeP("Colors", fish.colors.join(", ")))
 
         const img = document.createElement("img");
         section.prepend(img);
-        img.src =`https://portiaportia.github.io/json/${fish.img}`;
+        img.src =`${base_url}/${fish.img}`;
     });
 };
 
