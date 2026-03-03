@@ -19,6 +19,17 @@ const showFish = async() => {
         const h3 = document.createElement("h3");
         h3.innerHTML = fish.title;
         section.appendChild(h3);
+
+        const pLength = document.createElement("p");
+        pLength.innerHTML = `Length: ${fish.length}`;
+        section.appendChild(pLength);
+
+        const h4 = document.createElement("h4");
+        h4.innerHTML = "Colors:";
+        section.append(h4);
+
+        const ul = document.createElement("ul");
+        section.append(ul);
     });
 };
 
