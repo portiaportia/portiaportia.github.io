@@ -11,3 +11,13 @@ function sayWelcome() {
     const text = document.getElementById("txtName").value;
     welcomeP.innerHTML = "Welcome " + text;
 }
+
+function wink() {
+    const face = document.getElementById("face");
+    face.src="images/wink.jpg";
+}
+
+function smile() {
+    const face = document.getElementById("face");
+    face.src="images/smile.jpg";
+}
