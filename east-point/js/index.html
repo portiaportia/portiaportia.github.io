@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="content">
+            <h1>Learning JavaScript</h1>
+
+            <div class="columns">
+                <section>
+                    <h3>Show Message</h3>
+                    <button onClick="showMessage()">Click Me</button>
+                    <p id="message"></p>
+                </section>
+                <section>
+                    <h3>Show Name</h3>
+                    <p>Enter Name:</p>
+                    <p><input type="text" id="txtName" onkeyup="sayWelcome()"></p>
+                    <p id="welcome"></p>
+                </section>
+            </div>
+
+            
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
