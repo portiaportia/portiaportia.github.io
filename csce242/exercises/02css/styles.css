@@ -1,0 +1,32 @@
+/* Structural */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(images/jungle-bg.jpg);
+    background-size: cover;
+}
+
+#content {
+    background-color:rgba(255,255,255, 0.8);
+    width:70%;
+    margin:auto;    /* center in the page */
+    border-radius:5px;
+    box-shadow: 5px 5px #8FB332;
+}
+
+header, main, footer {
+    padding:5px;
+}
+
+header, footer {
+    background:#30728C;
+    color:white;
+}
+
+
+/* Navigation */
+
+
+/* Typography */
+h1 {
+    color:white;
+}
