@@ -1,4 +1,13 @@
 /* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+
+#content {
+    width:80%;
+    margin:auto;
+}
 
 /* Navigation */
 
