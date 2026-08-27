@@ -9,6 +9,10 @@ body {
     margin:auto;
 }
 
+#main-header {
+    background-color: bisque;
+}
+
 #sidebar, #info {
     padding:5px;
 }
@@ -22,12 +26,22 @@ body {
 }
 
 /* Navigation */
-
-/* Quick Links */
-#quick-links {
+#main-nav ul, #quick-links {
     list-style-type: none;
     padding-left:0;
 }
+
+#main-nav li {
+    background-color: darkslateblue;
+    padding:5px;
+    border-bottom: 1px solid white;
+}
+
+#main-nav a {
+    color:white;
+    text-decoration: none;  /* Remover underline */
+}
+
 
 /* Typography */
 
