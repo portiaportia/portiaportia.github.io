@@ -42,6 +42,10 @@ body {
     text-decoration: none;  /* Remover underline */
 }
 
+/* images */
+img {
+    max-width:100%;
+}
 
 /* Typography */
 #main-header h1 {
