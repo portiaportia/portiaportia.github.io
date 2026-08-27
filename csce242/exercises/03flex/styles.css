@@ -14,3 +14,34 @@ body {
 /* Typography */
 
 /* Responsive Design */
+
+/* 600 px or larger */
+@media (min-width: 1000px) {
+    .columns {
+        display:flex;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4
+    }
+
+    .five {
+        flex:5;
+    }
+
+    .six {
+        flex:6;
+    }
+}
