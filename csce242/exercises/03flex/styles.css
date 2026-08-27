@@ -9,7 +9,25 @@ body {
     margin:auto;
 }
 
+#sidebar, #info {
+    padding:5px;
+}
+
+#sidebar {
+    background-color: aliceblue;
+}
+
+#info {
+    background-color: aquamarine;
+}
+
 /* Navigation */
+
+/* Quick Links */
+#quick-links {
+    list-style-type: none;
+    padding-left:0;
+}
 
 /* Typography */
 
