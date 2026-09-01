@@ -31,6 +31,22 @@ body {
     font-size:1.5em;
 }
 
+.hero-arrow {
+    position:absolute;
+    top:22%;
+    font-size:12em;
+    color:white;
+    text-decoration: none;
+}
+
+#hero-arrow-right {
+    right:2%;
+}
+
+#hero-arrow-left {
+    left:2%;
+}
+
 /* Sidebar */
 #sidebar, #info {
     padding:5px;
