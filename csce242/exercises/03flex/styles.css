@@ -61,7 +61,7 @@ body {
 }
 
 /* Navigation */
-#main-nav ul, #quick-links {
+#main-nav ul, #quick-links, #login-nav ul {
     list-style-type: none;
     padding-left:0;
 }
@@ -72,9 +72,24 @@ body {
     border-bottom: 1px solid white;
 }
 
-#main-nav a {
+#main-nav a, #login-nav a {
     color:white;
     text-decoration: none;  /* Remover underline */
+}
+
+/* login nav */
+#login-nav a {
+    color:#c06c84;
+    font-size:1.5em;
+}
+
+#login-nav li {
+    display:inline-block;
+}
+
+#login-nav li:not(:last-child):not(:first-child)::after {
+  content: " | ";
+  color:#c06c84;
 }
 
 /* images */
