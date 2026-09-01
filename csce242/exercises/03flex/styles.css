@@ -17,6 +17,20 @@ body {
     top:1em;
 }
 
+/* Hero */
+#hero {
+    position:relative; 
+}
+
+#hero-description {
+    position:absolute;
+    top:60%;
+    left:5%;
+    background:rgba(255,255,255,0.8);
+    padding:20px;
+    font-size:1.5em;
+}
+
 /* Sidebar */
 #sidebar, #info {
     padding:5px;
