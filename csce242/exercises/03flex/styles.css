@@ -78,6 +78,12 @@ body {
 }
 
 /* login nav */
+#login-nav {
+    position:absolute;
+    top:1%;
+    right:1%;
+}
+
 #login-nav a {
     color:#c06c84;
     font-size:1.5em;
