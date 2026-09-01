@@ -4,15 +4,20 @@ body {
     background-color: gray;
 }
 
-#content {
-    width:80%;
-    margin:auto;
-}
-
+/* Header */
 #main-header {
     background-color: bisque;
+    position: relative;
+    padding-top:3%;
 }
 
+#logo {
+    position:absolute;
+    left:1em;
+    top:1em;
+}
+
+/* Sidebar */
 #sidebar, #info {
     padding:5px;
 }
@@ -33,7 +38,7 @@ body {
 
 #main-nav li {
     background-color: darkslateblue;
-    padding:5px;
+    padding:20px 5px;
     border-bottom: 1px solid white;
 }
 
@@ -57,6 +62,11 @@ img {
 
 /* 600 px or larger */
 @media (min-width: 1000px) {
+    #content {
+        width:80%;
+        margin:auto;
+    }
+
     .columns {
         display:flex;
     }
