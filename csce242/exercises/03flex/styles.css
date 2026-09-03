@@ -64,6 +64,13 @@ body {
 #footer-links-title {
     width:fit-content;
     margin:auto;
+    align-items: baseline;
+}
+
+#footer-links-title h1, #footer-links h2 {
+    margin:0;
+    padding-left:10px;
+    margin-top:-50px;
 }
 
 #footer-links {
@@ -146,7 +153,7 @@ img {
     #footer-links-title {
         margin:0;
     }
-    
+
     #content {
         width:80%;
         margin:auto;
