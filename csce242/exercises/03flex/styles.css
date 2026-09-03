@@ -60,6 +60,27 @@ body {
     background-color: aquamarine;
 }
 
+/*Footer links */
+
+#footer-links {
+    background:maroon;
+    color:white;
+}
+
+#footer-links a {
+    color:white;
+}
+
+/*Footer Copy */
+#footer-copy {
+    background:black;
+    color:white;
+}
+
+#footer-copy a {
+    color:white;
+}
+
 /* Navigation */
 #main-nav ul, #quick-links, #login-nav ul {
     list-style-type: none;
