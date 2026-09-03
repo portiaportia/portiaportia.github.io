@@ -66,10 +66,9 @@ body {
 }
 
 #footer-social {
-    position:absolute;
-    top:5px;
-    right:5px;
     list-style-type: none;
+    width:fit-content;
+    margin:auto;
 }
 
 #footer-social li {
@@ -171,6 +170,12 @@ img {
 @media (min-width: 1000px) {
     #footer-links-title {
         margin:0;
+    }
+
+    #footer-social {
+        position:absolute;
+        top:5px;
+        right:5px;
     }
 
     #content {
