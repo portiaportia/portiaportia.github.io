@@ -61,6 +61,9 @@ body {
 }
 
 /*Footer links */
+#footer-links-title {
+    background:blue;
+}
 
 #footer-links {
     background:maroon;
@@ -128,6 +131,11 @@ img {
 #main-header h1 {
     text-align: center;
     padding-top:15px;
+}
+
+/* columns for all devices */
+.columns-mobile {
+    display:flex;
 }
 
 /* Responsive Design */
