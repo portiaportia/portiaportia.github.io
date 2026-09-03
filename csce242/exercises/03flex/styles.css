@@ -61,6 +61,25 @@ body {
 }
 
 /*Footer links */
+#footer-links header {
+    position:relative;
+}
+
+#footer-social {
+    position:absolute;
+    top:5px;
+    right:5px;
+    list-style-type: none;
+}
+
+#footer-social li {
+    display:inline-block;
+}
+
+#footer-social a {
+    list-style-type: none; 
+}
+
 #footer-links-title {
     width:fit-content;
     margin:auto;
