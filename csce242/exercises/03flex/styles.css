@@ -62,7 +62,8 @@ body {
 
 /*Footer links */
 #footer-links-title {
-    background:blue;
+    width:fit-content;
+    margin:auto;
 }
 
 #footer-links {
@@ -142,6 +143,10 @@ img {
 
 /* 600 px or larger */
 @media (min-width: 1000px) {
+    #footer-links-title {
+        margin:0;
+    }
+    
     #content {
         width:80%;
         margin:auto;
