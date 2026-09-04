@@ -146,6 +146,33 @@ body {
   font-size:18px;
 }
 
+#intro-gallery {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:10px;
+    margin-top:10px;
+}
+
+#intro-gallery section {
+    background:var(--cards-bg);
+    border:1px solid var(--accent-text);
+    padding:0;
+}
+
+#intro-gallery header {
+    background:var(--accent-text);
+    padding:5px;
+}
+
+#intro-gallery h1, #intro-gallery h2 {
+    margin:0;
+    text-align:center;
+    color:var(--light-text);
+    font-size:24px;
+    font-weight:300;
+}
+
+
 /*Footer links */
 #footer-links header {
     position:relative;
