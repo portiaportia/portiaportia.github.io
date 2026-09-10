@@ -5,6 +5,7 @@ document.getElementById("btn-show-message").onclick = (e) => {
 };
 
 //styles the link when it's clicked
-document.getElementById("link").onclick = () => {
-    
+document.getElementById("link").onclick = (e) => {
+    e.preventDefault(); //don't go to links destination
+    e.target.classList.add("cool-link");
 };
