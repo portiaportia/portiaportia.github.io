@@ -145,6 +145,13 @@ h1, h2, h3 {
     color:magenta;
 }
 
+#ball {
+    height:50px;
+    width:50px;
+    background-color:#A64F6C;
+    border-radius:50%;
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */
@@ -167,6 +174,7 @@ h1, h2, h3 {
 
     .project-card {
         margin-bottom:0;
+        min-height:200px;
     }
     
     /* Navigation */
