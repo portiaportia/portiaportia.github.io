@@ -139,6 +139,12 @@ h1, h2, h3 {
     display:flex;
 }
 
+/* Styles for JS */
+.cool-link {
+    background:teal;
+    color:magenta;
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */
