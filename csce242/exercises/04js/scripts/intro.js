@@ -12,5 +12,5 @@ document.getElementById("link").onclick = (e) => {
 
 //when button clicked make ball bounce
 document.getElementById("btn-bounce").onclick = (e) => {
-    console.log("hi");
+    document.getElementById("ball").classList.toggle("bouncing-ball");
 }
