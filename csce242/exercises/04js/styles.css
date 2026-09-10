@@ -103,6 +103,7 @@ body {
     border: 2px solid var(--cards-border);
     box-shadow: 4px 4px 0 var(--cards-border);
     margin-bottom:18px;
+    position:relative;
 }
 
 .project-card h3 {
@@ -150,18 +151,20 @@ h1, h2, h3 {
     width:50px;
     background-color:#A64F6C;
     border-radius:50%;
+    bottom:75%;
 }
 
 .bouncing-ball {
     animation-name: bounce;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    position:absolute;
 }
 
 /* Bounce Animation */
 @keyframes bounce {
-    0% {background-color:#A64F6C;}
-    50%{background-color: #393D3B;}
+    0% {bottom:75%;}
+    50%{bottom:0%;}
 }
 
 /* Responsive Design */
