@@ -163,8 +163,10 @@ h1, h2, h3 {
 
 /* Bounce Animation */
 @keyframes bounce {
-    0% {bottom:75%;}
-    50%{bottom:0%;}
+    0% {bottom:75%; background:red;}
+    25%{background:orange;}
+    50%{background:yellow; bottom:0%;}
+    75%{background:green;}
 }
 
 /* Responsive Design */
