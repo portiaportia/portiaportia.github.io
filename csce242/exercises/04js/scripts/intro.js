@@ -9,3 +9,8 @@ document.getElementById("link").onclick = (e) => {
     e.preventDefault(); //don't go to links destination
     e.target.classList.add("cool-link");
 };
+
+//when button clicked make ball bounce
+document.getElementById("btn-bounce").onclick = (e) => {
+    console.log("hi");
+}
