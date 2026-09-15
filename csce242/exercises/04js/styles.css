@@ -169,6 +169,11 @@ h1, h2, h3 {
     75%{background:green;}
 }
 
+/* Hiding */
+.hidden {
+    display:none;
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */
