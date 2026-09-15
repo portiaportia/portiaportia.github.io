@@ -40,18 +40,36 @@ document.getElementById("txt-num-days").onkeyup = (e) => {
 let countInterval;
 let count = 0;
 const pCount = document.getElementById("p-count");
+const btnStart = document.getElementById("btn-start");
+const btnPause = document.getElementById("btn-pause");
+const btnStop = document.getElementById("btn-stop");
+btnPause.disabled = true;
+btnStop.disabled = true;
 
-document.getElementById("btn-start").onclick = () =>
+btnStart.onclick = () =>
 {
-    console.log("Start clicked");
+    countInterval = setInterval(()=>{
+        pCount.innerHTML = ++count;
+    },500);
+    btnStart.disabled = true;
+    btnPause.disabled = false;
+    btnStop.disabled = false;
 };
 
-document.getElementById("btn-pause").onclick = () =>
+btnPause.onclick = () =>
 {
-    console.log("Paused clicked");
+    clearInterval(countInterval);
+    btnStart.disabled = false;
+    btnPause.disabled = true;
+    btnStop.disabled = true;
 };
 
-document.getElementById("btn-stop").onclick = () =>
+btnStop.onclick = () =>
 {
-    console.log("Stop clicked");
+    count=0;
+    pCount.innerHTML = "";
+    clearInterval(countInterval);
+    btnStart.disabled = false;
+    btnPause.disabled = true;
+    btnStop.disabled = true;
 };
