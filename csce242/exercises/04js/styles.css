@@ -14,6 +14,7 @@
     --light-text: #FAF1E8;
     --footer-copy-bg: #C2B7AB;
     --accent-text:#A64F6C;
+    --donation:0%;
 }
 
 body {
@@ -167,6 +168,15 @@ h1, h2, h3 {
     25%{background:orange;}
     50%{background:yellow; bottom:0%;}
     75%{background:green;}
+}
+
+/* Thermometer */
+#thermometer {
+    width:25%;
+    height:200px;
+    margin-right:10%;
+    border:2px solid turquoise;
+    background:linear-gradient(0deg, red 0% var(--donation), white var(--donation) 100%);
 }
 
 /* Hiding */
