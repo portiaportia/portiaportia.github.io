@@ -78,6 +78,11 @@ btnStop.onclick = () =>
 setInterval(()=>{
     const pDisplay = document.getElementById("date-display");
     const today = new Date();
+    const month = today.getMonth();
+    const day = today.getDay();
+    const year = today.getFullYear();
     const seconds = today.getSeconds();
+    const minutes = today.getMinutes();
+    const hours = today.getHours();
     pDisplay.innerHTML = seconds;
 }, 1000);
