@@ -92,7 +92,7 @@ body {
 #toggle-nav div {
     width:25px;
     height:2px;
-    background-color:white;
+    background-color:var(--headings);
     margin:6px 0;
 }
 
@@ -197,10 +197,18 @@ h1, h2, h3 {
     display:none;
 }
 
+.hide-small {
+    display:none;
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */
 @media (min-width: 1000px) {
+    .hide-small {
+        display:flex;
+    }
+
     /* Structure */
     #content {
         width:80%;
@@ -226,6 +234,10 @@ h1, h2, h3 {
     #main-nav li {
         flex:1;
         border:0;
+    }
+
+    #toggle-nav {
+        display:none;
     }
 
     /* Columns */
