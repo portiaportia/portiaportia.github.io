@@ -190,6 +190,8 @@ h1, h2, h3 {
     margin-right:10%;
     border:2px solid turquoise;
     background:linear-gradient(0deg, red 0% var(--donation), white var(--donation) 100%);
+    margin-left:10px;
+    margin-bottom:10px;
 }
 
 /* Hiding */
