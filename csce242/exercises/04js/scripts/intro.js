@@ -102,5 +102,6 @@ document.getElementById("btn-donation").onclick = () => {
     percent = userDonation / GOAL * 100;
     
     donationP.innerHTML = `You are ${percent.toFixed(1)}% to your goal`;
+    document.querySelector(":root").style.setProperty("--donation", percent + "%");
 
 }
