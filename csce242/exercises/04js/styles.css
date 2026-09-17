@@ -83,6 +83,19 @@ body {
     color:var(--highlight-bg);
 }
 
+/* Navigation */
+#toggle-nav {
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:white;
+    margin:6px 0;
+}
+
 /* Page Title */
 #page-title {
     color: var(--headings);
