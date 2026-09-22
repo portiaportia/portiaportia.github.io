@@ -16,3 +16,8 @@ document.getElementById("btn-loop").onclick = (e) => {
         loopResult.innerHTML += `<p>${i+1}</p>`;
     }*/
 };
+
+//looping through a range
+document.getElementById("btn-loop-range").onclick = () => {
+    console.log("ih");
+};
