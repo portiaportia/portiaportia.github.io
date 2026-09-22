@@ -19,5 +19,20 @@ document.getElementById("btn-loop").onclick = (e) => {
 
 //looping through a range
 document.getElementById("btn-loop-range").onclick = () => {
-    console.log("ih");
+    const startText = document.getElementById("txt-start");
+    const endText = document.getElementById("txt-end");
+    const errorStart = document.getElementById("error-start");
+    errorStart.classList.add("hidden");
+    const errorEnd = document.getElementById("error-end");
+    errorEnd.classList.add("hidden");
+
+    if(isNaN(startText) || startText < 0 || startText > 5){
+        errorStart.innerHTML = "* Invalid";
+        errorStart.classList.remove("hidden");
+    }
+
+    if(isNaN(endText) || endText < 10 || endText > 20 || endText < startText){
+        errorEnd.innerHTML = "* Invalid";
+        errorEnd.classList.remove("hidden");
+    }
 };

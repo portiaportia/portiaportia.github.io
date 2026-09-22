@@ -140,6 +140,11 @@ body {
     border:1px solid pink;
 }
 
+.error {
+    color:red;
+    font-style: italic;
+}
+
 /* images */
 img {
     max-width:100%;
