@@ -82,16 +82,17 @@ document.getElementById("btn-show-toy-prices").onclick = () => {
 
     const table = document.createElement("table");
     div.append(table);
-    const header = document.createElement("tr");
-    table.append(header);
-    const headerCol1 = document.createElement("th");
-    header.append(headerCol1);
-    headerCol1.innerHTML = "Name";
-    const headerCol2 = document.createElement("th");
-    header.append(headerCol2);
-    headerCol2.innerHTML = "Price";
+    let tr = document.createElement("tr");
+    table.append(tr);
+    let th = document.createElement("th");
+    tr.append(th);
+    th.innerHTML = "Name";
+    th = document.createElement("th");
+    tr.append(th);
+    th.innerHTML = "Price";
 
     for(let toy in toyMap) {
-
+        tr = document.createElement("tr");
+        table.append(tr);
     }
 };
