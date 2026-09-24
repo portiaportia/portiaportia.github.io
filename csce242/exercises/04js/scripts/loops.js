@@ -71,5 +71,27 @@ document.getElementById("btn-show-toys").onclick = () => {
 //show a table of toys and prices
 document.getElementById("btn-show-toy-prices").onclick = () => {
     const div = document.getElementById("toy-info");
-    div.innerHTML = "hi";
+    div.innerHTML = "";
+    
+    const toyMap = [];
+    toyMap["doll"]= 129.99;
+    toyMap["skate board"] = 200.00;
+    toyMap["mini car"] = 1.99;
+    toyMap["board game"] = 20.99;
+    toyMap["braclettes"] = 19.24;
+
+    const table = document.createElement("table");
+    div.append(table);
+    const header = document.createElement("tr");
+    table.append(header);
+    const headerCol1 = document.createElement("th");
+    header.append(headerCol1);
+    headerCol1.innerHTML = "Name";
+    const headerCol2 = document.createElement("th");
+    header.append(headerCol2);
+    headerCol2.innerHTML = "Price";
+
+    for(let toy in toyMap) {
+
+    }
 };
