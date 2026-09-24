@@ -47,3 +47,23 @@ document.getElementById("btn-loop-range").onclick = () => {
         ul.appendChild(li);
     }
 };
+
+//first array example
+document.getElementById("btn-show-toys").onclick = () => {
+    const toys = ["doll", "skate board", "mini car", "board game", "braclets"];
+    const toyList = document.getElementById("toy-list");
+    toyList.innerHTML = "";
+
+    /*
+    for(let i = 0; i < toys.length; i++){
+        const p = document.createElement("p");
+        p.innerHTML = toys[i];
+        toyList.append(p);
+    }*/
+
+    toys.forEach((toy)=>{
+        const p = document.createElement("p").innerHTML;
+        p.innerHTML = toy;
+        toysList.append(p);
+    });
+};
