@@ -67,3 +67,9 @@ document.getElementById("btn-show-toys").onclick = () => {
         toysList.append(p);
     });
 };
+
+//show a table of toys and prices
+document.getElementById("btn-show-toy-prices").onclick = () => {
+    const div = document.getElementById("toy-info");
+    div.innerHTML = "hi";
+};
