@@ -82,29 +82,23 @@ document.getElementById("btn-show-toy-prices").onclick = () => {
 
     const table = document.createElement("table");
     div.append(table);
-    let tr = document.createElement("tr");
-    table.append(tr);
-    let th = document.createElement("th");
-    tr.append(th);
-    th.innerHTML = "Name";
-    th = document.createElement("th");
-    tr.append(th);
-    th.innerHTML = "Price";
+    table.append(createTR("Name", "Price", "th"));
 
     for(let toy in toyMap) {
-        table.append(createTR(toy, "$" + toyMap[toy])); 
+        table.append(createTR(toy, "$" + toyMap[toy], "td")); 
     }
 };
 
-const createTD = (data) => {
-    const td = document.createElement("td");
-    td.innerHTML = data;
-    return td;
+const createElement = (data, type) => {
+    console.log(type);
+    const elem = document.createElement(type);
+    elem.innerHTML = data;
+    return elem;
 };
 
-const createTR = (data1, data2){
+const createTR = (data1, data2, type) => {
     const tr = document.createElement("tr");
-    tr.append(createTD(data1));
-    tr.append(createTD(data2));
+    tr.append(createElement(data1, type));
+    tr.append(createElement(data2, type));
     return tr;
 }
