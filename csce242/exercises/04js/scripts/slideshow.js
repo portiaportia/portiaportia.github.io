@@ -11,6 +11,18 @@ document.getElementById("hero-arrow-right").onclick = (e) => {
     slide(currentSlide, nextSlide);
 };
 
+document.getElementById("hero-arrow-left").onclick = (e) => {
+    e.preventDefault();
+    const currentSlide = getCurrentSlide();
+    let nextSlide = currentSlide.previousElementSibling;
+
+    if(nextSlide == null){
+        nextSlide = document.querySelector("#slides :last-child");
+    }
+
+    slide(currentSlide, nextSlide);
+};
+
 const getCurrentSlide = () => {
     return document.querySelector("#slides :not(.hidden)");
 }
