@@ -28,5 +28,5 @@ dogs.push(new Dog("Gerald", "Pit Bull", 1, "large", "pitt-bull.jpg"));
 const dogsDiv = document.querySelector(".dogs");
 
 dogs.forEach((dog)=>{
-
+    dogsDiv.append(dog.item);
 });
