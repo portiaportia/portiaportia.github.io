@@ -14,7 +14,16 @@ class Dog {
 
         section.append(this.dogName());
         section.append(this.dogImage());
-        section.append(this.moreInfo());
+
+        const moreInfo = this.moreInfo()
+        section.append(moreInfo);
+        moreInfo.classList.add("hidden");
+
+        section.querySelector("a").onclick = () => {
+            moreInfo.classList.toggle("hidden");
+        };
+        
+
         return section;
     }
 
@@ -37,6 +46,7 @@ class Dog {
 
     moreInfo(){
         const ul = document.createElement("ul");
+        ul.classList.add("more-info");
         ul.append(this.liInfo("Breed", this.breed));
         ul.append(this.liInfo("Size", this.size));
         ul.append(this.liInfo("Age", this.age));
