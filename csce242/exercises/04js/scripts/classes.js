@@ -13,7 +13,7 @@ class Dog {
         section.classList.add("project-card");
 
         section.append(this.dogName());
-
+        section.append(this.dogImage());
         return section;
     }
 
@@ -25,6 +25,13 @@ class Dog {
         a.href="#";
 
         return h3;
+    }
+
+    dogImage() {
+        const img = document.createElement("img");
+        img.src= `images/classes/${this.pic}`;
+        img.alt = `Picture of ${this.title}`;
+        return img;
     }
 }
 
