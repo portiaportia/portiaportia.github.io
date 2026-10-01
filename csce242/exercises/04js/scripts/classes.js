@@ -33,6 +33,21 @@ class Dog {
         img.alt = `Picture of ${this.title}`;
         return img;
     }
+
+    moreInfo(){
+        const ul = document.createElement("ul");
+        ul.append(this.liInfo("Breed", this.breed));
+        ul.append(this.liInfo("Size", this.size));
+        ul.append(this.liInfo("Age", this.age));
+
+        return ul;
+    }
+
+    liInfo(property, value) {
+        const li = document.createElement("li");
+        li.append(`<strong>${property}</strong>: ${value}`);
+        return li;
+    }
 }
 
 const dogs = [];
