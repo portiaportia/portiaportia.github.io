@@ -14,6 +14,7 @@ class Dog {
 
         section.append(this.dogName());
         section.append(this.dogImage());
+        section.append(this.moreInfo());
         return section;
     }
 
@@ -45,7 +46,7 @@ class Dog {
 
     liInfo(property, value) {
         const li = document.createElement("li");
-        li.append(`<strong>${property}</strong>: ${value}`);
+        li.innerHTML= `<strong>${property}</strong>: ${value}`;
         return li;
     }
 }
