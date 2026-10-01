@@ -6,6 +6,14 @@ class Dog {
         this.size = size;
         this.pic = pic;
     }
+
+    get item() {
+        const section = document.createElement("section");
+        section.classList.add("dog");
+
+
+        return section;
+    }
 }
 
 const dogs = [];
