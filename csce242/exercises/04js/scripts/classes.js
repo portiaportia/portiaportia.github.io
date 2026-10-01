@@ -10,9 +10,21 @@ class Dog {
     get item() {
         const section = document.createElement("section");
         section.classList.add("dog");
+        section.classList.add("project-card");
 
+        section.append(this.dogName());
 
         return section;
+    }
+
+    dogName() {
+        const h3 = document.createElement("h3");
+        const a = document.createElement("a");
+        h3.append(a);
+        a.textContent = this.title;
+        a.href="#";
+
+        return h3;
     }
 }
 
