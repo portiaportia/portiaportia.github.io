@@ -25,7 +25,7 @@ const displayFish = (fish) => {
     section.append(h2);
 
     const img = document.createElement("img");
-    //img.src= 
+    img.src= base_url + fish.img;
     section.append(img);
 
     return section;
