@@ -11,12 +11,15 @@ const showFish = async() => {
     const fishes = await getFish();
     
     fishes.forEach((fish)=>{
-        displayFish(fish);
+        document.querySelector(".fish-list").append(displayFish(fish));
     });
 };
 
 const displayFish = (fish) => {
-    console.log(fish);
+    const section = document.createElement("section");
+    section.classList.add("fish");
+
+    return section;
 };
 
 showFish();
