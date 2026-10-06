@@ -24,10 +24,15 @@
             </header>
             <main>
                 <h2 id="page-title">Contact Us</h2>
-                <div class="projects">
-                    
-                </div>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="f45f3906-4be3-4f95-a4bd-820e85c09623">
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <textarea name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
             </main>
         </div>
+        <script src="scripts/contact.js"></script>
     </body>
 </html>
