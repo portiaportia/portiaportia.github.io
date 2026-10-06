@@ -1,6 +1,6 @@
 //https://web3forms.com/
 //e.target is the form
-document.getElementById('contact-form').onsubmit = (e) => {
+document.getElementById('contact-form').onsubmit = async(e) => {
     e.preventDefault();
     
     const formData = new FormData(e.target);
@@ -17,16 +17,15 @@ document.getElementById('contact-form').onsubmit = (e) => {
         const data = await response.json();
 
         if (response.ok) {
-            alert("Success! Your message has been sent.");
+            result.innerHTML = "Message Sent";
             form.reset();
         } else {
-            alert("Error: " + data.message);
+            result.innerHTML ="Error: " + data.message;
         }
 
     } catch (error) {
-        alert("Something went wrong. Please try again.");
+        result.innerHTML = "Sorry, we couldn't send your message";
     } finally {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
+        result.innerHTML = "";
     }
 };
