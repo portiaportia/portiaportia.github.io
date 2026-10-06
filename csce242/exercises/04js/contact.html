@@ -24,17 +24,18 @@
             </header>
             <main>
                 <h2 id="page-title">Contact Us</h2>
-                <form action="" method="POST">
+                <form id="contact-form" action="" method="POST">
                     <p>
                         <label for="name">Name:</label>
-                        <input type="text" name="name" required>
+                        <input type="text" name="name" value="amy" required>
                     </p>
                     <p>
                         <label for="email">Email:</label>
-                        <input type="email" name="email" required>
+                        <input type="email" name="email" value="asmith@gmail.com" required>
                     </p>
-                    <p><textarea name="message" required></textarea></p>
+                    <p><textarea name="message" required>hello</textarea></p>
                     <p><button type="submit">Submit</button></p>
+                    <p id="result"></p>
                 </form>
             </main>
         </div>

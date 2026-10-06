@@ -1,17 +1,12 @@
 //https://web3forms.com/
-const form = document.getElementById('form');
-const submitBtn = form.querySelector('button[type="submit"]');
-
-form.addEventListener('submit', async (e) => {
+//e.target is the form
+document.getElementById('contact-form').onsubmit = (e) => {
     e.preventDefault();
-
-    const formData = new FormData(form);
+    
+    const formData = new FormData(e.target);
     formData.append("access_key", "f45f3906-4be3-4f95-a4bd-820e85c09623");
-
-    const originalText = submitBtn.textContent;
-
-    submitBtn.textContent = "Sending...";
-    submitBtn.disabled = true;
+    const result = document.getElementById("result");
+    result.innerHTML = "Sending...";
 
     try {
         const response = await fetch("https://api.web3forms.com/submit", {
@@ -34,4 +29,4 @@ form.addEventListener('submit', async (e) => {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
     }
-});
+};
